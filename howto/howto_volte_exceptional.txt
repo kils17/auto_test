@@ -1,0 +1,919 @@
+
+
+
+sim2:~/GX_inkwon# ./minidiameterd -f gx-ims17.cfg 
+
+
+sim1:~/sae_sim# ipython -i scripts/7F_inkwon/5g_nsa_cbresp_delay.py
+sim1:~/sae_sim# ipython -i scripts/7F_inkwon/5g_nsa_ubresp_delay.py
+sim1:~/sae_sim# ipython -i scripts/7F_inkwon/5g_nsa_dbresp_delay.py
+
+
+
+
+<< CBReq-CBResp >>
+sim1:~/sae_sim# ipython -i scripts/7F_inkwon/5g_nsa_cbresp_delay.py
+
+
+
+
+Case 1) 
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1 
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+Case 2)
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+Case 3)
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+Case 4)
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 3002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 3002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+
+
+Case 5)
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  3 && 
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 3002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 3002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 && 
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" && 
+./minidclisender 172.21.21.241 4868 --rating-grp  60 && 
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+
+
+
+<< UBReq-UBResp >>
+sim1:~/sae_sim# ipython -i scripts/7F_inkwon/5g_nsa_ubresp_delay.py
+
+
+
+
+
+
+Case 6)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+UBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1 
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+Case 7)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+UBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+Case 8)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+UBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 59000 59000 59000 59000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+Case 9)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+UBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 5222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 5222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+Case 10)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+UBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 3222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 3222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 4222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 4222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  3 && 
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 6002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 6002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 && 
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" && 
+./minidclisender 172.21.21.241 4868 --rating-grp  60 && 
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+
+<< DBReq-DBResp >>
+sim1:~/sae_sim# ipython -i scripts/7F_inkwon/5g_nsa_dbresp_delay.py
+
+
+
+Case 11)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+DBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1 
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+Case 12)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+DBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 && 
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 && 
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" && 
+./minidclisender 172.21.21.241 4868 --rating-grp  60 && 
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --enable-online 0 &&
+./minidclisender 172.21.21.241 4868 --enable-offline 1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+Case 13)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+DBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1 
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+Case 14)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+DBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1 
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 3002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 3002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
+Case 15)
+
+CBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 &&
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 4868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+DBR
+
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --supported-features    10415 1 2 &&
+./minidclisender 172.21.21.241 4868 --supported-features      10415 2 128 &&
+./minidclisender 172.21.21.241 4868 --destination-host  csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --remove-level-charging-rule-name 2 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+sleep 1
+./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 4868 --gx-command 3 &&
+./minidclisender 172.21.21.241 4868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 4868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 4868 --charging-rule-name  3 && 
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit in ip from 3002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25"  &&
+./minidclisender 172.21.21.241 4868 --flow-information   &&
+./minidclisender 172.21.21.241 4868 --flow-info-flow-description "permit out ip from 2222:2222:2222:2222::25  to 3002:ac64:6130:24:0:19:ede0:f901"  &&
+./minidclisender 172.21.21.241 4868 --flow-status  2 && 
+./minidclisender 172.21.21.241 4868 --precedence   0 &&
+./minidclisender 172.21.21.241 4868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" && 
+./minidclisender 172.21.21.241 4868 --rating-grp  60 && 
+./minidclisender 172.21.21.241 4868 --report-level  1 &&
+./minidclisender 172.21.21.241 4868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 4868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 4868 --rar-time 1
+
+
