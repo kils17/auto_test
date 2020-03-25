@@ -1,11 +1,10 @@
 ---
 # test list
 
-name: Basic Test
+name: Volte abnormal test
 
 test_list:
 - volte_abnormal_01.yaml
-#- basic_test2.yaml
-#- basic_test3.yaml
+#- volte_abnormal_02.yaml
 
 ...

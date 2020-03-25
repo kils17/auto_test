@@ -1,1 +1,0 @@
-sim2:~# cd GX_inkwon; ./start_pcrf.sh gx-ims17.cfg

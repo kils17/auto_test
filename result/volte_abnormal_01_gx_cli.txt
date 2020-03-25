@@ -1,0 +1,29 @@
+sim2:~# cd ~/GX_inkwon/test; ./start_pcrf.sh ../gx-ims17.cfgsim2:~# cd ~/GX_inkwon/test; ./send_rar.sh va_01./minidclisenderSending: minid_cli_message--reset-rar-info-gx (null)
+./minidclisenderSending: minid_cli_message--gx-command 3
+./minidclisenderSending: minid_cli_message--destination-host csc-nsa-smf-7
+./minidclisenderSending: minid_cli_message--destination-realm kt.com
+./minidclisenderSending: minid_cli_message--charging-rule-name 2
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit in ip from 1002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit out ip from 2222:2222:2222:2222::25  to 1002:ac64:6130:24:0:19:ede0:f901
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit in ip from 2002:ac64:6130:24:0:19:ede0:f901 to 2222:2222:2222:2222::25
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit out ip from 2222:2222:2222:2222::25  to 2002:ac64:6130:24:0:19:ede0:f901
+./minidclisenderSending: minid_cli_message--flow-status 2
+./minidclisenderSending: minid_cli_message--precedence 0
+./minidclisenderSending: minid_cli_message--flow-authorized-qos 1 39000 39000 39000 39000  -1 1 1 0
+./minidclisenderSending: minid_cli_message--rating-grp 60
+./minidclisenderSending: minid_cli_message--report-level 1
+./minidclisenderSending: minid_cli_message--resource-allocation-notification 0
+./minidclisenderSending: minid_cli_message--event-trigger 14
+./minidclisenderSending: minid_cli_message--rar-time 1
+./minidclisenderSending: minid_cli_message--reset-rar-info-gx (null)
+./minidclisenderSending: minid_cli_message--gx-command 3
+./minidclisenderSending: minid_cli_message--supported-features 10415
+./minidclisenderSending: minid_cli_message--supported-features 10415
+./minidclisenderSending: minid_cli_message--destination-host csc-nsa-smf-7
+./minidclisenderSending: minid_cli_message--destination-realm kt.com
+./minidclisenderSending: minid_cli_message--remove-level-charging-rule-name 2
+./minidclisenderSending: minid_cli_message--rar-time 1

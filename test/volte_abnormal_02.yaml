@@ -1,7 +1,7 @@
 ---
 # Test Procedure
 test_description:
-- name: volte_abnormal_01
+- name: volte_abnormal_02
 
 test_prepartion:
 - host: cp_cli
@@ -53,7 +53,7 @@ test_procedure:
 - proc_type: gx_cli
   wait: 10
   host: gx_cli
-  cmd: cd ~/GX_inkwon/test; ./send_rar.sh va_01
+  cmd: cd ~/GX_inkwon/test; ./send_rar.sh va_02
 - proc_type: show_cli
   wait: 2
   host: cp_cli

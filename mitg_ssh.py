@@ -12,13 +12,16 @@ import threading
 
 logger = logging.getLogger(__name__)
 
+stop_thread = False
+
 def th_monpro(connection_id, command, prompt_str='', write_fp=None, option='+'):
-    #print("KKK: th_monpro 1")
+    global stop_thread
+
+    print("KKK: th_monpro 1, stop({0})".format(stop_thread))
 
     if write_fp:
         #write_fp.write('{0}# {1}'.format(prompt_str, command))
         write_fp.write('{0}# '.format(prompt_str))
-
 
     # send command
     connection_id.sendline(command)
@@ -40,7 +43,11 @@ def th_monpro(connection_id, command, prompt_str='', write_fp=None, option='+'):
         str = connection_id.readline().decode(errors='ignore').strip("\r\n")
 #        print(str)
         write_fp.write('{0}\n'.format(str))
-
+        print ("stop thread", stop_thread)
+        if stop_thread == True:
+            connection_id.sendline("q")
+            print("thread terminated")
+            break
 
 
     ##print("KKK: th_monpro 2")
@@ -672,6 +679,8 @@ class SshController:
 
         #print("KKK: mon_command 1")
 
+        global stop_thread
+        stop_thread = False
 
         # strt thread for mon pro
         t = threading.Thread(target=th_monpro, args=(self.connection_id, command, prompt_str, write_fp, option))
@@ -683,6 +692,12 @@ class SshController:
         #print("KKK: mon_command 2")
         
         return True
+
+    def stop_mon_command(self):
+        global stop_thread
+        stop_thread = True
+        print("KKK: th_monpro 1, stop({0})".format(stop_thread))
+
 
     def run_control(self, command, prompt_str=None, timeout=120, wait_for_prompt=True, write_fp=None):
         """

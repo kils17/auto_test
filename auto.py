@@ -94,6 +94,9 @@ def stop_test():
     for id in range(len(DEV_OBJS)):
         DEV_OBJS[id].fp.close()
 
+    # stop monpro threads
+    DEV_OBJS[0].conn_obj.stop_mon_command()
+
 
 def get_dev_obj(host):
     global DEV_OBJS
@@ -158,11 +161,10 @@ def run_test(testfile):
     ############################################################################
     # do procedure
     ############################################################################
+
     for proc in testitem.get('test_procedure'):
         print("host: ", proc)
         dev_obj = get_dev_obj(proc.get('host'))
-
-        time.sleep(proc.get('wait'))
 
 
         if proc.get('proc_type') == 'show_cli':
@@ -180,10 +182,9 @@ def run_test(testfile):
         elif proc.get('proc_type') == 'mon_pro':
             dev_obj.conn_obj.mon_command(proc.get('cmd'), write_fp=dev_obj.fp, option=proc.get('option'))
 
+        time.sleep(proc.get('wait'))
 
 
-    print("[ Test End: Waiting for 30 sec ]")
-    time.sleep(30)
 
 
 
@@ -200,12 +201,17 @@ def do_test(ARGS):
 
     for i in range(len(testlist['test_list'])):
 
+        print("[ Test Begin: Waiting for 3 sec ]")
+        time.sleep(3)
+
         # start test
         run_test(testlist['test_list'][i])
 
         # stop test
         stop_test()
 
+        print("[ Test End: wait for 5 sec ]")
+        time.sleep(5)
 
 
 

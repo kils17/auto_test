@@ -1,3 +1,0 @@
-[local]CISCO_SMF_7F# show subs imsi 450081030101806
-Wednesday March 25 14:43:41 KST 2020
-No subscribers match the specified criteria

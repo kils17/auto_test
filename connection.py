@@ -197,6 +197,10 @@ class ConnectionMixin(abc.ABC):
 
         return ret
 
+    def stop_mon_command(self):
+        self.connection.stop_mon_command()
+
+
     def run_control(self, command, prompt_str=None, timeout=120, wait_for_prompt=True, write_fp=None):
         """
         This method will call the low level run_command method depending on the

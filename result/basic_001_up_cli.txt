@@ -1,3 +1,0 @@
-[local]TB_UPF02-09# show subs all
-Wednesday March 25 14:45:28 KST 2020
-No subscribers match the specified criteria
