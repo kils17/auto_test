@@ -1,5 +1,5 @@
 [local]TB_UPF02-09#  mon pro
-Wednesday March 25 14:17:56 KST 2020
+Wednesday March 25 14:45:15 KST 2020
 [2J[0;0f
 MONITOR GLOBAL PROTOCOLS:
 

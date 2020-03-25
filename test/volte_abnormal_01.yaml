@@ -22,13 +22,13 @@ test_procedure:
 - proc_type: mon_pro
   wait: 3
   host: cp_mon
-  cmd: mon subs imsi 450081030101806
+  cmd: mon subs imsi 450081030101804
   option: +,+
 - proc_type: mon_pro
   wait: 3
   host: up_mon
-  cmd: mon pro
-  option: 49,B,Y,+,a
+  cmd: mon subs imsi 450081030101804
+  .option: +,a
 - proc_type: gx_cli
   wait: 3
   host: gx_cli
@@ -36,23 +36,31 @@ test_procedure:
 - proc_type: sim_cli
   wait: 3
   host: sim_cli
-  cmd: cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_no_urlcc.py
+  cmd: cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_cbresp_delay.py
 - proc_type: show_cli
   wait: 3
   host: cp_cli
-  cmd: show subs imsi 450081030101806
+  cmd: show subs imsi 450081030101804
 - proc_type: show_cli
   wait: 3
+  host: cp_cli
+  cmd: show subs active-charging session full imsi 450081030101804
+- proc_type: show_cli
+  wait: 1
   host: up_cli
   #cmd: show subs imsi 450081030101806
   cmd: show subs all
   more: True
-- proc_type: sim_cli
+- proc_type: gx_cli
   wait: 3
+  host: gx_cli
+  cmd: cd GX_inkwon; ./send_rar_volte_abnormal_01.sh
+- proc_type: sim_cli
+  wait: 5
   host: sim_cli
   cmd: mme.clearSub()
 - proc_type: sim_ctl
-  wait: 3
+  wait: 1
   host: sim_cli
   cmd: d
 

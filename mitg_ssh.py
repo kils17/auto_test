@@ -23,8 +23,8 @@ def th_monpro(connection_id, command, prompt_str='', write_fp=None, option='+'):
     # send command
     connection_id.sendline(command)
 
-    # need to wait for 1 sec in case of mon sub
-    time.sleep(1)
+    # need to wait for 2 sec in case of mon sub
+    time.sleep(2)
 
     # send option
     for opt in option.split(','):
