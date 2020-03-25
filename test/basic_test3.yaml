@@ -1,0 +1,21 @@
+---
+# Test Procedure
+
+test_prepartion:
+- host: up1
+  hostfile: up1.yaml
+- host: up2
+  hostfile: up2.yaml
+
+test_procedure:
+- mon_sub:
+  - wait: 0
+  - host: mon_sub_1
+  - imsi: 450081030101806
+  - verbosity: 2
+- mon_pro:
+  - wait: 0
+  - host: mon_pro_2
+  - verbosity: 2
+
+...

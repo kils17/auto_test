@@ -1,0 +1,11 @@
+---
+# test list
+
+name: Basic Test
+
+test_list:
+- volte_abnormal_01.yaml
+#- basic_test2.yaml
+#- basic_test3.yaml
+
+...

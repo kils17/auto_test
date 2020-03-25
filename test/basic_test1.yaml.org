@@ -1,0 +1,47 @@
+---
+# Test Procedure
+test_description:
+- name: basic_001
+
+test_prepartion:
+- host: cp_cli
+  hostfile: cp1.yaml
+- host: cp_mon
+  hostfile: cp1.yaml
+- host: up_cli
+  hostfile: up4.yaml
+- host: up_mon
+  hostfile: up4.yaml
+- host: sim_cli
+  hostfile: saesim1.yaml
+
+test_procedure:
+#- proc_type: mon_sub
+#  wait: 3
+#  host: cp_mon
+#  imsi: 450081030101806
+#  verbosity: 2
+#  cmd: mon subs imsi 450081030101806
+- proc_type: saesim
+  wait: 3
+  host: sim_cli
+  cmd: ipython -i script/7F_inkwon/5g_nsa_no_urlcc.py
+- proc_type: show_cli
+  wait: 3
+  host: up_cli
+  cmd: show ver
+#- proc_type: mon_pro
+#  wait: 3
+#  host: up_mon
+#  verbosity: 2
+#  cmd: mon pro
+- proc_type: show_cli
+  wait: 3
+  host: cp_cli
+  cmd: show ver
+- proc_type: show_cli
+  wait: 3
+  host: cp_cli
+  cmd: show session disconnect
+
+...
