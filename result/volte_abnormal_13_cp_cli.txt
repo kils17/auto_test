@@ -1,0 +1,822 @@
+[local]CISCO_SMF_7F# show subs imsi 450081030101804
+Thursday March 26 17:28:35 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+#TCNAT 04351c5d 450081030101804 12110030101804@cisco17.com fd02:0:5017:4000:0:4:351c:5d01 00h00m06s
+
+Total subscribers matching specified criteria: 1
+[local]CISCO_SMF_7F# show active-charging session full imsi 450081030101804
+Thursday March 26 17:28:45 KST 2020
+
+  Session-ID:                15:569534  Username: 12110030101804@cisco17.com
+  Callid:                     04351c5d  IMSI/MSID:          450081030101804
+  MSISDN:                                                    12110030101804
+  SessMgr Instance:                 15  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5017:4000::
+  NAS-IP:                                                     172.20.69.231
+  Access-NAS-IP(FA):                                                       
+  NAS-PORT:                         0   NSAPI:                            5
+  Acct-Session-ID:                                         AC1445E30196E996
+  NAS-ID:                                                               n/a
+  Access-NAS-ID(FA):                                                    n/a
+  3GPP2-BSID:                                                           n/a
+  Access-Correlation-ID(FA):                                            n/a
+  3GPP2-Correlation-ID:                                                 n/a
+  MEID:                                                                 n/a
+  Carrier-ID:                      n/a  ESN:                            n/a
+  PCO: 
+    Value/Interface:               n/a
+  Uplink Bytes:                      0  Downlink Bytes:                   0
+  Uplink Packets:                    0  Downlink Packets:                 0
+  Injected Uplink Packets:           0  Injected Downlink Packets:        0
+  Buffered Uplink Packets:           0  Buffered Downlink Packets:        0
+  Buffered Uplink Bytes:             0  Buffered Downlink Bytes:          0
+  Uplink Packets in Buffer:          0  Downlink Packets in Buffer:       0
+  Buff Over-limit Uplink Pkts:       0  Buff Over-limit Downlink Pkts:    0
+  DCCA Buffered Packet Drops: 
+  Uplink:                            0  Downlink:                         0
+  Uplink Out of Order Packets:       0  Downlink Out of Order Packets:    0
+  Dyn FUI Redirected Flows:          0  Dyn FUI Discarded Pkts:           0
+  ITC Terminated Flows:              0  ITC Redirected Flows:             0
+  ITC Dropped Packets:               0  ITC ToS Remarked Packets:         0
+  ITC Dropped Upl Pkts:              0  ITC Dropped Dnl Pkts:             0
+  Flow action Terminated Flows:                                           0
+  PP Flow action Terminated Flows:                                        0
+  PP Dropped Packets:                                                     0
+  CC Dropped Uplink Packets:         0  CC Dropped Uplink Bytes:          0
+  CC Dropped Downlink Packets:       0  CC Dropped Downlink Bytes:        0
+  NRUPC Req Made:                    0  NRUPC Req Success:                0
+  NRUPC Req Failed:                  0  NRUPC Req Time Out:               0
+  Bearer Bandwidth Limiting: Disabled
+  Uplink MBR (bps):                  0  Downlink MBR (bps):               0
+  Uplink GBR (bps):                  0  Downlink GBR (bps):               0
+  Uplink Burst (bytes):            n/a  Downlink Burst (bytes):         n/a
+  Dropped Uplink Pkts:             n/a  Dropped Downlink Pkts:          n/a
+  Creation Time:                        Thursday March 26 08:28:29 GMT 2020
+  Last Pkt Time:                                                           
+  Duration:                                                     00h:00m:18s
+  Rule Base name:                                                      FREE
+  URL-Redir First-Request-Only:                                         n/a
+  Bandwidth Policy:                                                     n/a
+  Bandwidth Policy Fallback Applied:                                     No
+  Dynamic GBR Monitoring:                                          Disabled
+  FW-and-NAT Policy:                                                    n/a
+  FW-and-NAT Policy ID:                                                 n/a
+  Firewall Policy IPv4:                                                 n/a
+  Firewall Policy IPv6:                                                 n/a
+  NAT Policy NAT44:                                                     n/a
+  NAT Policy NAT64:                                                     n/a
+  Bypass NAT Flow Present:                                              n/a
+  Congestion Mgmt Policy:                                               n/a
+  CF Policy ID:                                                         n/a
+  Old CF Policy ID:                                                     n/a
+  Dynamic Charging:                                                 Enabled
+  Dynamic Chrg Msg Received:         1  Rule Definitions Received:        0
+  Installs Received:                 1  Removes Received:                 0
+  Installs Succeeded:                1  Installs Failed:                  0
+  Removes Succeeded:                 0  Removes Failed:                   0
+  Uplink Dynamic Rule Packets:       0  Downlink Dynamic Rule Packets:    0
+  Predefined Rule Retention Succeeded:0 Predefined Retention Failed:      0
+  Time Based PCC Rule:
+  Installs Deferred:                 0  Removes Initiated:                0
+  Dynamic Charging Packet Drop statistics:
+  PCC Rule BW Limit Upl Pkts:        0  PCC Rule BW Limit Dnl Pkts:       0
+  PCC Rule Gating Upl Pkts:          0  PCC Rule Gating Dnl Pkts:         0
+  RuleMatch Fail Upl Pkts:           0  RuleMatch Fail Dnl Pkts:          0
+  Credit-Control:                                                       Off
+  Event-Triggers:                                                          
+  QoS Renegotiate Up:                0  QoS Renegotiate Dn:               0
+  Max (L3) Flows:                    0
+  Max Flows Timestamp:                                                  n/a
+  
+  TCP-Proxy Session Stats:                                              n/a
+  Partial HTTP Header Anomaly prevented:                                  0
+  Redirection Anomaly Prevented:                                          0
+  TRM Anomaly Prevented:                                                  0
+  VPP LOCAL UPLINK TEP Version:                                           0
+  VPP LOCAL DOWNLINK TEP Version :                                        0
+  VPP suppress offload:                                                   1
+  VPP onload failed:                                                      0
+  VPP onload succeeded:                                                   0
+  VPP sent packets:                                                       0
+  VPP dropped packets:                                                    0
+  
+  Link Monitoring Average Throughput:                                0 kbps
+  Link Monitoring Average RTT:                                       0 ms
+
+  Charging Updates:                                                     n/a
+No Charging ruledef(s) match the specified criteria
+No Firewall ruledef(s) match the specified criteria
+
+  Post-processing Rulestats : No Post-processing ruledef(s) match the specified criteria
+Dynamic Charging Rule Name Statistics: n/a
+Total Dynamic Rules:             0
+Total Predefined Rules:          0
+Total ADC Rules:                 0
+Total Firewall Predefined Rules: 0
+Total Time Based Pending PCC Rules: 0
+Charging-Updates Statistics:         n/a
+Dynamic Charging Rule Definition(s) Configured: n/a
+Predefined Rules Enabled List: n/a
+Predefined Firewall Rules Enabled List: n/a
+
+Total acs sessions matching specified criteria: 1
+[local]CISCO_SMF_7F# show subs imsi 450081030101804
+Thursday March 26 17:29:02 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+#TCNAT 04351c5d 450081030101804 12110030101804@cisco17.com fd02:0:5017:4000:0:4:351c:5d01 00h00m33s
+#TCNAT 04351c5d 450081030101804 12110030101804@cisco17.com fd02:0:5017:4000:0:4:351c:5d01 00h00m33s
+
+Total subscribers matching specified criteria: 2
+[local]CISCO_SMF_7F# show active-charging session full imsi 450081030101804
+Thursday March 26 17:29:04 KST 2020
+
+  Session-ID:                15:569534  Username: 12110030101804@cisco17.com
+  Callid:                     04351c5d  IMSI/MSID:          450081030101804
+  MSISDN:                                                    12110030101804
+  SessMgr Instance:                 15  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5017:4000::
+  NAS-IP:                                                     172.20.69.231
+  Access-NAS-IP(FA):                                                       
+  NAS-PORT:                         0   NSAPI:                            5
+  Acct-Session-ID:                                         AC1445E30196E996
+  NAS-ID:                                                               n/a
+  Access-NAS-ID(FA):                                                    n/a
+  3GPP2-BSID:                                                           n/a
+  Access-Correlation-ID(FA):                                            n/a
+  3GPP2-Correlation-ID:                                                 n/a
+  MEID:                                                                 n/a
+  Carrier-ID:                      n/a  ESN:                            n/a
+  PCO: 
+    Value/Interface:               n/a
+  Uplink Bytes:                      0  Downlink Bytes:                   0
+  Uplink Packets:                    0  Downlink Packets:                 0
+  Injected Uplink Packets:           0  Injected Downlink Packets:        0
+  Buffered Uplink Packets:           0  Buffered Downlink Packets:        0
+  Buffered Uplink Bytes:             0  Buffered Downlink Bytes:          0
+  Uplink Packets in Buffer:          0  Downlink Packets in Buffer:       0
+  Buff Over-limit Uplink Pkts:       0  Buff Over-limit Downlink Pkts:    0
+  DCCA Buffered Packet Drops: 
+  Uplink:                            0  Downlink:                         0
+  Uplink Out of Order Packets:       0  Downlink Out of Order Packets:    0
+  Dyn FUI Redirected Flows:          0  Dyn FUI Discarded Pkts:           0
+  ITC Terminated Flows:              0  ITC Redirected Flows:             0
+  ITC Dropped Packets:               0  ITC ToS Remarked Packets:         0
+  ITC Dropped Upl Pkts:              0  ITC Dropped Dnl Pkts:             0
+  Flow action Terminated Flows:                                           0
+  PP Flow action Terminated Flows:                                        0
+  PP Dropped Packets:                                                     0
+  CC Dropped Uplink Packets:         0  CC Dropped Uplink Bytes:          0
+  CC Dropped Downlink Packets:       0  CC Dropped Downlink Bytes:        0
+  NRUPC Req Made:                    0  NRUPC Req Success:                0
+  NRUPC Req Failed:                  0  NRUPC Req Time Out:               0
+  Bearer Bandwidth Limiting: Disabled
+  Uplink MBR (bps):                  0  Downlink MBR (bps):               0
+  Uplink GBR (bps):                  0  Downlink GBR (bps):               0
+  Uplink Burst (bytes):            n/a  Downlink Burst (bytes):         n/a
+  Dropped Uplink Pkts:             n/a  Dropped Downlink Pkts:          n/a
+  Creation Time:                        Thursday March 26 08:28:29 GMT 2020
+  Last Pkt Time:                                                           
+  Duration:                                                     00h:00m:36s
+  Rule Base name:                                                      FREE
+  URL-Redir First-Request-Only:                                         n/a
+  Bandwidth Policy:                                                     n/a
+  Bandwidth Policy Fallback Applied:                                     No
+  Dynamic GBR Monitoring:                                          Disabled
+  FW-and-NAT Policy:                                                    n/a
+  FW-and-NAT Policy ID:                                                 n/a
+  Firewall Policy IPv4:                                                 n/a
+  Firewall Policy IPv6:                                                 n/a
+  NAT Policy NAT44:                                                     n/a
+  NAT Policy NAT64:                                                     n/a
+  Bypass NAT Flow Present:                                              n/a
+  Congestion Mgmt Policy:                                               n/a
+  CF Policy ID:                                                         n/a
+  Old CF Policy ID:                                                     n/a
+  Dynamic Charging:                                                 Enabled
+  Dynamic Chrg Msg Received:         2  Rule Definitions Received:        1
+  Installs Received:                 2  Removes Received:                 0
+  Installs Succeeded:                2  Installs Failed:                  0
+  Removes Succeeded:                 0  Removes Failed:                   0
+  Uplink Dynamic Rule Packets:       0  Downlink Dynamic Rule Packets:    0
+  Predefined Rule Retention Succeeded:0 Predefined Retention Failed:      0
+  Time Based PCC Rule:
+  Installs Deferred:                 0  Removes Initiated:                0
+  Dynamic Charging Packet Drop statistics:
+  PCC Rule BW Limit Upl Pkts:        0  PCC Rule BW Limit Dnl Pkts:       0
+  PCC Rule Gating Upl Pkts:          0  PCC Rule Gating Dnl Pkts:         0
+  RuleMatch Fail Upl Pkts:           0  RuleMatch Fail Dnl Pkts:          0
+  Credit-Control:                                                       Off
+  Event-Triggers:                                                          
+  QoS Renegotiate Up:                0  QoS Renegotiate Dn:               0
+  Max (L3) Flows:                    0
+  Max Flows Timestamp:                                                  n/a
+  
+  TCP-Proxy Session Stats:                                              n/a
+  Partial HTTP Header Anomaly prevented:                                  0
+  Redirection Anomaly Prevented:                                          0
+  TRM Anomaly Prevented:                                                  0
+  VPP LOCAL UPLINK TEP Version:                                           0
+  VPP LOCAL DOWNLINK TEP Version :                                        0
+  VPP suppress offload:                                                   1
+  VPP onload failed:                                                      0
+  VPP onload succeeded:                                                   0
+  VPP sent packets:                                                       0
+  VPP dropped packets:                                                    0
+  
+  Link Monitoring Average Throughput:                                0 kbps
+  Link Monitoring Average RTT:                                       0 ms
+
+  Charging Updates:                                                     n/a
+No Charging ruledef(s) match the specified criteria
+No Firewall ruledef(s) match the specified criteria
+
+  Post-processing Rulestats : No Post-processing ruledef(s) match the specified criteria
+Dynamic Charging Rule Name Statistics: n/a
+Total Dynamic Rules:             0
+Total Predefined Rules:          0
+Total ADC Rules:                 0
+Total Firewall Predefined Rules: 0
+Total Time Based Pending PCC Rules: 0
+Charging-Updates Statistics:         n/a
+Dynamic Charging Rule Definition(s) Configured: n/a
+Predefined Rules Enabled List: n/a
+Predefined Firewall Rules Enabled List: n/a
+
+  Session-ID:                15:569535  Username: 12110030101804@cisco17.com
+  Callid:                     04351c5d  IMSI/MSID:          450081030101804
+  MSISDN:                                                    12110030101804
+  SessMgr Instance:                 15  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5017:4000::
+  NAS-IP:                                                     172.20.69.231
+  Access-NAS-IP(FA):                                                       
+  NAS-PORT:                         0   NSAPI:                            6
+  Acct-Session-ID:                                         AC1445E30196E997
+  NAS-ID:                                                               n/a
+  Access-NAS-ID(FA):                                                    n/a
+  3GPP2-BSID:                                                           n/a
+  Access-Correlation-ID(FA):                                            n/a
+  3GPP2-Correlation-ID:                                                 n/a
+  MEID:                                                                 n/a
+  Carrier-ID:                      n/a  ESN:                            n/a
+  PCO: 
+    Value/Interface:               n/a
+  Uplink Bytes:                      0  Downlink Bytes:                   0
+  Uplink Packets:                    0  Downlink Packets:                 0
+  Injected Uplink Packets:           0  Injected Downlink Packets:        0
+  Buffered Uplink Packets:           0  Buffered Downlink Packets:        0
+  Buffered Uplink Bytes:             0  Buffered Downlink Bytes:          0
+  Uplink Packets in Buffer:          0  Downlink Packets in Buffer:       0
+  Buff Over-limit Uplink Pkts:       0  Buff Over-limit Downlink Pkts:    0
+  DCCA Buffered Packet Drops: 
+  Uplink:                            0  Downlink:                         0
+  Uplink Out of Order Packets:       0  Downlink Out of Order Packets:    0
+  Dyn FUI Redirected Flows:          0  Dyn FUI Discarded Pkts:           0
+  ITC Terminated Flows:              0  ITC Redirected Flows:             0
+  ITC Dropped Packets:               0  ITC ToS Remarked Packets:         0
+  ITC Dropped Upl Pkts:              0  ITC Dropped Dnl Pkts:             0
+  Flow action Terminated Flows:                                           0
+  PP Flow action Terminated Flows:                                        0
+  PP Dropped Packets:                                                     0
+  CC Dropped Uplink Packets:         0  CC Dropped Uplink Bytes:          0
+  CC Dropped Downlink Packets:       0  CC Dropped Downlink Bytes:        0
+  NRUPC Req Made:                    0  NRUPC Req Success:                0
+  NRUPC Req Failed:                  0  NRUPC Req Time Out:               0
+  Bearer Bandwidth Limiting: Enabled
+  Uplink MBR (bps):              39000  Downlink MBR (bps):           39000
+  Uplink GBR (bps):              39000  Downlink GBR (bps):           39000
+  Uplink Burst (bytes):          14625  Downlink Burst (bytes):       14625
+  Dropped Uplink Pkts:               0  Dropped Downlink Pkts:            0
+  Creation Time:                        Thursday March 26 08:28:29 GMT 2020
+  Last Pkt Time:                                                           
+  Duration:                                                     00h:00m:36s
+  Rule Base name:                                                      FREE
+  URL-Redir First-Request-Only:                                         n/a
+  Bandwidth Policy:                                                     n/a
+  Bandwidth Policy Fallback Applied:                                     No
+  Dynamic GBR Monitoring:                                          Disabled
+  FW-and-NAT Policy:                                                    n/a
+  FW-and-NAT Policy ID:                                                 n/a
+  Firewall Policy IPv4:                                                 n/a
+  Firewall Policy IPv6:                                                 n/a
+  NAT Policy NAT44:                                                     n/a
+  NAT Policy NAT64:                                                     n/a
+  Bypass NAT Flow Present:                                              n/a
+  Congestion Mgmt Policy:                                               n/a
+  CF Policy ID:                                                         n/a
+  Old CF Policy ID:                                                     n/a
+  Dynamic Charging:                                                 Enabled
+  Dynamic Chrg Msg Received:         0  Rule Definitions Received:        0
+  Installs Received:                 0  Removes Received:                 0
+  Installs Succeeded:                0  Installs Failed:                  0
+  Removes Succeeded:                 0  Removes Failed:                   0
+  Uplink Dynamic Rule Packets:       0  Downlink Dynamic Rule Packets:    0
+  Predefined Rule Retention Succeeded:0 Predefined Retention Failed:      0
+  Time Based PCC Rule:
+  Installs Deferred:                 0  Removes Initiated:                0
+  Dynamic Charging Packet Drop statistics:
+  PCC Rule BW Limit Upl Pkts:        0  PCC Rule BW Limit Dnl Pkts:       0
+  PCC Rule Gating Upl Pkts:          0  PCC Rule Gating Dnl Pkts:         0
+  RuleMatch Fail Upl Pkts:           0  RuleMatch Fail Dnl Pkts:          0
+  Credit-Control:                                                       Off
+  Event-Triggers:                                                          
+  QoS Renegotiate Up:                0  QoS Renegotiate Dn:               0
+  Max (L3) Flows:                    0
+  Max Flows Timestamp:                                                  n/a
+  
+  TCP-Proxy Session Stats:                                              n/a
+  Partial HTTP Header Anomaly prevented:                                  0
+  Redirection Anomaly Prevented:                                          0
+  TRM Anomaly Prevented:                                                  0
+  VPP LOCAL UPLINK TEP Version:                                           0
+  VPP LOCAL DOWNLINK TEP Version :                                        0
+  VPP suppress offload:                                                   1
+  VPP onload failed:                                                      0
+  VPP onload succeeded:                                                   0
+  VPP sent packets:                                                       0
+  VPP dropped packets:                                                    0
+  
+  Link Monitoring Average Throughput:                                0 kbps
+  Link Monitoring Average RTT:                                       0 ms
+
+  Charging Updates:                                                     n/a
+No Charging ruledef(s) match the specified criteria
+No Firewall ruledef(s) match the specified criteria
+
+  Post-processing Rulestats : No Post-processing ruledef(s) match the specified criteria
+Dynamic Charging Rule Name Statistics: n/a
+Total Dynamic Rules:             1
+Total Predefined Rules:          0
+Total ADC Rules:                 0
+Total Firewall Predefined Rules: 0
+Total Time Based Pending PCC Rules: 0
+Charging-Updates Statistics:         n/a
+
+Dynamic Charging Rule Definition(s) Configured:
+Name                 Prior Content-Id Chrg-Type Rule Parameters            
+-------------------- ----- ---------- --------- ---------------------------
+                   2     0         60      None Gate Status:      Allow All
+                                                QoS Class Identifier:     1
+                                                ARP Priority Level:       1
+                                                Reporting Level: Rating Grp
+                                                Metering Method:   Duration
+                                                Uplink MBR:           39000
+                                                Downlink MBR:         39000
+                                                Uplink GBR:           39000
+                                                Downlink GBR:         39000
+                                                Uplink PDR id:       0x0007
+                                                Uplink FAR id:       0x0007
+                                                Uplink QER id:   0x00000002
+                                                Dnlink PDR id:       0x0008
+                                                Dnlink FAR id:       0x0008
+                                                Dnlink QER id:   0x00000002
+                                                Filter 1:
+                                                Direction:           Uplink
+                                                Src Addr  2002:ac64:6130:24:0:19:ede0:f901/128
+                                                Dst Addr  2222:2222:2222:2222::25/128
+                                                Filter 2:
+                                                Direction:           Uplink
+                                                Src Addr  1002:ac64:6130:24:0:19:ede0:f901/128
+                                                Dst Addr  2222:2222:2222:2222::25/128
+                                                Filter 3:
+                                                Direction:         Downlink
+                                                Src Addr  2222:2222:2222:2222::25/128
+                                                Dst Addr  2002:ac64:6130:24:0:19:ede0:f901/128
+                                                Filter 4:
+                                                Direction:         Downlink
+                                                Src Addr  2222:2222:2222:2222::25/128
+                                                Dst Addr  1002:ac64:6130:24:0:19:ede0:f901/128
+Predefined Rules Enabled List: n/a
+Predefined Firewall Rules Enabled List: n/a
+
+Total acs sessions matching specified criteria: 2
+[local]CISCO_SMF_7F# show subs imsi 450081030101804
+Thursday March 26 17:29:21 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+#TCNAT 04351c5d 450081030101804 12110030101804@cisco17.com fd02:0:5017:4000:0:4:351c:5d01 00h00m52s
+#TCNAT 04351c5d 450081030101804 12110030101804@cisco17.com fd02:0:5017:4000:0:4:351c:5d01 00h00m52s
+
+Total subscribers matching specified criteria: 2
+[local]CISCO_SMF_7F# show active-charging session full imsi 450081030101804
+Thursday March 26 17:29:24 KST 2020
+
+  Session-ID:                15:569534  Username: 12110030101804@cisco17.com
+  Callid:                     04351c5d  IMSI/MSID:          450081030101804
+  MSISDN:                                                    12110030101804
+  SessMgr Instance:                 15  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5017:4000::
+  NAS-IP:                                                     172.20.69.231
+  Access-NAS-IP(FA):                                                       
+  NAS-PORT:                         0   NSAPI:                            5
+  Acct-Session-ID:                                         AC1445E30196E996
+  NAS-ID:                                                               n/a
+  Access-NAS-ID(FA):                                                    n/a
+  3GPP2-BSID:                                                           n/a
+  Access-Correlation-ID(FA):                                            n/a
+  3GPP2-Correlation-ID:                                                 n/a
+  MEID:                                                                 n/a
+  Carrier-ID:                      n/a  ESN:                            n/a
+  PCO: 
+    Value/Interface:               n/a
+  Uplink Bytes:                      0  Downlink Bytes:                   0
+  Uplink Packets:                    0  Downlink Packets:                 0
+  Injected Uplink Packets:           0  Injected Downlink Packets:        0
+  Buffered Uplink Packets:           0  Buffered Downlink Packets:        0
+  Buffered Uplink Bytes:             0  Buffered Downlink Bytes:          0
+  Uplink Packets in Buffer:          0  Downlink Packets in Buffer:       0
+  Buff Over-limit Uplink Pkts:       0  Buff Over-limit Downlink Pkts:    0
+  DCCA Buffered Packet Drops: 
+  Uplink:                            0  Downlink:                         0
+  Uplink Out of Order Packets:       0  Downlink Out of Order Packets:    0
+  Dyn FUI Redirected Flows:          0  Dyn FUI Discarded Pkts:           0
+  ITC Terminated Flows:              0  ITC Redirected Flows:             0
+  ITC Dropped Packets:               0  ITC ToS Remarked Packets:         0
+  ITC Dropped Upl Pkts:              0  ITC Dropped Dnl Pkts:             0
+  Flow action Terminated Flows:                                           0
+  PP Flow action Terminated Flows:                                        0
+  PP Dropped Packets:                                                     0
+  CC Dropped Uplink Packets:         0  CC Dropped Uplink Bytes:          0
+  CC Dropped Downlink Packets:       0  CC Dropped Downlink Bytes:        0
+  NRUPC Req Made:                    0  NRUPC Req Success:                0
+  NRUPC Req Failed:                  0  NRUPC Req Time Out:               0
+  Bearer Bandwidth Limiting: Disabled
+  Uplink MBR (bps):                  0  Downlink MBR (bps):               0
+  Uplink GBR (bps):                  0  Downlink GBR (bps):               0
+  Uplink Burst (bytes):            n/a  Downlink Burst (bytes):         n/a
+  Dropped Uplink Pkts:             n/a  Dropped Downlink Pkts:          n/a
+  Creation Time:                        Thursday March 26 08:28:29 GMT 2020
+  Last Pkt Time:                                                           
+  Duration:                                                     00h:00m:56s
+  Rule Base name:                                                      FREE
+  URL-Redir First-Request-Only:                                         n/a
+  Bandwidth Policy:                                                     n/a
+  Bandwidth Policy Fallback Applied:                                     No
+  Dynamic GBR Monitoring:                                          Disabled
+  FW-and-NAT Policy:                                                    n/a
+  FW-and-NAT Policy ID:                                                 n/a
+  Firewall Policy IPv4:                                                 n/a
+  Firewall Policy IPv6:                                                 n/a
+  NAT Policy NAT44:                                                     n/a
+  NAT Policy NAT64:                                                     n/a
+  Bypass NAT Flow Present:                                              n/a
+  Congestion Mgmt Policy:                                               n/a
+  CF Policy ID:                                                         n/a
+  Old CF Policy ID:                                                     n/a
+  Dynamic Charging:                                                 Enabled
+  Dynamic Chrg Msg Received:         4  Rule Definitions Received:        3
+  Installs Received:                 3  Removes Received:                 1
+  Installs Succeeded:                3  Installs Failed:                  0
+  Removes Succeeded:                 1  Removes Failed:                   0
+  Uplink Dynamic Rule Packets:       0  Downlink Dynamic Rule Packets:    0
+  Predefined Rule Retention Succeeded:0 Predefined Retention Failed:      0
+  Time Based PCC Rule:
+  Installs Deferred:                 0  Removes Initiated:                0
+  Dynamic Charging Packet Drop statistics:
+  PCC Rule BW Limit Upl Pkts:        0  PCC Rule BW Limit Dnl Pkts:       0
+  PCC Rule Gating Upl Pkts:          0  PCC Rule Gating Dnl Pkts:         0
+  RuleMatch Fail Upl Pkts:           0  RuleMatch Fail Dnl Pkts:          0
+  Credit-Control:                                                       Off
+  Event-Triggers:                                                          
+  QoS Renegotiate Up:                0  QoS Renegotiate Dn:               0
+  Max (L3) Flows:                    0
+  Max Flows Timestamp:                                                  n/a
+  
+  TCP-Proxy Session Stats:                                              n/a
+  Partial HTTP Header Anomaly prevented:                                  0
+  Redirection Anomaly Prevented:                                          0
+  TRM Anomaly Prevented:                                                  0
+  VPP LOCAL UPLINK TEP Version:                                           0
+  VPP LOCAL DOWNLINK TEP Version :                                        0
+  VPP suppress offload:                                                   1
+  VPP onload failed:                                                      0
+  VPP onload succeeded:                                                   0
+  VPP sent packets:                                                       0
+  VPP dropped packets:                                                    0
+  
+  Link Monitoring Average Throughput:                                0 kbps
+  Link Monitoring Average RTT:                                       0 ms
+
+  Charging Updates:                                                     n/a
+No Charging ruledef(s) match the specified criteria
+No Firewall ruledef(s) match the specified criteria
+
+  Post-processing Rulestats : No Post-processing ruledef(s) match the specified criteria
+Dynamic Charging Rule Name Statistics: n/a
+Total Dynamic Rules:             0
+Total Predefined Rules:          0
+Total ADC Rules:                 0
+Total Firewall Predefined Rules: 0
+Total Time Based Pending PCC Rules: 0
+Charging-Updates Statistics:         n/a
+Dynamic Charging Rule Definition(s) Configured: n/a
+Predefined Rules Enabled List: n/a
+Predefined Firewall Rules Enabled List: n/a
+
+  Session-ID:                15:569536  Username: 12110030101804@cisco17.com
+  Callid:                     04351c5d  IMSI/MSID:          450081030101804
+  MSISDN:                                                    12110030101804
+  SessMgr Instance:                 15  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5017:4000::
+  NAS-IP:                                                     172.20.69.231
+  Access-NAS-IP(FA):                                                       
+  NAS-PORT:                         0   NSAPI:                            6
+  Acct-Session-ID:                                         AC1445E30196E998
+  NAS-ID:                                                               n/a
+  Access-NAS-ID(FA):                                                    n/a
+  3GPP2-BSID:                                                           n/a
+  Access-Correlation-ID(FA):                                            n/a
+  3GPP2-Correlation-ID:                                                 n/a
+  MEID:                                                                 n/a
+  Carrier-ID:                      n/a  ESN:                            n/a
+  PCO: 
+    Value/Interface:               n/a
+  Uplink Bytes:                      0  Downlink Bytes:                   0
+  Uplink Packets:                    0  Downlink Packets:                 0
+  Injected Uplink Packets:           0  Injected Downlink Packets:        0
+  Buffered Uplink Packets:           0  Buffered Downlink Packets:        0
+  Buffered Uplink Bytes:             0  Buffered Downlink Bytes:          0
+  Uplink Packets in Buffer:          0  Downlink Packets in Buffer:       0
+  Buff Over-limit Uplink Pkts:       0  Buff Over-limit Downlink Pkts:    0
+  DCCA Buffered Packet Drops: 
+  Uplink:                            0  Downlink:                         0
+  Uplink Out of Order Packets:       0  Downlink Out of Order Packets:    0
+  Dyn FUI Redirected Flows:          0  Dyn FUI Discarded Pkts:           0
+  ITC Terminated Flows:              0  ITC Redirected Flows:             0
+  ITC Dropped Packets:               0  ITC ToS Remarked Packets:         0
+  ITC Dropped Upl Pkts:              0  ITC Dropped Dnl Pkts:             0
+  Flow action Terminated Flows:                                           0
+  PP Flow action Terminated Flows:                                        0
+  PP Dropped Packets:                                                     0
+  CC Dropped Uplink Packets:         0  CC Dropped Uplink Bytes:          0
+  CC Dropped Downlink Packets:       0  CC Dropped Downlink Bytes:        0
+  NRUPC Req Made:                    0  NRUPC Req Success:                0
+  NRUPC Req Failed:                  0  NRUPC Req Time Out:               0
+  Bearer Bandwidth Limiting: Enabled
+  Uplink MBR (bps):              49000  Downlink MBR (bps):           49000
+  Uplink GBR (bps):              49000  Downlink GBR (bps):           49000
+  Uplink Burst (bytes):          18375  Downlink Burst (bytes):       18375
+  Dropped Uplink Pkts:               0  Dropped Downlink Pkts:            0
+  Creation Time:                        Thursday March 26 08:28:29 GMT 2020
+  Last Pkt Time:                                                           
+  Duration:                                                     00h:00m:56s
+  Rule Base name:                                                      FREE
+  URL-Redir First-Request-Only:                                         n/a
+  Bandwidth Policy:                                                     n/a
+  Bandwidth Policy Fallback Applied:                                     No
+  Dynamic GBR Monitoring:                                          Disabled
+  FW-and-NAT Policy:                                                    n/a
+  FW-and-NAT Policy ID:                                                 n/a
+  Firewall Policy IPv4:                                                 n/a
+  Firewall Policy IPv6:                                                 n/a
+  NAT Policy NAT44:                                                     n/a
+  NAT Policy NAT64:                                                     n/a
+  Bypass NAT Flow Present:                                              n/a
+  Congestion Mgmt Policy:                                               n/a
+  CF Policy ID:                                                         n/a
+  Old CF Policy ID:                                                     n/a
+  Dynamic Charging:                                                 Enabled
+  Dynamic Chrg Msg Received:         0  Rule Definitions Received:        0
+  Installs Received:                 0  Removes Received:                 0
+  Installs Succeeded:                0  Installs Failed:                  0
+  Removes Succeeded:                 0  Removes Failed:                   0
+  Uplink Dynamic Rule Packets:       0  Downlink Dynamic Rule Packets:    0
+  Predefined Rule Retention Succeeded:0 Predefined Retention Failed:      0
+  Time Based PCC Rule:
+  Installs Deferred:                 0  Removes Initiated:                0
+  Dynamic Charging Packet Drop statistics:
+  PCC Rule BW Limit Upl Pkts:        0  PCC Rule BW Limit Dnl Pkts:       0
+  PCC Rule Gating Upl Pkts:          0  PCC Rule Gating Dnl Pkts:         0
+  RuleMatch Fail Upl Pkts:           0  RuleMatch Fail Dnl Pkts:          0
+  Credit-Control:                                                       Off
+  Event-Triggers:                                                          
+  QoS Renegotiate Up:                0  QoS Renegotiate Dn:               0
+  Max (L3) Flows:                    0
+  Max Flows Timestamp:                                                  n/a
+  
+  TCP-Proxy Session Stats:                                              n/a
+  Partial HTTP Header Anomaly prevented:                                  0
+  Redirection Anomaly Prevented:                                          0
+  TRM Anomaly Prevented:                                                  0
+  VPP LOCAL UPLINK TEP Version:                                           0
+  VPP LOCAL DOWNLINK TEP Version :                                        0
+  VPP suppress offload:                                                   1
+  VPP onload failed:                                                      0
+  VPP onload succeeded:                                                   0
+  VPP sent packets:                                                       0
+  VPP dropped packets:                                                    0
+  
+  Link Monitoring Average Throughput:                                0 kbps
+  Link Monitoring Average RTT:                                       0 ms
+
+  Charging Updates:                                                     n/a
+No Charging ruledef(s) match the specified criteria
+No Firewall ruledef(s) match the specified criteria
+
+  Post-processing Rulestats : No Post-processing ruledef(s) match the specified criteria
+Dynamic Charging Rule Name Statistics: n/a
+Total Dynamic Rules:             1
+Total Predefined Rules:          0
+Total ADC Rules:                 0
+Total Firewall Predefined Rules: 0
+Total Time Based Pending PCC Rules: 0
+Charging-Updates Statistics:         n/a
+
+Dynamic Charging Rule Definition(s) Configured:
+Name                 Prior Content-Id Chrg-Type Rule Parameters            
+-------------------- ----- ---------- --------- ---------------------------
+                   2     0         60      None Gate Status:      Allow All
+                                                QoS Class Identifier:     1
+                                                ARP Priority Level:       1
+                                                Reporting Level: Rating Grp
+                                                Metering Method:   Duration
+                                                Uplink MBR:           49000
+                                                Downlink MBR:         49000
+                                                Uplink GBR:           49000
+                                                Downlink GBR:         49000
+                                                Uplink PDR id:       0x000B
+                                                Uplink FAR id:       0x000B
+                                                Uplink QER id:   0x00000005
+                                                Dnlink PDR id:       0x000C
+                                                Dnlink FAR id:       0x000C
+                                                Dnlink QER id:   0x00000005
+                                                Filter 1:
+                                                Direction:           Uplink
+                                                Src Addr  2002:ac64:6130:24:0:19:ede0:f901/128
+                                                Dst Addr  2222:2222:2222:2222::25/128
+                                                Filter 2:
+                                                Direction:           Uplink
+                                                Src Addr  1002:ac64:6130:24:0:19:ede0:f901/128
+                                                Dst Addr  2222:2222:2222:2222::25/128
+                                                Filter 3:
+                                                Direction:         Downlink
+                                                Src Addr  2222:2222:2222:2222::25/128
+                                                Dst Addr  2002:ac64:6130:24:0:19:ede0:f901/128
+                                                Filter 4:
+                                                Direction:         Downlink
+                                                Src Addr  2222:2222:2222:2222::25/128
+                                                Dst Addr  1002:ac64:6130:24:0:19:ede0:f901/128
+Predefined Rules Enabled List: n/a
+Predefined Firewall Rules Enabled List: n/a
+
+Total acs sessions matching specified criteria: 2

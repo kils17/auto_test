@@ -5,6 +5,19 @@ name: Volte abnormal test
 
 test_list:
 - volte_abnormal_01.yaml
-- volte_abnormal_02.yaml
+#- volte_abnormal_02.yaml
+#- volte_abnormal_03.yaml
+#- volte_abnormal_04.yaml
+#- volte_abnormal_05.yaml
+#- volte_abnormal_06.yaml
+#- volte_abnormal_07.yaml
+#- volte_abnormal_08.yaml
+#- volte_abnormal_09.yaml
+#- volte_abnormal_10.yaml
+#- volte_abnormal_11.yaml
+#- volte_abnormal_12.yaml
+#- volte_abnormal_13.yaml
+#- volte_abnormal_14.yaml
+#- volte_abnormal_15.yaml
 
 ...

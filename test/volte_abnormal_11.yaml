@@ -1,0 +1,104 @@
+---
+# Test Procedure
+test_description:
+- name: volte_abnormal_11
+
+test_prepartion:
+- host: cp_cli
+  hostfile: cp1.yaml
+- host: cp_mon
+  hostfile: cp1.yaml
+- host: up_cli
+  hostfile: up8.yaml
+- host: up_mon
+  hostfile: up8.yaml
+- host: sim_cli
+  hostfile: saesim1.yaml
+- host: gx_cli
+  hostfile: gx1.yaml
+
+# proc_type: [ mon_pro | show_cli | sim_sli | gx_cli ]
+test_procedure:
+- proc_type: mon_pro
+  wait: 3
+  host: cp_mon
+  cmd: mon subs imsi 450081030101804
+  option: +,+
+- proc_type: mon_pro
+  wait: 3
+  host: up_mon
+  cmd: mon subs imsi 450081030101804
+  option: +,a
+- proc_type: gx_cli
+  wait: 3
+  host: gx_cli
+  cmd: cd ~/GX_inkwon/test; ./start_pcrf.sh ../gx-ims17.cfg
+- proc_type: sim_cli
+  wait: 10
+  host: sim_cli
+  cmd: cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_dbresp_delay.py
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show ver
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show subs imsi 450081030101804
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show active-charging session full imsi 450081030101804
+- proc_type: show_cli
+  wait: 2
+  host: up_cli
+  cmd: show ver
+- proc_type: show_cli
+  wait: 2
+  host: up_cli
+  cmd: show subs imsi 450081030101804
+  more: True
+- proc_type: gx_cli
+  wait: 10
+  host: gx_cli
+  cmd: cd ~/GX_inkwon/test; ./send_rar.sh va_11_1
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show subs imsi 450081030101804
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show active-charging session full imsi 450081030101804
+- proc_type: show_cli
+  wait: 2
+  host: up_cli
+  cmd: show subs imsi 450081030101804
+  more: True
+- proc_type: gx_cli
+  wait: 10
+  host: gx_cli
+  cmd: cd ~/GX_inkwon/test; ./send_rar.sh va_11_2
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show subs imsi 450081030101804
+- proc_type: show_cli
+  wait: 2
+  host: cp_cli
+  cmd: show active-charging session full imsi 450081030101804
+- proc_type: show_cli
+  wait: 2
+  host: up_cli
+  cmd: show subs imsi 450081030101804
+  more: True
+- proc_type: sim_cli
+  wait: 5
+  host: sim_cli
+  cmd: mme.clearSub()
+- proc_type: sim_ctl
+  wait: 1
+  host: sim_cli
+  cmd: d
+
+...
