@@ -5,6 +5,6 @@ name: Volte abnormal test
 
 test_list:
 - volte_abnormal_01.yaml
-#- volte_abnormal_02.yaml
+- volte_abnormal_02.yaml
 
 ...

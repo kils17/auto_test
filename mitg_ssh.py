@@ -17,7 +17,8 @@ stop_thread = False
 def th_monpro(connection_id, command, prompt_str='', write_fp=None, option='+'):
     global stop_thread
 
-    print("KKK: th_monpro 1, stop({0})".format(stop_thread))
+#    print("KKK: th_monpro 1, stop({0})".format(stop_thread))
+    print("thread th_monpro() started")
 
     if write_fp:
         #write_fp.write('{0}# {1}'.format(prompt_str, command))
@@ -34,22 +35,16 @@ def th_monpro(connection_id, command, prompt_str='', write_fp=None, option='+'):
         connection_id.sendline(opt)
 
     # write output, until test end, how to send 'q'
-    i = 0
     while True:
-#        if i == 1000:
-#            break
-#            #connection_id.sendline("q")
-#        i = i + 1
-        str = connection_id.readline().decode(errors='ignore').strip("\r\n")
-#        print(str)
-        write_fp.write('{0}\n'.format(str))
-        print ("stop thread", stop_thread)
-        if stop_thread == True:
-            connection_id.sendline("q")
-            print("thread terminated")
-            break
-
-
+        try:
+            str = connection_id.read_nonblocking(size=1000, timeout=1).decode(errors='ignore').replace("\r", "")
+            write_fp.write(str)
+        except pexpect.TIMEOUT:
+            if stop_thread == True:
+                connection_id.sendline("q")
+                print("thread th_monpro() terminated")
+                break
+            
     ##print("KKK: th_monpro 2")
 
 

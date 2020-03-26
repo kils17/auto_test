@@ -1,5 +1,5 @@
 [local]TB_UPF02-08# show subs imsi 450081030101804
-Wednesday March 25 19:25:13 KST 2020
+Thursday March 26 15:41:26 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -55,26 +55,26 @@ Wednesday March 25 19:25:13 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-y.C.AI 0132be41 -               -                      fd02:0:5017:4000:0:e:f09b:c401 00h00m20s
+y.C.AI 0132be44 -               -                      fd02:0:5017:4000:0:5:b372:9501 00h00m20s
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only full callid 0132be41
-Wednesday March 25 19:25:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only full callid 0132be44
+Thursday March 26 15:41:26 KST 2020
 
-  Local SEID      : [0x0014000000002574] 5629499534222708
-  Remote SEID     : [0x00cc000000001695] 57420895248979605
+  Local SEID      : [0x0014000000002575] 5629499534222709
+  Remote SEID     : [0x0050000000004ea6] 22517998136872614
   State           : Connected
-  Connect Time    : Wed Mar 25 19:24:53 2020
-  Idle time       : 00h00m20s
+  Connect Time    : Thu Mar 26 15:41:05 2020
+  Idle time       : 00h00m21s
   Access Type: uplane-ipv6               Network Type: IP
   user-plane-service-name: UP-SVC
-  Callid: 0132be41
+  Callid: 0132be44
   Rulebase: FREE
   Interface Type: Sxab                   
   eMPS Session: No
   eMPS Session Priority: 0
   Card/Cpu: 1/0                          Sessmgr Instance: 5
-  IP address: fd02:0:5017:4000:0:e:f09b:c401
+  IP address: fd02:0:5017:4000:0:5:b372:9501
   Source context: sae                    Destination context: sgi
   PDN-Instance: cisco17.com         
   User-plane-Sx-addr: 172.20.68.228                
@@ -100,7 +100,7 @@ Wednesday March 25 19:25:14 KST 2020
   Congestion Level: 0
   GGSN Address: 172.20.69.227
   User-Name: 12110030101804@cisco17.com
-  Session-ID: AC1445E30597D3F8
+  Session-ID: AC1445E302260072
   input pkts: 0                                   output pkts: 0           
   input bytes: 0                                  output bytes: 0           
   input bytes dropped: 0                          output bytes dropped: 0         
@@ -170,12 +170,12 @@ Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Matc
     Allowed Time unit: unrestricted               Status Validity Time: N/A              
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 pdr full all
-Wednesday March 25 19:25:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 pdr full all
+Thursday March 26 15:41:26 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
-IP address: fd02:0:5017:4000:0:e:f09b:c401
+IP address: fd02:0:5017:4000:0:5:b372:9501
 PDR-ID:                    0x0003
  Rule Name:                N/A
  TDF App Id:              N/A
@@ -186,14 +186,14 @@ PDR-ID:                    0x0003
  Source Interface:CP-function
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x82242005
+ Local F-TEID:           0x82250005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0003
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x4ae6005
+  Remote TEID:           0x4af2005
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -241,14 +241,14 @@ PDR-ID:                    0x0004
     Dst IP Addr:         ff05::2/128
     Dst Port:            ANY
     SPI:                 0
- Local F-TEID:           0x2240005
+ Local F-TEID:           0x226c005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0004
   Destination Interface: CP-function
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x82cde033
+  Remote TEID:           0x89d94014
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -264,7 +264,7 @@ PDR-ID:                    0x0004
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            93836280
+    Charging Id:            36044914
 
 PDR-ID:                    0x0005
  Rule Name:                N/A
@@ -276,14 +276,14 @@ PDR-ID:                    0x0005
  Source Interface:       Core
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x4ae6005
+ Local F-TEID:           0x4af2005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0005
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x20010532
+  Remote TEID:           0x200102e6
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -299,7 +299,7 @@ PDR-ID:                    0x0005
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            93836280
+    Charging Id:            36044914
 
 PDR-ID:                    0x0006
  Rule Name:                N/A
@@ -311,14 +311,14 @@ PDR-ID:                    0x0006
  Source Interface:     Access
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x224a005
+ Local F-TEID:           0x2252005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0006
   Destination Interface: Core
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x2240005
+  Remote TEID:           0x226c005
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -334,21 +334,21 @@ PDR-ID:                    0x0006
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            93836280
+    Charging Id:            36044914
 
 Total ADC PDRs found:  0
 Total PDRs found:      4
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 far full all
-Wednesday March 25 19:25:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 far full all
+Thursday March 26 15:41:26 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
 	 FAR-ID  		  : 0x0003 			
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4ae6005
+	 Remote TEID		  : 0x4af2005
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -364,7 +364,7 @@ Interface Type: Sxab
 	 Destination Interface	  : CP-function
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x82cde033
+	 Remote TEID		  : 0x89d94014
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -380,7 +380,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x20010532
+	 Remote TEID		  : 0x200102e6
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -396,7 +396,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Core
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x2240005
+	 Remote TEID		  : 0x226c005
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -428,7 +428,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4ae6005
+	 Remote TEID		  : 0x4af2005
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -444,12 +444,12 @@ Interface Type: Sxab
 Total Number of FARs found: 6
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 qer full all
-Wednesday March 25 19:25:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 qer full all
+Thursday March 26 15:41:26 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
-	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xA91F8033 
+	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xA6E38014 
 	 APN-AMBR uplink (bps) 	 : 1000000          		 APN-AMBR downlink (bps) : 1000000          
  	 MBR uplink (bps) 	 : n/a 				 MBR downlink (bps) 	 : n/a 
  	 GBR uplink (bps) 	 : 0                		 GBR downlink (bps) 	 : 0                
@@ -460,10 +460,10 @@ Interface Type: Sxab
 Total Number of QERs found: 1
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 urr full all
-Wednesday March 25 19:25:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 urr full all
+Thursday March 26 15:41:26 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
 
 URR-id				  : 0x80000009
@@ -488,7 +488,7 @@ Total Number of URRs found: 1
 
 Total subscribers matching specified criteria: 1
 [local]TB_UPF02-08# show subs imsi 450081030101804
-Wednesday March 25 19:25:33 KST 2020
+Thursday March 26 15:41:45 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -544,26 +544,26 @@ Wednesday March 25 19:25:33 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-y.C.AI 0132be41 -               -                      fd02:0:5017:4000:0:e:f09b:c401 00h00m40s
+y.C.AI 0132be44 -               -                      fd02:0:5017:4000:0:5:b372:9501 00h00m40s
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only full callid 0132be41
-Wednesday March 25 19:25:33 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only full callid 0132be44
+Thursday March 26 15:41:45 KST 2020
 
-  Local SEID      : [0x0014000000002574] 5629499534222708
-  Remote SEID     : [0x00cc000000001695] 57420895248979605
+  Local SEID      : [0x0014000000002575] 5629499534222709
+  Remote SEID     : [0x0050000000004ea6] 22517998136872614
   State           : Connected
-  Connect Time    : Wed Mar 25 19:24:53 2020
+  Connect Time    : Thu Mar 26 15:41:05 2020
   Idle time       : 00h00m40s
   Access Type: uplane-ipv6               Network Type: IP
   user-plane-service-name: UP-SVC
-  Callid: 0132be41
+  Callid: 0132be44
   Rulebase: FREE
   Interface Type: Sxab                   
   eMPS Session: No
   eMPS Session Priority: 0
   Card/Cpu: 1/0                          Sessmgr Instance: 5
-  IP address: fd02:0:5017:4000:0:e:f09b:c401
+  IP address: fd02:0:5017:4000:0:5:b372:9501
   Source context: sae                    Destination context: sgi
   PDN-Instance: cisco17.com         
   User-plane-Sx-addr: 172.20.68.228                
@@ -589,7 +589,7 @@ Wednesday March 25 19:25:33 KST 2020
   Congestion Level: 0
   GGSN Address: 172.20.69.227
   User-Name: 12110030101804@cisco17.com
-  Session-ID: AC1445E30597D3F8
+  Session-ID: AC1445E302260072
   input pkts: 0                                   output pkts: 0           
   input bytes: 0                                  output bytes: 0           
   input bytes dropped: 0                          output bytes dropped: 0         
@@ -659,12 +659,12 @@ Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Matc
     Allowed Time unit: unrestricted               Status Validity Time: N/A              
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 pdr full all
-Wednesday March 25 19:25:33 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 pdr full all
+Thursday March 26 15:41:45 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
-IP address: fd02:0:5017:4000:0:e:f09b:c401
+IP address: fd02:0:5017:4000:0:5:b372:9501
 PDR-ID:                    0x0003
  Rule Name:                N/A
  TDF App Id:              N/A
@@ -675,14 +675,14 @@ PDR-ID:                    0x0003
  Source Interface:CP-function
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x82242005
+ Local F-TEID:           0x82250005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0003
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x4ae6005
+  Remote TEID:           0x4af2005
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -730,14 +730,14 @@ PDR-ID:                    0x0004
     Dst IP Addr:         ff05::2/128
     Dst Port:            ANY
     SPI:                 0
- Local F-TEID:           0x2240005
+ Local F-TEID:           0x226c005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0004
   Destination Interface: CP-function
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x82cde033
+  Remote TEID:           0x89d94014
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -753,7 +753,7 @@ PDR-ID:                    0x0004
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            93836280
+    Charging Id:            36044914
 
 PDR-ID:                    0x0005
  Rule Name:                N/A
@@ -765,14 +765,14 @@ PDR-ID:                    0x0005
  Source Interface:       Core
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x4ae6005
+ Local F-TEID:           0x4af2005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0005
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x20010532
+  Remote TEID:           0x200102e6
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -788,7 +788,7 @@ PDR-ID:                    0x0005
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            93836280
+    Charging Id:            36044914
 
 PDR-ID:                    0x0006
  Rule Name:                N/A
@@ -800,14 +800,14 @@ PDR-ID:                    0x0006
  Source Interface:     Access
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x224a005
+ Local F-TEID:           0x2252005
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0006
   Destination Interface: Core
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x2240005
+  Remote TEID:           0x226c005
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -823,21 +823,21 @@ PDR-ID:                    0x0006
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            93836280
+    Charging Id:            36044914
 
 Total ADC PDRs found:  0
 Total PDRs found:      4
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 far full all
-Wednesday March 25 19:25:33 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 far full all
+Thursday March 26 15:41:45 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
 	 FAR-ID  		  : 0x0003 			
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4ae6005
+	 Remote TEID		  : 0x4af2005
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -853,7 +853,7 @@ Interface Type: Sxab
 	 Destination Interface	  : CP-function
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x82cde033
+	 Remote TEID		  : 0x89d94014
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -869,7 +869,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x20010532
+	 Remote TEID		  : 0x200102e6
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -885,7 +885,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Core
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x2240005
+	 Remote TEID		  : 0x226c005
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -917,7 +917,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4ae6005
+	 Remote TEID		  : 0x4af2005
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -933,12 +933,12 @@ Interface Type: Sxab
 Total Number of FARs found: 6
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 qer full all
-Wednesday March 25 19:25:33 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 qer full all
+Thursday March 26 15:41:45 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
-	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xA91F8033 
+	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xA6E38014 
 	 APN-AMBR uplink (bps) 	 : 1000000          		 APN-AMBR downlink (bps) : 1000000          
  	 MBR uplink (bps) 	 : n/a 				 MBR downlink (bps) 	 : n/a 
  	 GBR uplink (bps) 	 : 0                		 GBR downlink (bps) 	 : 0                
@@ -949,10 +949,10 @@ Interface Type: Sxab
 Total Number of QERs found: 1
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 0132be41 urr full all
-Wednesday March 25 19:25:33 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 0132be44 urr full all
+Thursday March 26 15:41:45 KST 2020
 
-Callid: 0132be41
+Callid: 0132be44
 Interface Type: Sxab                   
 
 URR-id				  : 0x80000009

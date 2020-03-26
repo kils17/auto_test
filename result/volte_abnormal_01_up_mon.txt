@@ -1,5 +1,5 @@
-[local]TB_UPF02-08#  mon subs imsi 450081030101804
-Wednesday March 25 19:24:47 KST 2020
+[local]TB_UPF02-08# mon subs imsi 450081030101804
+Thursday March 26 15:40:59 KST 2020
 
 
 NO MATCHING CALL - waiting for a matching call to connect...
@@ -153,16 +153,13 @@ N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
 ----------------------------------------------------------------------
 Incoming Call:
 ----------------------------------------------------------------------
- MSID/IMSI   : 450081030101804             Callid      : 0132be41
+ MSID/IMSI   : 450081030101804             Callid      : 0132be44
  IMEI        : 1122334455667788            MSISDN      : 12110030101804
  Username    : 12110030101804@cisco17.com   SessionType : n/a
  Status      : Active                      Service Name: UP-SVC
  Src Context : sae                         Dest Context: sgi
 ----------------------------------------------------------------------
 
-
-
-Failure: MonSub : File Transfer failed!
 
 
  ***
