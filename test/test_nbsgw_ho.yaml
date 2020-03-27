@@ -1,0 +1,13 @@
+---
+# test list
+
+name: NB-SGW Handover test
+
+description: kkk
+
+test_list:
+#- nbsgw_ho_01.yaml
+#- nbsgw_ho_02.yaml
+- nbsgw_ho_03.yaml
+
+...

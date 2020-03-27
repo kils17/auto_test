@@ -1,1 +1,1 @@
-sim2:~# cd GX_inkwon; ./start_pcrf.sh gx-ims17.cfg
+sim2:~# cd GX_inkwon; ./start_pcrf.sh gx-ims17.cfgsim2:~# cd GX_inkwon; ./start_pcrf.sh gx-ims17.cfg-bash: cd: GX_inkwon: No such file or directory

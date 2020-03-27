@@ -1,5 +1,5 @@
 [local]TB_UPF02-08# show ver
-Friday March 27 15:44:12 KST 2020
+Friday March 27 17:38:35 KST 2020
 Active Software:
   Image Version:                  21.17.1
   Image Build Number:             74081
@@ -8,7 +8,7 @@ Active Software:
   Boot Image:                     /flash/sftp/qvpc-si-21.17.1.bin
   Source Commit ID:               f56b41e56962db68420ef4edbc04bc84cb23cdac
 [local]TB_UPF02-08# show subs imsi 450081030101806
-Friday March 27 15:44:14 KST 2020
+Friday March 27 17:38:37 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -64,26 +64,26 @@ Friday March 27 15:44:14 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-y.C.AI 004ddc82 -               -                      fd02:0:5001:2052::69e4:b601   00h00m23s
+y.C.AI 02179ffa -               -                      fd02:0:5001:2052::ab05:3e01   00h00m21s
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only full callid 004ddc82
-Friday March 27 15:44:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only full callid 02179ffa
+Friday March 27 17:38:37 KST 2020
 
-  Local SEID      : [0x0008000000002572] 2251799813694834
-  Remote SEID     : [0x0008000000001e81] 2251799813693057
+  Local SEID      : [0x0020000000002568] 9007199254750568
+  Remote SEID     : [0x000c000000001d3e] 3377699720535358
   State           : Connected
-  Connect Time    : Fri Mar 27 15:43:50 2020
-  Idle time       : 00h00m24s
+  Connect Time    : Fri Mar 27 17:38:16 2020
+  Idle time       : 00h00m21s
   Access Type: uplane-ipv6               Network Type: IP
   user-plane-service-name: UP-SVC
-  Callid: 004ddc82
+  Callid: 02179ffa
   Rulebase: IMS-DF-POSTPAID
   Interface Type: Sxab                   
   eMPS Session: No
   eMPS Session Priority: 0
-  Card/Cpu: 1/0                          Sessmgr Instance: 2
-  IP address: fd02:0:5001:2052::69e4:b601
+  Card/Cpu: 1/0                          Sessmgr Instance: 8
+  IP address: fd02:0:5001:2052::ab05:3e01
   Source context: sae                    Destination context: sgi
   PDN-Instance: cisco3.com          
   User-plane-Sx-addr: 172.20.68.228                
@@ -109,7 +109,7 @@ Friday March 27 15:44:14 KST 2020
   Congestion Level: 0
   GGSN Address: 172.20.69.227
   User-Name: 12110030101804@cisco3.com
-  Session-ID: AC1445E30026FF22
+  Session-ID: AC1445E30054B801
   input pkts: 0                                   output pkts: 0           
   input bytes: 0                                  output bytes: 0           
   input bytes dropped: 0                          output bytes dropped: 0         
@@ -179,12 +179,12 @@ Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Matc
     Allowed Time unit: unrestricted               Status Validity Time: N/A              
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 pdr full all
-Friday March 27 15:44:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa pdr full all
+Friday March 27 17:38:37 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
-IP address: fd02:0:5001:2052::69e4:b601
+IP address: fd02:0:5001:2052::ab05:3e01
 PDR-ID:                    0x0003
  Rule Name:                N/A
  TDF App Id:              N/A
@@ -195,14 +195,14 @@ PDR-ID:                    0x0003
  Source Interface:CP-function
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x8225a002
+ Local F-TEID:           0x82224008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0003
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x4af2002
+  Remote TEID:           0x4ae2008
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -250,14 +250,14 @@ PDR-ID:                    0x0004
     Dst IP Addr:         ff05::2/128
     Dst Port:            ANY
     SPI:                 0
- Local F-TEID:           0x2258002
+ Local F-TEID:           0x2222008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0004
   Destination Interface: CP-function
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x83cf8002
+  Remote TEID:           0x8a0ec003
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -273,7 +273,7 @@ PDR-ID:                    0x0004
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 PDR-ID:                    0x0005
  Rule Name:                N/A
@@ -285,14 +285,14 @@ PDR-ID:                    0x0005
  Source Interface:       Core
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x4af2002
+ Local F-TEID:           0x4ae2008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0005
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x200107b5
+  Remote TEID:           0x2001044a
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -308,7 +308,7 @@ PDR-ID:                    0x0005
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 PDR-ID:                    0x0006
  Rule Name:                N/A
@@ -320,14 +320,14 @@ PDR-ID:                    0x0006
  Source Interface:     Access
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x2250002
+ Local F-TEID:           0x222c008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0006
   Destination Interface: Core
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x2258002
+  Remote TEID:           0x2222008
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -343,21 +343,21 @@ PDR-ID:                    0x0006
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 Total ADC PDRs found:  0
 Total PDRs found:      4
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 far full all
-Friday March 27 15:44:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa far full all
+Friday March 27 17:38:37 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
 	 FAR-ID  		  : 0x0003 			
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4af2002
+	 Remote TEID		  : 0x4ae2008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -373,7 +373,7 @@ Interface Type: Sxab
 	 Destination Interface	  : CP-function
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x83cf8002
+	 Remote TEID		  : 0x8a0ec003
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -389,7 +389,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x200107b5
+	 Remote TEID		  : 0x2001044a
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -405,7 +405,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Core
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x2258002
+	 Remote TEID		  : 0x2222008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -437,7 +437,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4af2002
+	 Remote TEID		  : 0x4ae2008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -453,12 +453,12 @@ Interface Type: Sxab
 Total Number of FARs found: 6
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 qer full all
-Friday March 27 15:44:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa qer full all
+Friday March 27 17:38:37 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
-	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xE1F76002 
+	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xFD162003 
 	 APN-AMBR uplink (bps) 	 : 1410066000       		 APN-AMBR downlink (bps) : 1410066000       
  	 MBR uplink (bps) 	 : n/a 				 MBR downlink (bps) 	 : n/a 
  	 GBR uplink (bps) 	 : 0                		 GBR downlink (bps) 	 : 0                
@@ -469,10 +469,10 @@ Interface Type: Sxab
 Total Number of QERs found: 1
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 urr full all
-Friday March 27 15:44:14 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa urr full all
+Friday March 27 17:38:37 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
 
 URR-id				  : 0x80000009
@@ -497,7 +497,7 @@ Total Number of URRs found: 1
 
 Total subscribers matching specified criteria: 1
 [local]TB_UPF02-08# show subs imsi 450081030101806
-Friday March 27 15:44:25 KST 2020
+Friday March 27 17:38:58 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -553,36 +553,36 @@ Friday March 27 15:44:25 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-y.C.AI 004ddc82 -               -                      fd02:0:5001:2052::69e4:b601   00h00m01s
+y.C.AI 02179ffa -               -                      fd02:0:5001:2052::ab05:3e01   00h00m01s
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only full callid 004ddc82
-Friday March 27 15:44:25 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only full callid 02179ffa
+Friday March 27 17:38:58 KST 2020
 
-  Local SEID      : [0x0008000000002572] 2251799813694834
-  Remote SEID     : [0x0008000000001e81] 2251799813693057
+  Local SEID      : [0x0020000000002568] 9007199254750568
+  Remote SEID     : [0x000c000000001d3e] 3377699720535358
   State           : Connected
-  Connect Time    : Fri Mar 27 15:43:50 2020
+  Connect Time    : Fri Mar 27 17:38:16 2020
   Idle time       : 00h00m01s
   Access Type: uplane-ipv6               Network Type: IP
   user-plane-service-name: UP-SVC
-  Callid: 004ddc82
+  Callid: 02179ffa
   Rulebase: IMS-DF-POSTPAID
   Interface Type: Sxab                   
   eMPS Session: No
   eMPS Session Priority: 0
-  Card/Cpu: 1/0                          Sessmgr Instance: 2
-  IP address: fd02:0:5001:2052::69e4:b601
+  Card/Cpu: 1/0                          Sessmgr Instance: 8
+  IP address: fd02:0:5001:2052::ab05:3e01
   Source context: sae                    Destination context: sgi
   PDN-Instance: cisco3.com          
   User-plane-Sx-addr: 172.20.68.228                
   Control-plane-Sx-addr: 172.20.69.232                
-  Number of associated PDRs : 4
+  Number of associated PDRs : 8
   Number of associated ADC PDRs : 0
-  Number of associated FARs : 4
-  Number of associated QERs : 1
+  Number of associated FARs : 8
+  Number of associated QERs : 3
   Number of associated BARs : 0
-  Number of associated URRs : 1
+  Number of associated URRs : 3
   Uplink APN AMBR (bps) : 1410066000       Downlink APN AMBR (bps) : 1410066000
   active input acl: n/a                active output acl: n/a            
   active input ipv6 acl: n/a             active output ipv6 acl: n/a            
@@ -598,9 +598,9 @@ Friday March 27 15:44:25 KST 2020
   Congestion Level: 0
   GGSN Address: 172.20.69.227
   User-Name: 12110030101804@cisco3.com
-  Session-ID: AC1445E30026FF22
-  input pkts: 0                                   output pkts: 9           
-  input bytes: 0                                  output bytes: 936         
+  Session-ID: AC1445E30054B801
+  input pkts: 9                                   output pkts: 9           
+  input bytes: 1008                               output bytes: 1008        
   input bytes dropped: 0                          output bytes dropped: 0         
   input pkts dropped: 0                           output pkts dropped: 0         
   CF Buffered Uplink Packets: 0                   CF Buffered Downlink Packets: 0           
@@ -609,9 +609,9 @@ Friday March 27 15:44:25 KST 2020
   Buff Over-limit Uplink Pkts: 0                  Buff Over-limit Downlink Pkts: 0           
   DDN buffered pkts : 0                           DDN buffered bytes : 0           
   DDN buffer overflow drop pkts : 0               DDN buffer overflow drop bytes : 0           
-  pk rate from user(bps): 0                       pk rate to user(bps): 0           
-  ave rate from user(bps): 0                      ave rate to user(bps): 0           
-  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(bps): 209                     pk rate to user(bps): 209         
+  ave rate from user(bps): 69                     ave rate to user(bps): 69          
+  sust rate from user(bps): 69                    sust rate to user(bps): 69          
   pk rate from user(pps): 0                       pk rate to user(pps): 0           
   ave rate from user(pps): 0                      ave rate to user(pps): 0           
   sust rate from user(pps): 0                     sust rate to user(pps): 0           
@@ -653,11 +653,12 @@ Friday March 27 15:44:25 KST 2020
 Static & Predef Rule Match stats:
 Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Match-Bypassed  FP-Down(Pkts/Bytes)  FP-Up(Pkts/Bytes)
 -------------------- ---------- ---------- ---------- ---------- ---------- --------------  -------------------  -----------------
-ICMPv6                        9        936          0          0          9              0          0/0              0/0
 
 Dynamic Rule Match stats:
 PDR Id   Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Match-Bypassed  FP-Down(Pkts/Bytes)  FP-Up(Pkts/Bytes)
 -------- -------------------- ---------- ---------- ---------- ---------- ---------- --------------  -------------------  -----------------
+0x0007   2                         0          0          9       1008          9              0          0/0               0/0
+0x0008   2                         9       1008          0          0          9              0          0/0               0/0
 
 Post-Processing Rule Match stats:
 Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Match-Bypassed  FP-Down(Pkts/Bytes)  FP-Up(Pkts/Bytes)
@@ -669,12 +670,12 @@ Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Matc
     Allowed Time unit: unrestricted               Status Validity Time: N/A              
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 pdr full all
-Friday March 27 15:44:25 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa pdr full all
+Friday March 27 17:38:58 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
-IP address: fd02:0:5001:2052::69e4:b601
+IP address: fd02:0:5001:2052::ab05:3e01
 PDR-ID:                    0x0003
  Rule Name:                N/A
  TDF App Id:              N/A
@@ -685,14 +686,14 @@ PDR-ID:                    0x0003
  Source Interface:CP-function
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x8225a002
+ Local F-TEID:           0x82224008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0003
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x4af2002
+  Remote TEID:           0x4ae2008
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -740,14 +741,14 @@ PDR-ID:                    0x0004
     Dst IP Addr:         ff05::2/128
     Dst Port:            ANY
     SPI:                 0
- Local F-TEID:           0x2258002
+ Local F-TEID:           0x2222008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0004
   Destination Interface: CP-function
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x83cf8002
+  Remote TEID:           0x8a0ec003
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -763,7 +764,7 @@ PDR-ID:                    0x0004
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 PDR-ID:                    0x0005
  Rule Name:                N/A
@@ -775,14 +776,14 @@ PDR-ID:                    0x0005
  Source Interface:       Core
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x4af2002
+ Local F-TEID:           0x4ae2008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0005
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x200107b5
+  Remote TEID:           0x2001044a
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -798,7 +799,7 @@ PDR-ID:                    0x0005
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 PDR-ID:                    0x0006
  Rule Name:                N/A
@@ -810,14 +811,14 @@ PDR-ID:                    0x0006
  Source Interface:     Access
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x2250002
+ Local F-TEID:           0x222c008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0006
   Destination Interface: Core
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x2258002
+  Remote TEID:           0x2222008
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -833,21 +834,185 @@ PDR-ID:                    0x0006
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
+
+PDR-ID:                    0x0007
+ Rule Name:                2
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                     9 Match Bypassed:             0
+ Matched Bytes:         1008 Matched Packets:            9
+ Precedence:               0
+ Source Interface:     Access
+ SDF Filter(s):              
+  Filter 1
+    Protocol:            IP
+    Src IP Addr:         fd02:0:5001:2052::ab05:3e01/128
+    Src Port:            ANY
+    Dst IP Addr:         ANY
+    Dst Port:            ANY
+    SPI:                 0
+ Local F-TEID:           0x222e008
+ Outer header removal:   GTP-U/UDP/IPv4
+ Application ID:         N/A
+ Associated FARID:       0x0007
+  Destination Interface: Core
+  Apply Action:          FORWARD 
+  Outer Header Creation: 
+  Remote TEID:           0x0
+  Transport Level Marking:         0X40 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            N/A
+  Remote IP Address:     
+ Remote Port:            N/A
+ Associated QERIDs:      2
+  QER-IDs                Correlation-ID
+   0x00000002                     n/a
+   0x80000003                     n/a
+ Associated URRIDs:      2
+  URR-IDs                Parent URR-ID
+   0x00000009                 n/a
+   0x0000001B                 n/a
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x5
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
+
+PDR-ID:                    0x0008
+ Rule Name:                2
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                     9 Match Bypassed:             0
+ Matched Bytes:         1008 Matched Packets:            9
+ Precedence:               0
+ Source Interface:       Core
+ SDF Filter(s):              
+  Filter 1
+    Protocol:            IP
+    Src IP Addr:         ANY
+    Src Port:            ANY
+    Dst IP Addr:         fd02:0:5001:2052::ab05:3e01/128
+    Dst Port:            ANY
+    SPI:                 0
+ Local F-TEID:           0x0
+ Outer header removal:   
+ Application ID:         N/A
+ Associated FARID:       0x0008
+  Destination Interface: Access
+  Apply Action:          FORWARD 
+  Outer Header Creation: GTP-U/UDP/IPv4
+  Remote TEID:           0x4ae0008
+  Transport Level Marking:         0X58 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            0X50 0XFC
+  Remote IP Address:     172.20.68.226
+ Remote Port:            N/A
+ Associated QERIDs:      2
+  QER-IDs                Correlation-ID
+   0x00000002                     n/a
+   0x80000003                     n/a
+ Associated URRIDs:      2
+  URR-IDs                Parent URR-ID
+   0x00000009                 n/a
+   0x0000001B                 n/a
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x5
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
+
+PDR-ID:                    0x0009
+ Rule Name:                N/A
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                     0 Match Bypassed:             0
+ Matched Bytes:            0 Matched Packets:            0
+ Precedence:               0
+ Source Interface:       Core
+ SDF Filter(s):              
+  No SDF filters present
+ Local F-TEID:           0x4ae0008
+ Outer header removal:   GTP-U/UDP/IPv4
+ Application ID:         N/A
+ Associated FARID:       0x0009
+  Destination Interface: Access
+  Apply Action:          FORWARD 
+  Outer Header Creation: GTP-U/UDP/IPv4
+  Remote TEID:           0x20010415
+  Transport Level Marking:         0X58 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            0X50 0XFC
+  Remote IP Address:     172.21.21.246
+ Remote Port:            N/A
+ Associated QERIDs:      0
+ Associated URRIDs:      0
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x6
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
+
+PDR-ID:                    0x000A
+ Rule Name:                N/A
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                     0 Match Bypassed:             0
+ Matched Bytes:            0 Matched Packets:            0
+ Precedence:               0
+ Source Interface:     Access
+ SDF Filter(s):              
+  No SDF filters present
+ Local F-TEID:           0x2230008
+ Outer header removal:   GTP-U/UDP/IPv4
+ Application ID:         N/A
+ Associated FARID:       0x000a
+  Destination Interface: Core
+  Apply Action:          FORWARD 
+  Outer Header Creation: GTP-U/UDP/IPv4
+  Remote TEID:           0x222e008
+  Transport Level Marking:         0X48 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            0X40 0XFC
+  Remote IP Address:     172.20.68.225
+ Remote Port:            N/A
+ Associated QERIDs:      0
+ Associated URRIDs:      0
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x7
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
 
 Total ADC PDRs found:  0
-Total PDRs found:      4
+Total PDRs found:      8
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 far full all
-Friday March 27 15:44:25 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa far full all
+Friday March 27 17:38:58 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
 	 FAR-ID  		  : 0x0003 			
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4af2002
+	 Remote TEID		  : 0x4ae2008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -863,7 +1028,7 @@ Interface Type: Sxab
 	 Destination Interface	  : CP-function
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x83cf8002
+	 Remote TEID		  : 0x8a0ec003
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -879,7 +1044,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x200107b5
+	 Remote TEID		  : 0x2001044a
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -895,7 +1060,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Core
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x2258002
+	 Remote TEID		  : 0x2222008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -906,6 +1071,70 @@ Interface Type: Sxab
 	 Remote Port		  : N/A
 	 Number of Associated PDRs: 1 
 	 Linked Traffic Endpoint : 0x3
+
+	 FAR-ID  		  : 0x0007 			
+	 Destination Interface	  : Core
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : 
+	 Remote TEID		  : 0x0
+	 Transport Level Marking         : 0X40 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : N/A
+	 Layer2 Marking                  : None 0
+	 Remote IP Address	  : 
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x5
+
+	 FAR-ID  		  : 0x0008 			
+	 Destination Interface	  : Access
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : GTP-U/UDP/IPv4
+	 Remote TEID		  : 0x4ae0008
+	 Transport Level Marking         : 0X58 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : 0X50 0XFC
+	 Layer2 Marking                  : None 0
+	 Remote IP Address	  : 172.20.68.226
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x5
+
+	 FAR-ID  		  : 0x0009 			
+	 Destination Interface	  : Access
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : GTP-U/UDP/IPv4
+	 Remote TEID		  : 0x20010415
+	 Transport Level Marking         : 0X58 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : 0X50 0XFC
+	 Layer2 Marking                  : N/A
+	 Remote IP Address	  : 172.21.21.246
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x7
+
+	 FAR-ID  		  : 0x000A 			
+	 Destination Interface	  : Core
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : GTP-U/UDP/IPv4
+	 Remote TEID		  : 0x222e008
+	 Transport Level Marking         : 0X48 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : 0X40 0XFC
+	 Layer2 Marking                  : N/A
+	 Remote IP Address	  : 172.20.68.225
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x6
 
 	 FAR-ID  		  : 0x8001 			
 	 Destination Interface	  : Core
@@ -927,7 +1156,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4af2002
+	 Remote TEID		  : 0x4ae2008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -940,30 +1169,80 @@ Interface Type: Sxab
 	 Linked Traffic Endpoint : 0x1
 
 
-Total Number of FARs found: 6
+Total Number of FARs found: 10
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 qer full all
-Friday March 27 15:44:25 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa qer full all
+Friday March 27 17:38:59 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
-	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xE1F76002 
+	 QER-id 		 : 0x00000002 			 Correlation-id 	 : n/a 
+	 APN-AMBR uplink (bps) 	 : n/a 				 APN-AMBR downlink (bps) : n/a 
+ 	 MBR uplink (bps) 	 : 39000            		 MBR downlink (bps) 	 : 39000            
+ 	 GBR uplink (bps) 	 : 39000            		 GBR downlink (bps) 	 : 39000            
+	 UL Gate Status 	 : OPEN				 DL Gate Status 	 : OPEN 
+	 Number of Associated PDRs  :2 
+
+	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xFD162003 
 	 APN-AMBR uplink (bps) 	 : 1410066000       		 APN-AMBR downlink (bps) : 1410066000       
  	 MBR uplink (bps) 	 : n/a 				 MBR downlink (bps) 	 : n/a 
  	 GBR uplink (bps) 	 : 0                		 GBR downlink (bps) 	 : 0                
 	 UL Gate Status 	 : OPEN				 DL Gate Status 	 : OPEN 
 	 Number of Associated PDRs  :2 
 
+	 QER-id 		 : 0x80000003 			 Correlation-id 	 : n/a 
+	 APN-AMBR uplink (bps) 	 : n/a 				 APN-AMBR downlink (bps) : n/a 
+ 	 MBR uplink (bps) 	 : 39000            		 MBR downlink (bps) 	 : 39000            
+ 	 GBR uplink (bps) 	 : 39000            		 GBR downlink (bps) 	 : 39000            
+	 UL Gate Status 	 : OPEN				 DL Gate Status 	 : OPEN 
+	 Number of Associated PDRs  :2 
 
-Total Number of QERs found: 1
+
+Total Number of QERs found: 3
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 urr full all
-Friday March 27 15:44:25 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa urr full all
+Friday March 27 17:38:59 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
+
+URR-id				  : 0x00000009
+Measurement Method		  : Volume  Duration 
+Reporting Triggers		  : Time-Threshold  
+Volume Threshold		  : Total: N/A			Uplink: N/A			Downlink: N/A
+Volume Quota                      : Total: N/A                  Uplink: N/A                     Downlink: N/A                 
+Time Threshold			  : 3600
+Time Quota                        : N/A                 
+Quota-Holding-Time                : N/A                 
+Volume Measurement		  : Uplink: N/A			Downlink: N/A
+First-Packet-Time		  : N/A				Last-Packet-Time: N/A
+Next Usage Report Sequence Number : 1
+Next Monitoring Time		  : Disabled
+Subsequent Time Threshold	  : N/A
+Subsequent Volume Threshold	  : Total: N/A			 Uplink: N/A			Downlink: N/A
+Number of Associated PDRs	  : 2 
+Measurement Period		  : N/A
+FAR ID for Quota Action		  : N/A
+
+URR-id				  : 0x0000001B
+Measurement Method		  : Volume  Duration 
+Reporting Triggers		  : Volume-Threshold  Time-Threshold  
+Volume Threshold		  : Total: N/A			Uplink: N/A			Downlink: N/A
+Volume Quota                      : Total: N/A                  Uplink: N/A                     Downlink: N/A                 
+Time Threshold			  : N/A
+Time Quota                        : N/A                 
+Quota-Holding-Time                : N/A                 
+Volume Measurement		  : Uplink: N/A			Downlink: N/A
+First-Packet-Time		  : N/A				Last-Packet-Time: N/A
+Next Usage Report Sequence Number : 1
+Next Monitoring Time		  : Disabled
+Subsequent Time Threshold	  : N/A
+Subsequent Volume Threshold	  : Total: N/A			 Uplink: N/A			Downlink: N/A
+Number of Associated PDRs	  : 2 
+Measurement Period		  : N/A
+FAR ID for Quota Action		  : N/A
 
 URR-id				  : 0x80000009
 Measurement Method		  : Volume  Duration 
@@ -973,8 +1252,8 @@ Volume Quota                      : Total: N/A                  Uplink: N/A     
 Time Threshold			  : 3600
 Time Quota                        : N/A                 
 Quota-Holding-Time                : N/A                 
-Volume Measurement		  : Uplink: N/A			Downlink: 936
-First-Packet-Time		  : 1585291456			Last-Packet-Time: 1585291464
+Volume Measurement		  : Uplink: N/A			Downlink: N/A
+First-Packet-Time		  : N/A				Last-Packet-Time: N/A
 Next Usage Report Sequence Number : 1
 Next Monitoring Time		  : Disabled
 Subsequent Time Threshold	  : N/A
@@ -983,11 +1262,11 @@ Number of Associated PDRs	  : 0
 Measurement Period		  : N/A
 FAR ID for Quota Action		  : N/A
 
-Total Number of URRs found: 1
+Total Number of URRs found: 3
 
 Total subscribers matching specified criteria: 1
 [local]TB_UPF02-08# show subs imsi 450081030101806
-Friday March 27 15:44:32 KST 2020
+Friday March 27 17:39:08 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -1043,36 +1322,36 @@ Friday March 27 15:44:32 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-y.C.AI 004ddc82 -               -                      fd02:0:5001:2052::69e4:b601   00h00m01s
+y.C.AI 02179ffa -               -                      fd02:0:5001:2052::ab05:3e01   00h00m05s
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only full callid 004ddc82
-Friday March 27 15:44:32 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only full callid 02179ffa
+Friday March 27 17:39:08 KST 2020
 
-  Local SEID      : [0x0008000000002572] 2251799813694834
-  Remote SEID     : [0x0008000000001e81] 2251799813693057
+  Local SEID      : [0x0020000000002568] 9007199254750568
+  Remote SEID     : [0x000c000000001d3e] 3377699720535358
   State           : Connected
-  Connect Time    : Fri Mar 27 15:43:50 2020
-  Idle time       : 00h00m01s
+  Connect Time    : Fri Mar 27 17:38:16 2020
+  Idle time       : 00h00m05s
   Access Type: uplane-ipv6               Network Type: IP
   user-plane-service-name: UP-SVC
-  Callid: 004ddc82
+  Callid: 02179ffa
   Rulebase: IMS-DF-POSTPAID
   Interface Type: Sxab                   
   eMPS Session: No
   eMPS Session Priority: 0
-  Card/Cpu: 1/0                          Sessmgr Instance: 2
-  IP address: fd02:0:5001:2052::69e4:b601
+  Card/Cpu: 1/0                          Sessmgr Instance: 8
+  IP address: fd02:0:5001:2052::ab05:3e01
   Source context: sae                    Destination context: sgi
   PDN-Instance: cisco3.com          
   User-plane-Sx-addr: 172.20.68.228                
   Control-plane-Sx-addr: 172.20.69.232                
-  Number of associated PDRs : 4
+  Number of associated PDRs : 8
   Number of associated ADC PDRs : 0
-  Number of associated FARs : 4
-  Number of associated QERs : 1
+  Number of associated FARs : 8
+  Number of associated QERs : 3
   Number of associated BARs : 0
-  Number of associated URRs : 1
+  Number of associated URRs : 3
   Uplink APN AMBR (bps) : 1410066000       Downlink APN AMBR (bps) : 1410066000
   active input acl: n/a                active output acl: n/a            
   active input ipv6 acl: n/a             active output ipv6 acl: n/a            
@@ -1088,9 +1367,9 @@ Friday March 27 15:44:32 KST 2020
   Congestion Level: 0
   GGSN Address: 172.20.69.227
   User-Name: 12110030101804@cisco3.com
-  Session-ID: AC1445E30026FF22
-  input pkts: 0                                   output pkts: 16          
-  input bytes: 0                                  output bytes: 1664        
+  Session-ID: AC1445E30054B801
+  input pkts: 15                                  output pkts: 15          
+  input bytes: 1680                               output bytes: 1680        
   input bytes dropped: 0                          output bytes dropped: 0         
   input pkts dropped: 0                           output pkts dropped: 0         
   CF Buffered Uplink Packets: 0                   CF Buffered Downlink Packets: 0           
@@ -1099,9 +1378,9 @@ Friday March 27 15:44:32 KST 2020
   Buff Over-limit Uplink Pkts: 0                  Buff Over-limit Downlink Pkts: 0           
   DDN buffered pkts : 0                           DDN buffered bytes : 0           
   DDN buffer overflow drop pkts : 0               DDN buffer overflow drop bytes : 0           
-  pk rate from user(bps): 0                       pk rate to user(bps): 278         
-  ave rate from user(bps): 0                      ave rate to user(bps): 92          
-  sust rate from user(bps): 0                     sust rate to user(bps): 92          
+  pk rate from user(bps): 209                     pk rate to user(bps): 209         
+  ave rate from user(bps): 69                     ave rate to user(bps): 69          
+  sust rate from user(bps): 69                    sust rate to user(bps): 69          
   pk rate from user(pps): 0                       pk rate to user(pps): 0           
   ave rate from user(pps): 0                      ave rate to user(pps): 0           
   sust rate from user(pps): 0                     sust rate to user(pps): 0           
@@ -1143,11 +1422,12 @@ Friday March 27 15:44:32 KST 2020
 Static & Predef Rule Match stats:
 Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Match-Bypassed  FP-Down(Pkts/Bytes)  FP-Up(Pkts/Bytes)
 -------------------- ---------- ---------- ---------- ---------- ---------- --------------  -------------------  -----------------
-ICMPv6                       16       1664          0          0         16              0          0/0              0/0
 
 Dynamic Rule Match stats:
 PDR Id   Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Match-Bypassed  FP-Down(Pkts/Bytes)  FP-Up(Pkts/Bytes)
 -------- -------------------- ---------- ---------- ---------- ---------- ---------- --------------  -------------------  -----------------
+0x0007   2                         0          0         15       1680         15              0          0/0               0/0
+0x0008   2                         15       1680          0          0         15              0          0/0               0/0
 
 Post-Processing Rule Match stats:
 Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Match-Bypassed  FP-Down(Pkts/Bytes)  FP-Up(Pkts/Bytes)
@@ -1159,12 +1439,12 @@ Rule Name            Pkts-Down  Bytes-Down Pkts-Up    Bytes-Up   Hits       Matc
     Allowed Time unit: unrestricted               Status Validity Time: N/A              
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 pdr full all
-Friday March 27 15:44:32 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa pdr full all
+Friday March 27 17:39:08 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
-IP address: fd02:0:5001:2052::69e4:b601
+IP address: fd02:0:5001:2052::ab05:3e01
 PDR-ID:                    0x0003
  Rule Name:                N/A
  TDF App Id:              N/A
@@ -1175,14 +1455,14 @@ PDR-ID:                    0x0003
  Source Interface:CP-function
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x8225a002
+ Local F-TEID:           0x82224008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0003
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x4af2002
+  Remote TEID:           0x4ae2008
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -1230,14 +1510,14 @@ PDR-ID:                    0x0004
     Dst IP Addr:         ff05::2/128
     Dst Port:            ANY
     SPI:                 0
- Local F-TEID:           0x2258002
+ Local F-TEID:           0x2222008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0004
   Destination Interface: CP-function
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x83cf8002
+  Remote TEID:           0x8a0ec003
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -1253,7 +1533,7 @@ PDR-ID:                    0x0004
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 PDR-ID:                    0x0005
  Rule Name:                N/A
@@ -1265,14 +1545,14 @@ PDR-ID:                    0x0005
  Source Interface:       Core
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x4af2002
+ Local F-TEID:           0x4ae2008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0005
   Destination Interface: Access
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x20010035
+  Remote TEID:           0x20010534
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -1288,7 +1568,7 @@ PDR-ID:                    0x0005
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
 
 PDR-ID:                    0x0006
  Rule Name:                N/A
@@ -1300,14 +1580,14 @@ PDR-ID:                    0x0006
  Source Interface:     Access
  SDF Filter(s):              
   No SDF filters present
- Local F-TEID:           0x2250002
+ Local F-TEID:           0x222c008
  Outer header removal:   GTP-U/UDP/IPv4
  Application ID:         N/A
  Associated FARID:       0x0006
   Destination Interface: Core
   Apply Action:          FORWARD 
   Outer Header Creation: GTP-U/UDP/IPv4
-  Remote TEID:           0x2258002
+  Remote TEID:           0x2222008
   Transport Level Marking:         N/A
   Transport Level Marking Options:
     Copy Inner:                    No
@@ -1323,21 +1603,185 @@ PDR-ID:                    0x0006
  Bearer QOS:
     QCI:                    9
     ARP:                    120
-    Charging Id:            2555682
+    Charging Id:            5552129
+
+PDR-ID:                    0x0007
+ Rule Name:                2
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                    15 Match Bypassed:             0
+ Matched Bytes:         1680 Matched Packets:           15
+ Precedence:               0
+ Source Interface:     Access
+ SDF Filter(s):              
+  Filter 1
+    Protocol:            IP
+    Src IP Addr:         fd02:0:5001:2052::ab05:3e01/128
+    Src Port:            ANY
+    Dst IP Addr:         ANY
+    Dst Port:            ANY
+    SPI:                 0
+ Local F-TEID:           0x222e008
+ Outer header removal:   GTP-U/UDP/IPv4
+ Application ID:         N/A
+ Associated FARID:       0x0007
+  Destination Interface: Core
+  Apply Action:          FORWARD 
+  Outer Header Creation: 
+  Remote TEID:           0x0
+  Transport Level Marking:         0X40 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            N/A
+  Remote IP Address:     
+ Remote Port:            N/A
+ Associated QERIDs:      2
+  QER-IDs                Correlation-ID
+   0x00000002                     n/a
+   0x80000003                     n/a
+ Associated URRIDs:      2
+  URR-IDs                Parent URR-ID
+   0x00000009                 n/a
+   0x0000001B                 n/a
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x5
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
+
+PDR-ID:                    0x0008
+ Rule Name:                2
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                    15 Match Bypassed:             0
+ Matched Bytes:         1680 Matched Packets:           15
+ Precedence:               0
+ Source Interface:       Core
+ SDF Filter(s):              
+  Filter 1
+    Protocol:            IP
+    Src IP Addr:         ANY
+    Src Port:            ANY
+    Dst IP Addr:         fd02:0:5001:2052::ab05:3e01/128
+    Dst Port:            ANY
+    SPI:                 0
+ Local F-TEID:           0x0
+ Outer header removal:   
+ Application ID:         N/A
+ Associated FARID:       0x0008
+  Destination Interface: Access
+  Apply Action:          FORWARD 
+  Outer Header Creation: GTP-U/UDP/IPv4
+  Remote TEID:           0x4ae0008
+  Transport Level Marking:         0X58 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            0X50 0XFC
+  Remote IP Address:     172.20.68.226
+ Remote Port:            N/A
+ Associated QERIDs:      2
+  QER-IDs                Correlation-ID
+   0x00000002                     n/a
+   0x80000003                     n/a
+ Associated URRIDs:      2
+  URR-IDs                Parent URR-ID
+   0x00000009                 n/a
+   0x0000001B                 n/a
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x5
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
+
+PDR-ID:                    0x0009
+ Rule Name:                N/A
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                     0 Match Bypassed:             0
+ Matched Bytes:            0 Matched Packets:            0
+ Precedence:               0
+ Source Interface:       Core
+ SDF Filter(s):              
+  No SDF filters present
+ Local F-TEID:           0x4ae0008
+ Outer header removal:   GTP-U/UDP/IPv4
+ Application ID:         N/A
+ Associated FARID:       0x0009
+  Destination Interface: Access
+  Apply Action:          FORWARD 
+  Outer Header Creation: GTP-U/UDP/IPv4
+  Remote TEID:           0x200104e5
+  Transport Level Marking:         0X58 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            0X50 0XFC
+  Remote IP Address:     172.21.21.247
+ Remote Port:            N/A
+ Associated QERIDs:      0
+ Associated URRIDs:      0
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x6
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
+
+PDR-ID:                    0x000A
+ Rule Name:                N/A
+ TDF App Id:              N/A
+ TDF Notifications:       N/A
+ Hits:                     0 Match Bypassed:             0
+ Matched Bytes:            0 Matched Packets:            0
+ Precedence:               0
+ Source Interface:     Access
+ SDF Filter(s):              
+  No SDF filters present
+ Local F-TEID:           0x2230008
+ Outer header removal:   GTP-U/UDP/IPv4
+ Application ID:         N/A
+ Associated FARID:       0x000a
+  Destination Interface: Core
+  Apply Action:          FORWARD 
+  Outer Header Creation: GTP-U/UDP/IPv4
+  Remote TEID:           0x222e008
+  Transport Level Marking:         0X48 0XFC
+  Transport Level Marking Options:
+    Copy Inner:                    No
+    Copy Outer:                    No
+  Inner Packet Marking:            0X40 0XFC
+  Remote IP Address:     172.20.68.225
+ Remote Port:            N/A
+ Associated QERIDs:      0
+ Associated URRIDs:      0
+ Activation Time:        N/A
+ Deactivation Time:      N/A
+ Traffic Endpoint-ID:      0x7
+ Bearer QOS:
+    QCI:                    1
+    ARP:                    68
+    Charging Id:            5552130
 
 Total ADC PDRs found:  0
-Total PDRs found:      4
+Total PDRs found:      8
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 far full all
-Friday March 27 15:44:32 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa far full all
+Friday March 27 17:39:08 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
 	 FAR-ID  		  : 0x0003 			
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4af2002
+	 Remote TEID		  : 0x4ae2008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -1353,7 +1797,7 @@ Interface Type: Sxab
 	 Destination Interface	  : CP-function
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x83cf8002
+	 Remote TEID		  : 0x8a0ec003
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -1369,7 +1813,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x20010035
+	 Remote TEID		  : 0x20010534
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -1385,7 +1829,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Core
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x2258002
+	 Remote TEID		  : 0x2222008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -1396,6 +1840,70 @@ Interface Type: Sxab
 	 Remote Port		  : N/A
 	 Number of Associated PDRs: 1 
 	 Linked Traffic Endpoint : 0x3
+
+	 FAR-ID  		  : 0x0007 			
+	 Destination Interface	  : Core
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : 
+	 Remote TEID		  : 0x0
+	 Transport Level Marking         : 0X40 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : N/A
+	 Layer2 Marking                  : None 0
+	 Remote IP Address	  : 
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x5
+
+	 FAR-ID  		  : 0x0008 			
+	 Destination Interface	  : Access
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : GTP-U/UDP/IPv4
+	 Remote TEID		  : 0x4ae0008
+	 Transport Level Marking         : 0X58 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : 0X50 0XFC
+	 Layer2 Marking                  : None 0
+	 Remote IP Address	  : 172.20.68.226
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x5
+
+	 FAR-ID  		  : 0x0009 			
+	 Destination Interface	  : Access
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : GTP-U/UDP/IPv4
+	 Remote TEID		  : 0x200104e5
+	 Transport Level Marking         : 0X58 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : 0X50 0XFC
+	 Layer2 Marking                  : N/A
+	 Remote IP Address	  : 172.21.21.247
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x7
+
+	 FAR-ID  		  : 0x000A 			
+	 Destination Interface	  : Core
+	 Apply Action		  : FORWARD 
+	 Outer Header Creation	  : GTP-U/UDP/IPv4
+	 Remote TEID		  : 0x222e008
+	 Transport Level Marking         : 0X48 0XFC
+	 Transport Level Marking Options :
+	   Copy Inner:                     No
+	   Copy Outer:                     No
+	 Inner Packet Marking            : 0X40 0XFC
+	 Layer2 Marking                  : N/A
+	 Remote IP Address	  : 172.20.68.225
+	 Remote Port		  : N/A
+	 Number of Associated PDRs: 1 
+	 Linked Traffic Endpoint : 0x6
 
 	 FAR-ID  		  : 0x8001 			
 	 Destination Interface	  : Core
@@ -1417,7 +1925,7 @@ Interface Type: Sxab
 	 Destination Interface	  : Access
 	 Apply Action		  : FORWARD 
 	 Outer Header Creation	  : GTP-U/UDP/IPv4
-	 Remote TEID		  : 0x4af2002
+	 Remote TEID		  : 0x4ae2008
 	 Transport Level Marking         : N/A
 	 Transport Level Marking Options :
 	   Copy Inner:                     No
@@ -1430,30 +1938,80 @@ Interface Type: Sxab
 	 Linked Traffic Endpoint : 0x1
 
 
-Total Number of FARs found: 6
+Total Number of FARs found: 10
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 qer full all
-Friday March 27 15:44:32 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa qer full all
+Friday March 27 17:39:09 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
-	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xE1F76002 
+	 QER-id 		 : 0x00000002 			 Correlation-id 	 : n/a 
+	 APN-AMBR uplink (bps) 	 : n/a 				 APN-AMBR downlink (bps) : n/a 
+ 	 MBR uplink (bps) 	 : 39000            		 MBR downlink (bps) 	 : 39000            
+ 	 GBR uplink (bps) 	 : 39000            		 GBR downlink (bps) 	 : 39000            
+	 UL Gate Status 	 : OPEN				 DL Gate Status 	 : OPEN 
+	 Number of Associated PDRs  :2 
+
+	 QER-id 		 : 0x80000001 			 Correlation-id 	 : 0xFD162003 
 	 APN-AMBR uplink (bps) 	 : 1410066000       		 APN-AMBR downlink (bps) : 1410066000       
  	 MBR uplink (bps) 	 : n/a 				 MBR downlink (bps) 	 : n/a 
  	 GBR uplink (bps) 	 : 0                		 GBR downlink (bps) 	 : 0                
 	 UL Gate Status 	 : OPEN				 DL Gate Status 	 : OPEN 
 	 Number of Associated PDRs  :2 
 
+	 QER-id 		 : 0x80000003 			 Correlation-id 	 : n/a 
+	 APN-AMBR uplink (bps) 	 : n/a 				 APN-AMBR downlink (bps) : n/a 
+ 	 MBR uplink (bps) 	 : 39000            		 MBR downlink (bps) 	 : 39000            
+ 	 GBR uplink (bps) 	 : 39000            		 GBR downlink (bps) 	 : 39000            
+	 UL Gate Status 	 : OPEN				 DL Gate Status 	 : OPEN 
+	 Number of Associated PDRs  :2 
 
-Total Number of QERs found: 1
+
+Total Number of QERs found: 3
 
 Total subscribers matching specified criteria: 1
-[local]TB_UPF02-08# show subs user-plane-only callid 004ddc82 urr full all
-Friday March 27 15:44:32 KST 2020
+[local]TB_UPF02-08# show subs user-plane-only callid 02179ffa urr full all
+Friday March 27 17:39:09 KST 2020
 
-Callid: 004ddc82
+Callid: 02179ffa
 Interface Type: Sxab                   
+
+URR-id				  : 0x00000009
+Measurement Method		  : Volume  Duration 
+Reporting Triggers		  : Time-Threshold  
+Volume Threshold		  : Total: N/A			Uplink: N/A			Downlink: N/A
+Volume Quota                      : Total: N/A                  Uplink: N/A                     Downlink: N/A                 
+Time Threshold			  : 3600
+Time Quota                        : N/A                 
+Quota-Holding-Time                : N/A                 
+Volume Measurement		  : Uplink: N/A			Downlink: N/A
+First-Packet-Time		  : N/A				Last-Packet-Time: N/A
+Next Usage Report Sequence Number : 1
+Next Monitoring Time		  : Disabled
+Subsequent Time Threshold	  : N/A
+Subsequent Volume Threshold	  : Total: N/A			 Uplink: N/A			Downlink: N/A
+Number of Associated PDRs	  : 2 
+Measurement Period		  : N/A
+FAR ID for Quota Action		  : N/A
+
+URR-id				  : 0x0000001B
+Measurement Method		  : Volume  Duration 
+Reporting Triggers		  : Volume-Threshold  Time-Threshold  
+Volume Threshold		  : Total: N/A			Uplink: N/A			Downlink: N/A
+Volume Quota                      : Total: N/A                  Uplink: N/A                     Downlink: N/A                 
+Time Threshold			  : N/A
+Time Quota                        : N/A                 
+Quota-Holding-Time                : N/A                 
+Volume Measurement		  : Uplink: N/A			Downlink: N/A
+First-Packet-Time		  : N/A				Last-Packet-Time: N/A
+Next Usage Report Sequence Number : 1
+Next Monitoring Time		  : Disabled
+Subsequent Time Threshold	  : N/A
+Subsequent Volume Threshold	  : Total: N/A			 Uplink: N/A			Downlink: N/A
+Number of Associated PDRs	  : 2 
+Measurement Period		  : N/A
+FAR ID for Quota Action		  : N/A
 
 URR-id				  : 0x80000009
 Measurement Method		  : Volume  Duration 
@@ -1463,8 +2021,8 @@ Volume Quota                      : Total: N/A                  Uplink: N/A     
 Time Threshold			  : 3600
 Time Quota                        : N/A                 
 Quota-Holding-Time                : N/A                 
-Volume Measurement		  : Uplink: N/A			Downlink: 1352
-First-Packet-Time		  : 1585291456			Last-Packet-Time: 1585291468
+Volume Measurement		  : Uplink: N/A			Downlink: N/A
+First-Packet-Time		  : N/A				Last-Packet-Time: N/A
 Next Usage Report Sequence Number : 1
 Next Monitoring Time		  : Disabled
 Subsequent Time Threshold	  : N/A
@@ -1473,6 +2031,6 @@ Number of Associated PDRs	  : 0
 Measurement Period		  : N/A
 FAR ID for Quota Action		  : N/A
 
-Total Number of URRs found: 1
+Total Number of URRs found: 3
 
 Total subscribers matching specified criteria: 1

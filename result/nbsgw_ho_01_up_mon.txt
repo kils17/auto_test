@@ -1,16 +1,8 @@
 [local]TB_UPF02-08# mon subs imsi 450081030101806
-Friday March 27 15:43:47 KST 2020
+Friday March 27 16:47:49 KST 2020
 
-----------------------------------------------------------------------
-Matching Call Found:
-----------------------------------------------------------------------
- MSID/IMSI   : 450081030101806             Callid      : 004ddc81
- IMEI        : 1122334455667788            MSISDN      : 12110030101804
- Username    : 12110030101804@cisco3.com   SessionType : uplane-ipv6
- Status      : Active                      Service Name: UP-SVC
- Src Context : sae                         Dest Context: sgi
-----------------------------------------------------------------------
 
+NO MATCHING CALL - waiting for a matching call to connect...
 
 C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
 D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
@@ -59,9 +51,6 @@ N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
                                76 - NSH    (ON )
 
   (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
-
-
-Failure: MonSub : File Transfer failed!
 *** Verbosity Level (  2) ***
 
 C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
@@ -162,9 +151,9 @@ N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
   (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
 
 ----------------------------------------------------------------------
-(Switching Trace) - New Incoming Call:
+Incoming Call:
 ----------------------------------------------------------------------
- MSID/IMSI   : 450081030101806             Callid      : 004ddc82
+ MSID/IMSI   : 450081030101806             Callid      : 00e67308
  IMEI        : 1122334455667788            MSISDN      : 12110030101804
  Username    : 12110030101804@cisco3.com   SessionType : n/a
  Status      : Active                      Service Name: UP-SVC
@@ -174,12 +163,6 @@ N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
 
 
 Failure: MonSub : File Transfer failed!
-
-
- ***
- *** Call Finished - Waiting to trace next matching call
- ***
-
 
 
  ***

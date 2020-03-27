@@ -1,5 +1,5 @@
 [local]CISCO_SMF_7F# show subs imsi 450081030101806
-Friday March 27 12:46:42 KST 2020
+Friday March 27 17:12:25 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -55,6 +55,6 @@ Friday March 27 12:46:42 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-#TCNAT 0a7f6108 450081030101806 12110030101854@cisco17.com fd02:0:5017:4000:0:a:7f61:801 00h00m10s
+#TCNAT 0bfd0eba 450081030101806 12110030101854@cisco17.com fd02:0:5017:2052:0:b:fd0e:ba01 00h00m10s
 
 Total subscribers matching specified criteria: 1

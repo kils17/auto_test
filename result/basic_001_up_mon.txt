@@ -1,5 +1,5 @@
 [local]TB_UPF02-08# mon pro
-Friday March 27 12:48:23 KST 2020
+Friday March 27 17:12:09 KST 2020
 [2J[0;0f
 MONITOR GLOBAL PROTOCOLS:
 
@@ -229,22 +229,22 @@ V - PCAP Hexdump       NONE
 
   (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
 Friday March 27 2020
-INBOUND>>>>>  12:48:29:320 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50252 to 172.20.68.228:8805 (1043)
+INBOUND>>>>>  17:12:15:838 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50287 to 172.20.68.228:8805 (1072)
 SEID: 0x0000000000000000, Message type: SX_SESSION_ESTABLISHMENT_REQUEST (0x32)
-Sequence Number: 0x2A6000 (2777088)
+Sequence Number: 0x239900 (2332928)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
         MP flag: Not present
-        Message Length: 0x040F (1039)
+        Message Length: 0x042C (1068)
         Interface: SXab
         Compression: Not Enabled
 
 INFORMATION ELEMENTS
         F-SEID: 
             Value: 
-                SEID: 0x00900000000045F4
+                SEID: 0x00A4000000002972
                 IPv4: 1
                 IPv6: 0
                 IPv4 ADDR: 172.20.69.232
@@ -452,7 +452,7 @@ INFORMATION ELEMENTS
                         OUTER HDR CREATION: 
                             Value: 
                                 DESC: GTP-U/UDP/IPv4 (0)
-                                TEID: 0x8861E024
+                                TEID: 0x8512A029
                                 IPv4 ADDR: 172.20.69.232
                     Traffic Endpoint ID: 
                         Value: 0x0002
@@ -510,7 +510,7 @@ INFORMATION ELEMENTS
             Congestion-Level: 0
             GGSN-Address: 172.20.69.227
             User-Name: 12110030101854@cisco17.com
-            Session-ID: AC1445E303FE0B2E
+            Session-ID: AC1445E3048C7982
             CALLED-STATION-ID: cisco17.com
             CALLING-STATION-ID: 12110030101854
 
@@ -524,7 +524,7 @@ INFORMATION ELEMENTS
                 QER ID: 
                     Value: 0x80000001
                 QER CORRELATION ID: 
-                    Value: 0xD2ACA024
+                    Value: 0xD7ACC029
                 GATE STATUS: 
                     Ul Gate: OPEN
                     Dl Gate: OPEN
@@ -562,11 +562,11 @@ INFORMATION ELEMENTS
                         S/D: 1
                         IPv4: 0
                         IPv6: 1
-                        IPv6 ADDR: fd02:0:5017:4000:0:a:7f61:801
+                        IPv6 ADDR: fd02:0:5017:2052:0:b:fd0e:ba01
                 Bearer Info: 
                     QCI: 9
                     ARP: 120
-                    Charging ID: 66980654
+                    Charging ID: 76315010
 
         CREATE TRAFFIC ENDPOINT: 
             Value: 
@@ -592,7 +592,7 @@ INFORMATION ELEMENTS
                 Bearer Info: 
                     QCI: 9
                     ARP: 120
-                    Charging ID: 66980654
+                    Charging ID: 76315010
 
         CREATE TRAFFIC ENDPOINT: 
             Value: 
@@ -607,12 +607,24 @@ INFORMATION ELEMENTS
                 Bearer Info: 
                     QCI: 9
                     ARP: 120
-                    Charging ID: 66980654
+                    Charging ID: 76315010
 
+        SUBSCRIBER TRACE: 
+        Action: 
+            Value: Start
+        Data Event: 
+            Value: ON
+                Enable VPP Trace: ON
+                Packet Capture: Full Pkt
+                MEH Header: OFF
+                Pan Priority: 0
+                Packet Capture Size: 0
+        Control Event: 
+            Value: ON
 
 PDU HEX DUMP
-0x0000	 2132 040f 0000 0000 0000 0000 2a60 0002	!2..........*`..
-0x0010	 0039 000d 0200 9000 0000 0045 f4ac 1445	.9.........E...E
+0x0000	 2132 042c 0000 0000 0000 0000 2399 0002	!2.,........#...
+0x0010	 0039 000d 0200 a400 0000 0029 72ac 1445	.9.........)r..E
 0x0020	 e800 0100 3500 3800 0200 0100 1d00 0400	....5.8.........
 0x0030	 0000 0100 0200 0a00 1400 0100 0083 0001	................
 0x0040	 0100 6c00 0400 0080 0100 cf00 0546 5245	..l..........FRE
@@ -647,7 +659,7 @@ PDU HEX DUMP
 0x0210	 0003 002c 0001 0100 0400 0a00 2a00 0100	...,........*...
 0x0220	 0083 0001 0200 0300 2800 6c00 0400 0000	........(.l.....
 0x0230	 0400 2c00 0102 0004 0017 002a 0001 0300	..,........*....
-0x0240	 5400 0900 8861 e024 ac14 45e8 0083 0001	T....a.$..E.....
+0x0240	 5400 0900 8512 a029 ac14 45e8 0083 0001	T......)..E.....
 0x0250	 0200 0300 2700 6c00 0400 0000 0500 2c00	....'.l.......,.
 0x0260	 0101 0004 0016 002a 0001 0000 1e00 0298	.......*........
 0x0270	 fc00 dc00 0290 fc00 8300 0104 0003 0027	...............'
@@ -658,31 +670,32 @@ PDU HEX DUMP
 0x02c0	 5463 6788 1254 6301 2345 6700 0000 00ac	Tcg..Tc.#Eg.....
 0x02d0	 1445 e31b 3132 3131 3030 3330 3130 3138	.E..121100301018
 0x02e0	 3534 4063 6973 636f 3137 2e63 6f6d 0011	54@cisco17.com..
-0x02f0	 4143 3134 3435 4533 3033 4645 3042 3245	AC1445E303FE0B2E
+0x02f0	 4143 3134 3435 4533 3034 3843 3739 3832	AC1445E3048C7982
 0x0300	 000c 6369 7363 6f31 372e 636f 6d00 0f31	..cisco17.com..1
 0x0310	 3231 3130 3033 3031 3031 3835 3400 008d	2110030101854...
 0x0320	 001b 0708 5400 1830 1010 08f6 0811 2233	....T..0......"3
 0x0330	 4455 6677 8807 2111 0003 0181 4500 0700	DUfw..!.....E...
-0x0340	 2300 6d00 0480 0000 0100 1c00 04d2 aca0	#.m.............
-0x0350	 2400 1900 0100 001a 000a 0000 0003 e800	$...............
+0x0340	 2300 6d00 0480 0000 0100 1c00 04d7 acc0	#.m.............
+0x0350	 2900 1900 0100 001a 000a 0000 0003 e800	)...............
 0x0360	 0000 03e8 00df 0030 0200 0764 6566 6175	.......0...defau
 0x0370	 6c74 0000 0003 0000 0000 0000 000e 1007	lt..............
 0x0380	 6465 6661 756c 7400 0000 0300 0000 0000	default.........
 0x0390	 0006 7465 7374 2d32 007f 0039 0083 0001	..test-2...9....
 0x03a0	 0100 1500 0104 0016 000c 0763 6973 636f	...........cisco
 0x03b0	 3137 0363 6f6d 005d 0011 05fd 0200 0050	17.com.].......P
-0x03c0	 1740 0000 0000 0a7f 6108 0100 e100 0609	.@......a.......
-0x03d0	 7803 fe0b 2e00 7f00 0a00 8300 0102 0015	x...............
+0x03c0	 1720 5200 0000 0bfd 0eba 0100 e100 0609	..R.............
+0x03d0	 7804 8c79 8200 7f00 0a00 8300 0102 0015	x..y............
 0x03e0	 0001 0400 7f00 1400 8300 0103 0015 0001	................
-0x03f0	 0400 e100 0609 7803 fe0b 2e00 7f00 1400	......x.........
-0x0400	 8300 0104 0015 0001 0400 e100 0609 7803	..............x.
-0x0410	 fe0b 2e                                	...
+0x03f0	 0400 e100 0609 7804 8c79 8200 7f00 1400	......x..y......
+0x0400	 8300 0104 0015 0001 0400 e100 0609 7804	..............x.
+0x0410	 8c79 8200 e500 190e 0100 0000 0000 0000	.y..............
+0x0420	 00f8 22fb d18a 93f2 30f7 fff0 0300 0000	..".....0.......
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:29:320 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50252 (96)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_ESTABLISHMENT_RESPONSE (0x33)
-Sequence Number: 0x2A6000 (2777088)
+<<<<OUTBOUND  17:12:15:860 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50287 (96)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_ESTABLISHMENT_RESPONSE (0x33)
+Sequence Number: 0x239900 (2332928)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -698,7 +711,7 @@ INFORMATION ELEMENTS
 
         UP F-SEID: 
             Value: 
-                SEID: 0x0004000000002567
+                SEID: 0x001C000000002568
                 IPv4: 1
                 IPv6: 0
                 IPv4 ADDR: 172.20.68.228
@@ -710,7 +723,7 @@ INFORMATION ELEMENTS
             Local F-TEID: 
                 Value: 
                     CH: 0
-                    TEID: 0x02212001
+                    TEID: 0x02208007
                     IPv4: 1
                     IPv6: 0
                     IPv4 ADDR: 172.20.68.227
@@ -723,7 +736,7 @@ INFORMATION ELEMENTS
             Local F-TEID: 
                 Value: 
                     CH: 0
-                    TEID: 0x04ADA001
+                    TEID: 0x04ADA007
                     IPv4: 1
                     IPv6: 0
                     IPv4 ADDR: 172.20.68.226
@@ -736,7 +749,7 @@ INFORMATION ELEMENTS
             Local F-TEID: 
                 Value: 
                     CH: 0
-                    TEID: 0x82210001
+                    TEID: 0x82212007
                     IPv4: 1
                     IPv6: 0
                     IPv4 ADDR: 172.20.68.228
@@ -749,7 +762,7 @@ INFORMATION ELEMENTS
             Local F-TEID: 
                 Value: 
                     CH: 0
-                    TEID: 0x0220E001
+                    TEID: 0x02210007
                     IPv4: 1
                     IPv6: 0
                     IPv4 ADDR: 172.20.68.225
@@ -757,23 +770,23 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2133 005c 0090 0000 0000 45f4 2a60 000a	!3.\......E.*`..
-0x0010	 78da 6310 6660 6464 b064 e065 6260 6100	x.c.f`dd.d.eb`a.
-0x0020	 02d5 f435 222e 4f18 1a18 8418 9a19 1859	...5".O........Y
-0x0030	 1844 1938 1999 1415 1881 a28f 61a2 cc60	.D.8........a..`
-0x0040	 5196 b50b 40a2 8f60 a24c 60d1 2645 0646	Q...@..`.L`.&E.F
-0x0050	 6413 1821 2628 3c00 893e 0400 7c65 128b	d..!&(<..>..|e..
+0x0000	 2133 005c 00a4 0000 0000 2972 2399 000a	!3.\......)r#...
+0x0010	 78da 6310 6660 6464 b064 e065 6290 6100	x.c.f`dd.d.eb.a.
+0x0020	 02d5 8c35 222e 4f18 1a18 8418 9a19 1859	...5".O........Y
+0x0030	 1844 1938 1999 141a d881 a28f 61a2 cc60	.D.8........a..`
+0x0040	 5196 b50b 40a2 8f60 a24c 60d1 2645 0576	Q...@..`.L`.&E.v
+0x0050	 6413 1821 2628 3280 441f 0200 a298 125c	d..!&(2.D......\
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:29:322 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50252 to 172.20.68.228:8805 (192)
-SEID: 0x0004000000002567, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
-Sequence Number: 0x2A6801 (2779137)
+INBOUND>>>>>  17:12:15:863 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50287 to 172.20.68.228:8805 (163)
+SEID: 0x001C000000002568, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x237F01 (2326273)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
         MP flag: Not present
-        Message Length: 0x00BC (188)
+        Message Length: 0x009F (159)
         Interface: SXab
         Compression: Not Enabled
 
@@ -818,7 +831,7 @@ INFORMATION ELEMENTS
                         OUTER HDR CREATION: 
                             Value: 
                                 DESC: GTP-U/UDP/IPv4 (0)
-                                TEID: 0x04ADA001
+                                TEID: 0x04ADA007
                                 IPv4 ADDR: 172.20.68.226
 
 
@@ -838,7 +851,7 @@ INFORMATION ELEMENTS
                         OUTER HDR CREATION: 
                             Value: 
                                 DESC: GTP-U/UDP/IPv4 (0)
-                                TEID: 0x04ADA001
+                                TEID: 0x04ADA007
                                 IPv4 ADDR: 172.20.68.226
 
 
@@ -858,42 +871,29 @@ INFORMATION ELEMENTS
                         OUTER HDR CREATION: 
                             Value: 
                                 DESC: GTP-U/UDP/IPv4 (0)
-                                TEID: 0x0220E001
+                                TEID: 0x02210007
                                 IPv4 ADDR: 172.20.68.225
 
 
-        SUBSCRIBER TRACE: 
-        Action: 
-            Value: Start
-        Data Event: 
-            Value: ON
-                Enable VPP Trace: ON
-                Packet Capture: Full Pkt
-                MEH Header: OFF
-                Pan Priority: 0
-                Packet Capture Size: 0
-        Control Event: 
-            Value: ON
 
 PDU HEX DUMP
-0x0000	 2134 00bc 0004 0000 0000 2567 2a68 0102	!4........%g*h..
+0x0000	 2134 009f 001c 0000 0000 2568 237f 0102	!4........%h#...
 0x0010	 0009 000b 0038 0002 0001 005f 0001 0000	.....8....._....
 0x0020	 0900 0b00 3800 0200 0400 5f00 0100 0009	....8....._.....
 0x0030	 000b 0038 0002 0005 005f 0001 0000 0a00	...8....._......
 0x0040	 1e00 6c00 0400 0080 0200 2c00 0102 000b	..l.......,.....
-0x0050	 000d 0054 0009 0004 ada0 01ac 1444 e200	...T.........D..
+0x0050	 000d 0054 0009 0004 ada0 07ac 1444 e200	...T.........D..
 0x0060	 0a00 1e00 6c00 0400 0000 0300 2c00 0102	....l.......,...
-0x0070	 000b 000d 0054 0009 0004 ada0 01ac 1444	.....T.........D
+0x0070	 000b 000d 0054 0009 0004 ada0 07ac 1444	.....T.........D
 0x0080	 e200 0a00 1e00 6c00 0400 0000 0600 2c00	......l.......,.
-0x0090	 0102 000b 000d 0054 0009 0002 20e0 01ac	.......T........
-0x00a0	 1444 e100 e500 190e 0100 0000 0000 0000	.D..............
-0x00b0	 00f8 22fb d18a 93f2 30f7 fff0 0300 0000	..".....0.......
+0x0090	 0102 000b 000d 0054 0009 0002 2100 07ac	.......T....!...
+0x00a0	 1444 e1                                	.D.
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:29:345 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50252 (29)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
-Sequence Number: 0x2A6801 (2779137)
+<<<<OUTBOUND  17:12:15:864 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50287 (29)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x237F01 (2326273)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -909,14 +909,14 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2135 0019 0090 0000 0000 45f4 2a68 010a	!5........E.*h..
+0x0000	 2135 0019 00a4 0000 0000 2972 237f 010a	!5........)r#...
 0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:29:348 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:50007 to 172.20.69.232:8805 (33)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_REPORT_REQUEST (0x38)
-Sequence Number: 0x543E00 (5520896)
+<<<<OUTBOUND  17:12:15:867 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:50049 to 172.20.69.232:8805 (33)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_REPORT_REQUEST (0x38)
+Sequence Number: 0x5A3E00 (5914112)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -934,15 +934,15 @@ INFORMATION ELEMENTS
                 EXIT CODE: 0
 
 PDU HEX DUMP
-0x0000	 2138 001d 0090 0000 0000 45f4 543e 000a	!8........E.T>..
+0x0000	 2138 001d 00a4 0000 0000 2972 5a3e 000a	!8........)rZ>..
 0x0010	 78da 6350 6760 6260 6478 06c4 0005 4101	x.cPg`b`dx....A.
 0x0020	 12                                     	.
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:29:350 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.68.228:50007 (21)
-SEID: 0x0004000000002567, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
-Sequence Number: 0x543E00 (5520896)
+INBOUND>>>>>  17:12:15:868 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.68.228:50049 (21)
+SEID: 0x001C000000002568, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
+Sequence Number: 0x5A3E00 (5914112)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -958,14 +958,14 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2139 0011 0004 0000 0000 2567 543e 0002	!9........%gT>..
+0x0000	 2139 0011 001c 0000 0000 2568 5a3e 0002	!9........%hZ>..
 0x0010	 0013 0001 01                           	.....
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:29:372 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50252 to 172.20.68.228:8805 (65)
-SEID: 0x0004000000002567, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
-Sequence Number: 0x2A9302 (2790146)
+INBOUND>>>>>  17:12:15:890 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50287 to 172.20.68.228:8805 (65)
+SEID: 0x001C000000002568, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x23A202 (2335234)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -999,23 +999,23 @@ INFORMATION ELEMENTS
                         OUTER HDR CREATION: 
                             Value: 
                                 DESC: GTP-U/UDP/IPv4 (0)
-                                TEID: 0x20010B2E
+                                TEID: 0x20010F02
                                 IPv4 ADDR: 172.21.21.249
 
 
 
 PDU HEX DUMP
-0x0000	 2134 003d 0004 0000 0000 2567 2a93 0202	!4.=......%g*...
+0x0000	 2134 003d 001c 0000 0000 2568 23a2 0202	!4.=......%h#...
 0x0010	 0009 000b 0038 0002 0006 005f 0001 0000	.....8....._....
 0x0020	 0a00 1e00 6c00 0400 0000 0500 2c00 0102	....l.......,...
-0x0030	 000b 000d 0054 0009 0020 010b 2eac 1515	.....T..........
+0x0030	 000b 000d 0054 0009 0020 010f 02ac 1515	.....T..........
 0x0040	 f9                                     	.
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:29:372 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50252 (29)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
-Sequence Number: 0x2A9302 (2790146)
+<<<<OUTBOUND  17:12:15:890 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50287 (29)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x23A202 (2335234)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1031,14 +1031,14 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2135 0019 0090 0000 0000 45f4 2a93 020a	!5........E.*...
+0x0000	 2135 0019 00a4 0000 0000 2972 23a2 020a	!5........)r#...
 0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:30:256 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:50007 to 172.20.69.232:8805 (35)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_REPORT_REQUEST (0x38)
-Sequence Number: 0x544001 (5521409)
+<<<<OUTBOUND  17:12:16:834 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:50049 to 172.20.69.232:8805 (35)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_REPORT_REQUEST (0x38)
+Sequence Number: 0x4E3301 (5124865)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1056,15 +1056,15 @@ INFORMATION ELEMENTS
                 EXIT CODE: 28
 
 PDU HEX DUMP
-0x0000	 2138 001f 0090 0000 0000 45f4 5440 010a	!8........E.T@..
+0x0000	 2138 001f 00a4 0000 0000 2972 4e33 010a	!8........)rN3..
 0x0010	 78da 6350 6760 6260 6478 c6c0 2803 0005	x.cPg`b`dx..(...
 0x0020	 5d01 2e                                	]..
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:30:257 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.68.228:50007 (21)
-SEID: 0x0004000000002567, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
-Sequence Number: 0x544001 (5521409)
+INBOUND>>>>>  17:12:16:835 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.68.228:50049 (21)
+SEID: 0x001C000000002568, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
+Sequence Number: 0x4E3301 (5124865)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1080,14 +1080,14 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2139 0011 0004 0000 0000 2567 5440 0102	!9........%gT@..
+0x0000	 2139 0011 001c 0000 0000 2568 4e33 0102	!9........%hN3..
 0x0010	 0013 0001 01                           	.....
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:35:432 Eventid:221302(3)
+<<<<OUTBOUND  17:12:18:561 Eventid:221302(3)
 [U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:8805 (16)
 SEID: NA, Message type: SX_HEARTBEAT_REQUEST (0x01)
-Sequence Number: 0x000005 (5)
+Sequence Number: 0x000001 (1)
 PFCP HEADER
         Version number: 1
         SEID flag: Not present
@@ -1102,13 +1102,13 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2001 000c 0000 0501 0060 0004 e21c 9bab	.........`......
+0x0000	 2001 000c 0000 0101 0060 0004 e21c 9bab	.........`......
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:35:449 Eventid:221301(3)
+INBOUND>>>>>  17:12:18:569 Eventid:221301(3)
 [U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.68.228:8805 (16)
 SEID: NA, Message type: SX_HEARTBEAT_RESPONSE (0x02)
-Sequence Number: 0x000005 (5)
+Sequence Number: 0x000001 (1)
 PFCP HEADER
         Version number: 1
         SEID flag: Not present
@@ -1123,13 +1123,13 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2002 000c 0000 0501 0060 0004 e211 8ffe	.........`......
+0x0000	 2002 000c 0000 0101 0060 0004 e211 8ffe	.........`......
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:48:678 Eventid:221301(3)
+INBOUND>>>>>  17:12:18:790 Eventid:221301(3)
 [U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.68.228:8805 (16)
 SEID: NA, Message type: SX_HEARTBEAT_REQUEST (0x01)
-Sequence Number: 0x000005 (5)
+Sequence Number: 0x000001 (1)
 PFCP HEADER
         Version number: 1
         SEID flag: Not present
@@ -1144,13 +1144,13 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2001 000c 0000 0501 0060 0004 e211 8ffe	.........`......
+0x0000	 2001 000c 0000 0101 0060 0004 e211 8ffe	.........`......
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:48:679 Eventid:221302(3)
+<<<<OUTBOUND  17:12:18:791 Eventid:221302(3)
 [U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:8805 (16)
 SEID: NA, Message type: SX_HEARTBEAT_RESPONSE (0x02)
-Sequence Number: 0x000005 (5)
+Sequence Number: 0x000001 (1)
 PFCP HEADER
         Version number: 1
         SEID flag: Not present
@@ -1165,13 +1165,13 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2002 000c 0000 0501 0060 0004 e21c 9bab	.........`......
+0x0000	 2002 000c 0000 0101 0060 0004 e21c 9bab	.........`......
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:53:458 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50252 to 172.20.68.228:8805 (118)
-SEID: 0x0004000000002567, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
-Sequence Number: 0x2A5303 (2773763)
+INBOUND>>>>>  17:12:39:920 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50287 to 172.20.68.228:8805 (118)
+SEID: 0x001C000000002568, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x238303 (2327299)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1255,7 +1255,7 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2134 0072 0004 0000 0000 2567 2a53 0302	!4.r......%g*S..
+0x0000	 2134 0072 001c 0000 0000 2568 2383 0302	!4.r......%h#...
 0x0010	 000a 000d 006c 0004 0000 0005 002c 0001	.....l.......,..
 0x0020	 0100 0a00 0d00 6c00 0400 0000 0600 2c00	......l.......,.
 0x0030	 0101 000a 000d 006c 0004 0000 0003 002c	.......l.......,
@@ -1265,10 +1265,10 @@ PDU HEX DUMP
 0x0070	 0100 2c00 0101                         	..,...
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:53:458 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50252 (29)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
-Sequence Number: 0x2A5303 (2773763)
+<<<<OUTBOUND  17:12:39:920 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50287 (29)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x238303 (2327299)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1284,14 +1284,14 @@ INFORMATION ELEMENTS
 
 
 PDU HEX DUMP
-0x0000	 2135 0019 0090 0000 0000 45f4 2a53 030a	!5........E.*S..
+0x0000	 2135 0019 00a4 0000 0000 2972 2383 030a	!5........)r#...
 0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
 
 Friday March 27 2020
-INBOUND>>>>>  12:48:53:470 Eventid:221301(3)
-[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50252 to 172.20.68.228:8805 (16)
-SEID: 0x0004000000002567, Message type: SX_SESSION_DELETION_REQUEST (0x36)
-Sequence Number: 0x2A4B04 (2771716)
+INBOUND>>>>>  17:12:39:941 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50287 to 172.20.68.228:8805 (16)
+SEID: 0x001C000000002568, Message type: SX_SESSION_DELETION_REQUEST (0x36)
+Sequence Number: 0x241104 (2363652)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1301,13 +1301,13 @@ PFCP HEADER
         Compression: Not Enabled
 
 PDU HEX DUMP
-0x0000	 2136 000c 0004 0000 0000 2567 2a4b 0402	!6........%g*K..
+0x0000	 2136 000c 001c 0000 0000 2568 2411 0402	!6........%h$...
 
 Friday March 27 2020
-<<<<OUTBOUND  12:48:53:471 Eventid:221302(3)
-[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50252 (97)
-SEID: 0x00900000000045F4, Message type: SX_SESSION_DELETION_RESPONSE (0x37)
-Sequence Number: 0x2A4B04 (2771716)
+<<<<OUTBOUND  17:12:39:942 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.68.228:8805 to 172.20.69.232:50287 (97)
+SEID: 0x00A4000000002972, Message type: SX_SESSION_DELETION_RESPONSE (0x37)
+Sequence Number: 0x241104 (2363652)
 PFCP HEADER
         Version number: 1
         SEID flag: Present
@@ -1330,29 +1330,29 @@ INFORMATION ELEMENTS
             USAGE REPORT TRIGGER: 
                 Termination Report 
             START TIME: 
-                Value: 1585280909
+                Value: 1585296735
             END TIME: 
-                Value: 1585280933
+                Value: 1585296759
             VOLUME MEASUREMENT: 
                 Total Volume: 1184
                 Downlink Volume: 1184
             DURATION MEASUREMENT: 
                 Value: 24
             TIME OF FIRST PACKET: 
-                Value: 1585280926
+                Value: 1585296752
             TIME of LAST PACKET: 
-                Value: 1585280933
+                Value: 1585296759
             PACKET MEASUREMENT: 
                 Total Packet: 8
                 Downlink Packet: 8
 
 
 PDU HEX DUMP
-0x0000	 2137 005d 0090 0000 0000 45f4 2a4b 040a	!7.]......E.*K..
+0x0000	 2137 005d 00a4 0000 0000 2972 2411 040a	!7.]......)r$...
 0x0010	 78da 6310 6660 6464 f067 c860 0864 6069	x.c.f`dd.g.`.d`i
 0x0020	 6060 e004 b258 1818 1818 19ec 1998 1838	``...X.........8
-0x0030	 18bc 1958 e26a cb7b 197c c0f4 5206 2706	...X.j.{.|..R.'.
+0x0030	 18bc 1958 e26a b7c6 33f8 80e9 7206 2706	...X.j..3...r.'.
 0x0040	 4156 0630 6059 00a7 9dc1 5a24 185c c18a	AV.0`Y....Z$.\..
-0x0050	 e631 b841 155f 832b 069a 04a5 0128 2f0e	.1.A._.+.....(/.
-0x0060	 4b                                     	K
+0x0050	 0a18 dca0 8aaf c115 034d 82d2 0035 470e	.........M...5G.
+0x0060	 8b                                     	.
 
