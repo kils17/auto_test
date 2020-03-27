@@ -115,7 +115,7 @@ def do_more(res, dev_obj):
 
     # extract the callids
     for line in (res.split('\n')):
-        words = line.split(' ')
+        words = " ".join(line.split()).split(" ")
         if len(words[0]) > 0:
             if words[0][0] == 'y':
                 callids.append(words[1])
@@ -128,6 +128,27 @@ def do_more(res, dev_obj):
         dev_obj.conn_obj.run_command('show subs user-plane-only callid {0} far full all'.format(callid), write_fp=dev_obj.fp)
         dev_obj.conn_obj.run_command('show subs user-plane-only callid {0} qer full all'.format(callid), write_fp=dev_obj.fp)
         dev_obj.conn_obj.run_command('show subs user-plane-only callid {0} urr full all'.format(callid), write_fp=dev_obj.fp)
+
+
+def do_ping(proc, dev_obj):
+    up_dev = get_dev_obj('up_cli')
+    res = up_dev.conn_obj.run_command("show subs imsi {0}".format(proc.get('imsi')))
+
+    destips = []
+    
+    # extract the destips
+    for line in (res.split('\n')):
+        words = " ".join(line.split()).split(" ")
+        if len(words[0]) > 0:
+            if words[0][0] == 'y':
+                destips.append(words[4])
+
+
+    # run ping command
+    for destip  in destips:
+        cmd = "{0} {1}".format(proc.get('cmd'), destip)
+        print("PING: ", cmd)
+        dev_obj.conn_obj.ping_command(cmd, write_fp=dev_obj.fp)
 
 
 
@@ -167,22 +188,26 @@ def run_test(testfile):
         dev_obj = get_dev_obj(proc.get('host'))
 
 
-        if proc.get('proc_type') == 'show_cli':
-           res =  dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
-           if proc.get('more') == True:
-               # show subs user-plane-only command with callid
-               do_more(res,  dev_obj) 
+        for loop in range(proc.get('loop')):
+            if proc.get('proc_type') == 'show_cli':
+               res =  dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
+               if proc.get('more') == True:
+                   # show subs user-plane-only command with callid
+                   do_more(res,  dev_obj) 
+    
+            elif proc.get('proc_type') == 'sim_cli':
+                dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
+            elif proc.get('proc_type') == 'sim_ctl':
+                dev_obj.conn_obj.run_control(proc.get('cmd'), write_fp=dev_obj.fp)
+            elif proc.get('proc_type') == 'gx_cli':
+                dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
+            elif proc.get('proc_type') == 'mon_pro':
+                dev_obj.conn_obj.mon_command(proc.get('cmd'), write_fp=dev_obj.fp, option=proc.get('option'))
+            elif proc.get('proc_type') == 'ping_cli':
+                do_ping(proc, dev_obj)
 
-        elif proc.get('proc_type') == 'sim_cli':
-            dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
-        elif proc.get('proc_type') == 'sim_ctl':
-            dev_obj.conn_obj.run_control(proc.get('cmd'), write_fp=dev_obj.fp)
-        elif proc.get('proc_type') == 'gx_cli':
-            dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
-        elif proc.get('proc_type') == 'mon_pro':
-            dev_obj.conn_obj.mon_command(proc.get('cmd'), write_fp=dev_obj.fp, option=proc.get('option'))
-
-        time.sleep(proc.get('wait'))
+            time.sleep(proc.get('wait'))
+    
 
 
 

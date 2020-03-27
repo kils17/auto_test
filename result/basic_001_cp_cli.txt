@@ -1,0 +1,60 @@
+[local]CISCO_SMF_7F# show subs imsi 450081030101806
+Friday March 27 12:46:42 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+#TCNAT 0a7f6108 450081030101806 12110030101854@cisco17.com fd02:0:5017:4000:0:a:7f61:801 00h00m10s
+
+Total subscribers matching specified criteria: 1

@@ -1,0 +1,10 @@
+sim2:~# ping6 -c 100 -i 1 -s 100 fd02:0:5017:4000:0:a:7f61:801
+PING fd02:0:5017:4000:0:a:7f61:801(fd02:0:5017:4000:0:a:7f61:801) 100 data bytes
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=1 ttl=64 time=1.85 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=2 ttl=64 time=1.18 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=3 ttl=64 time=1.22 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=4 ttl=64 time=2.38 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=5 ttl=64 time=1.08 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=6 ttl=64 time=1.10 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=7 ttl=64 time=1.10 ms
+108 bytes from fd02:0:5017:4000:0:a:7f61:801: icmp_seq=8 ttl=64 time=1.05 ms

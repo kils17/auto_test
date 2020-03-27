@@ -169,6 +169,34 @@ class ConnectionMixin(abc.ABC):
         """
         return self.connection.add_prompt(prompt)
 
+    def ping_command(self, command, prompt_str=None, timeout=120, wait_for_prompt=True, write_fp=None):
+        """
+        This method will call the low level run_command method depending on the
+        connection.  The return of the low level method is returned to the caller.
+
+        :param str command: Command to run.
+        :param str prompt_str: This is the prompt string to use for the command.
+                               If one is not passed in then the method will use the current prompt string.
+                               This is used to override the current prompt string
+        :param int timeout: Timeout in seconds to wait for the command to complete. Default is 10
+        :param bool wait_for_prompt: Default is True, if we need to wait for the prompt
+
+        :return: Returns the output from the command returned by the Host
+        :rtype: str
+
+        **Example**
+
+        """
+        try:
+            ret = self.connection.ping_command(command, prompt_str, timeout, wait_for_prompt, write_fp)
+        except (eme.EngTimeoutError, TimeoutError, EOFError) as err:
+            logger.warning("Command timed out ({0}), reconnecting ...".format(err))
+            self.reconnect(attempts=3, timeout=timeout)
+            # raise to the upper layer to signal a timeout occurred
+            raise eme.EngConnectionError("Timeout: {}".format(err))
+
+        return ret
+
     def mon_command(self, command, prompt_str=None, timeout=120, wait_for_prompt=True, write_fp=None, option='+'):
         """
         This method will call the low level run_command method depending on the

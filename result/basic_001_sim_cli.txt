@@ -1,0 +1,11 @@
+sim1:~# cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_no_urlcc.pySTARENT SAE Sim
+[2020-03-27 21:12:05,547] [MME-Egress-EGTPC_Node DEBUG] Listening on ctrl<172.21.21.245:2123>, src<172.21.21.245:9999>
+[2020-03-27 21:12:05,547] [MME-Egress-EGTPC_Node DEBUG] Starting the thread
+[2020-03-27 21:12:05,548] [ENODEB-S1U-172.21.21.248_Node DEBUG] Listening on data<172.21.21.248:2152>
+[2020-03-27 21:12:05,548] [ENODEB-S1U-172.21.21.248_Node DEBUG] Starting the thread
+[2020-03-27 21:12:05,548] [ENODEB-S1U-172.21.21.249_Node DEBUG] Listening on data<172.21.21.249:2152>
+[2020-03-27 21:12:05,548] [ENODEB-S1U-172.21.21.249_Node DEBUG] Starting the thread
+State Transition: SAE_SIM_STATE_NONE -> SAE_SIM_STATE_STARTUP
+
+[0;34msim1:~# mme.clearSub()
+[0;34msim1:~# d[[1;34m2[0;34m]: [0m

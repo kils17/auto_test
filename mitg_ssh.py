@@ -14,6 +14,29 @@ logger = logging.getLogger(__name__)
 
 stop_thread = False
 
+def th_ping(connection_id, command, prompt_str='', write_fp=None):
+    global stop_thread
+
+#    print("KKK: th_monpro 1, stop({0})".format(stop_thread))
+    print("thread th_monpro() started")
+
+    if write_fp:
+        #write_fp.write('{0}# {1}'.format(prompt_str, command))
+        write_fp.write('{0}# '.format(prompt_str))
+
+    # send command
+    connection_id.sendline(command)
+
+    # write output, until test end, how to send 'q'
+    while True:
+        try:
+            str = connection_id.read_nonblocking(size=50, timeout=1).decode(errors='ignore').replace("\r", "")
+            write_fp.write(str)
+        except pexpect.TIMEOUT:
+            if stop_thread == True:
+                print("thread th_monpro() terminated")
+                break
+            
 def th_monpro(connection_id, command, prompt_str='', write_fp=None, option='+'):
     global stop_thread
 
@@ -634,6 +657,59 @@ class SshController:
             raise eme.EngConnectionError("Unable to re-connect after {0} attempts".format(attempts))
         else:
             return new_prompt
+
+    def ping_command(self, command, prompt_str=None, timeout=120, wait_for_prompt=True, write_fp=None):
+        """
+        Runs a command,  expects the prompt and returns everything up to
+        the prompt.
+
+        :param str command: list of commands (strings) to be sent over the connection
+        :param str prompt_str: Expected prompt.  If arg is not passed the command will use the configured one
+        :param int timeout: Timeout in seconds of the command to complete
+        :param bool wait_for_prompt: Default is True, if we need to wait for the prompt
+
+        :return: str res: Command output, excluding prompt string
+        :rtype: str
+        :raises eme.EngConnectionError: If connection is not up
+        :raises eme.EngOutputError: command is empty
+
+        """
+        if not self.state == "Connected":
+            raise eme.EngConnectionError("Connection not in Connected state, "
+                                         "state is: {0}, command: {1}".format(self.state, command))
+        if not command:
+            raise eme.EngOutputError("Command list is empty ({0})".format(command))
+        if not self.connection_id:
+            raise eme.EngConnectionError(conn_id=self.connection_id)
+        if not prompt_str:
+            prompt_str = self.initial_prompt
+
+        logger.debug("Sending command '{0}', timeout={1}, prompt={2}".format(command, timeout, self.prompt_list))
+
+        if not wait_for_prompt:
+            logger.warning("Do not wait for prompt, return after timeout {0}".format(timeout))
+            time.sleep(timeout)
+            return
+
+        # Get command output. Output is of the form: echoed command, output of command (if any), prompt.
+        # The prompt is removed by _expect, which leaves before/after strings.
+        # Strip off the echoed command, so all that's left is the command output (if any).
+
+        #print("KKK: ping_command 1")
+
+        global stop_thread
+        stop_thread = False
+
+        # strt thread for mon pro
+        t = threading.Thread(target=th_ping, args=(self.connection_id, command, prompt_str, write_fp))
+        t.setDaemon(True)
+        t.start()
+        #t.join()
+
+
+        #print("KKK: ping_command 2")
+        
+        return True
 
     def mon_command(self, command, prompt_str=None, timeout=120, wait_for_prompt=True, write_fp=None, option='+'):
         """
