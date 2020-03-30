@@ -1,10 +1,10 @@
 sim1:~# cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_2pdn.pySTARENT SAE Sim
-[2020-03-28 01:11:28,736] [MME-Egress-EGTPC_Node DEBUG] Listening on ctrl<172.21.21.240:2123>, src<172.21.21.240:10000>
-[2020-03-28 01:11:28,736] [MME-Egress-EGTPC_Node DEBUG] Starting the thread
-[2020-03-28 01:11:28,736] [ENODEB-S1U-172.21.21.246_Node DEBUG] Listening on data<172.21.21.246:2152>
-[2020-03-28 01:11:28,737] [ENODEB-S1U-172.21.21.246_Node DEBUG] Starting the thread
-[2020-03-28 01:11:28,737] [ENODEB-S1U-172.21.21.247_Node DEBUG] Listening on data<172.21.21.247:2152>
-[2020-03-28 01:11:28,737] [ENODEB-S1U-172.21.21.247_Node DEBUG] Starting the thread
+[2020-03-31 07:09:24,776] [MME-Egress-EGTPC_Node DEBUG] Listening on ctrl<172.21.21.240:2123>, src<172.21.21.240:10000>
+[2020-03-31 07:09:24,776] [MME-Egress-EGTPC_Node DEBUG] Starting the thread
+[2020-03-31 07:09:24,777] [ENODEB-S1U-172.21.21.246_Node DEBUG] Listening on data<172.21.21.246:2152>
+[2020-03-31 07:09:24,777] [ENODEB-S1U-172.21.21.246_Node DEBUG] Starting the thread
+[2020-03-31 07:09:24,778] [ENODEB-S1U-172.21.21.247_Node DEBUG] Listening on data<172.21.21.247:2152>
+[2020-03-31 07:09:24,778] [ENODEB-S1U-172.21.21.247_Node DEBUG] Starting the thread
 State Transition: SAE_SIM_STATE_NONE -> SAE_SIM_STATE_STARTUP
 
 [0;34msim1:~# mme.s1ReestablishTrgr(user_sess, enodeb_addr="172.21.21.247")

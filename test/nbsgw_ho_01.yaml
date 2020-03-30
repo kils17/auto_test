@@ -69,7 +69,7 @@ test_procedure:
   host: up_cli
   cmd: show subs imsi 450081030101806
   more: True
-#- proc_type: gx_cli
+#- proc_type: rar_cli
 #  wait: 10
 #  loop: 1
 #  host: gx_cli
@@ -80,6 +80,7 @@ test_procedure:
   host: ping_cli
   cmd: ping6
   imsi: 450081030101806
+  ebi: 5
   option: count 15 interval 1 packet-size 64
 - proc_type: show_cli
   wait: 1

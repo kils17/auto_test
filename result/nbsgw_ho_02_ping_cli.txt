@@ -1,22 +1,22 @@
-TB_7F_N9508_Core1# ping6 fd02:0:5001:2052::ab05:3e01 count 15 interval 1 packet- size 64
-PING6 fd02:0:5001:2052::ab05:3e01 (fd02:0:5001:2052::ab05:3e01): 64 data bytes
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=0 time=2.983 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=1 time=2.317 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=2 time=2.646 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=3 time=2.708 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=4 time=2.497 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=5 time=2.405 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=6 time=2.891 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=7 time=2.637 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=8 time=2.436 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=9 time=3.837 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=10 time=2.899 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=11 time=2.348 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=12 time=2.646 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=13 time=2.533 ms
-72 bytes from fd02:0:5001:2052::ab05:3e01: icmp_seq=14 time=2.403 ms
+TB_7F_N9508_Core1# ping6 fd02:0:5001:2053:0:a:d7e7:1601 count 15 interval 1 pack et-size 64
+PING6 fd02:0:5001:2053:0:a:d7e7:1601 (fd02:0:5001:2053:0:a:d7e7:1601): 64 data bytes
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=0 time=2.905 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=1 time=2.47 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=2 time=2.461 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=3 time=2.555 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=4 time=2.45 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=5 time=2.121 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=6 time=2.521 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=7 time=2.541 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=8 time=2.44 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=9 time=2.44 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=10 time=2.408 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=11 time=2.673 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=12 time=2.66 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=13 time=2.397 ms
+72 bytes from fd02:0:5001:2053:0:a:d7e7:1601: icmp_seq=14 time=2.413 ms
 
---- fd02:0:5001:2052::ab05:3e01 ping6 statistics ---
+--- fd02:0:5001:2053:0:a:d7e7:1601 ping6 statistics ---
 15 packets transmitted, 15 packets received, 0.00% packet loss
-round-trip min/avg/max = 2.317/2.679/3.837 ms
+round-trip min/avg/max = 2.121/2.496/2.905 ms
 TB_7F_N9508_Core1# 

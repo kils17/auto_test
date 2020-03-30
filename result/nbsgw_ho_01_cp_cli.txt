@@ -1,5 +1,5 @@
 [local]CISCO_SMF_7F# show ver
-Friday March 27 16:48:02 KST 2020
+Monday March 30 22:46:07 KST 2020
 Active Software:
   Image Version:                  21.17.1
   Image Build Number:             74081
@@ -8,7 +8,7 @@ Active Software:
   Boot Image:                     /flash/qvpc-di-21.17.1.bin
   Source Commit ID:               f56b41e56962db68420ef4edbc04bc84cb23cdac
 [local]CISCO_SMF_7F# show subs imsi 450081030101806
-Friday March 27 16:48:04 KST 2020
+Monday March 30 22:46:09 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -64,21 +64,21 @@ Friday March 27 16:48:04 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-#TCNAT 065f738a 450081030101806 12110030101804@cisco3.com fd02:0:5001:2052:0:6:5f73:8a01 00h00m12s
+#TCNAT 081e1388 450081030101806 12110030101804@cisco3.com fd02:0:5001:2053:0:8:1e13:8801 00h00m13s
 
 Total subscribers matching specified criteria: 1
 [local]CISCO_SMF_7F# show active-charging session full imsi 450081030101806
-Friday March 27 16:48:07 KST 2020
+Monday March 30 22:46:11 KST 2020
 
-  Session-ID:               22:4398789  Username: 12110030101804@cisco3.com
-  Callid:                     065f738a  IMSI/MSID:          450081030101806
+  Session-ID:               28:3668808  Username: 12110030101804@cisco3.com
+  Callid:                     081e1388  IMSI/MSID:          450081030101806
   MSISDN:                                                    12110030101804
-  SessMgr Instance:                 22  SessMgr Card/Cpu:               4/0
-  Client-IP:                                             fd02:0:5001:2052::
+  SessMgr Instance:                 28  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5001:2053::
   NAS-IP:                                                     172.20.69.231
   Access-NAS-IP(FA):                                                       
   NAS-PORT:                         0   NSAPI:                            5
-  Acct-Session-ID:                                         AC1445E3025F9086
+  Acct-Session-ID:                                         AC1445E3031B8975
   NAS-ID:                                                               n/a
   Access-NAS-ID(FA):                                                    n/a
   3GPP2-BSID:                                                           n/a
@@ -114,9 +114,9 @@ Friday March 27 16:48:07 KST 2020
   Uplink GBR (bps):                  0  Downlink GBR (bps):               0
   Uplink Burst (bytes):            n/a  Downlink Burst (bytes):         n/a
   Dropped Uplink Pkts:             n/a  Dropped Downlink Pkts:          n/a
-  Creation Time:                          Friday March 27 07:47:52 GMT 2020
+  Creation Time:                          Monday March 30 13:45:57 GMT 2020
   Last Pkt Time:                                                           
-  Duration:                                                     00h:00m:17s
+  Duration:                                                     00h:00m:16s
   Rule Base name:                                           IMS-DF-POSTPAID
   URL-Redir First-Request-Only:                                         n/a
   Bandwidth Policy:                                                     n/a
@@ -184,7 +184,7 @@ Predefined Firewall Rules Enabled List: n/a
 
 Total acs sessions matching specified criteria: 1
 [local]CISCO_SMF_7F# show subs imsi 450081030101806
-Friday March 27 16:48:20 KST 2020
+Monday March 30 22:46:25 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -240,21 +240,21 @@ Friday March 27 16:48:20 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-#TCNAT 065f738a 450081030101806 12110030101804@cisco3.com fd02:0:5001:2052:0:6:5f73:8a01 00h00m28s
+#TCNAT 081e1388 450081030101806 12110030101804@cisco3.com fd02:0:5001:2053:0:8:1e13:8801 00h00m29s
 
 Total subscribers matching specified criteria: 1
 [local]CISCO_SMF_7F# show active-charging session full imsi 450081030101806
-Friday March 27 16:48:22 KST 2020
+Monday March 30 22:46:27 KST 2020
 
-  Session-ID:               22:4398789  Username: 12110030101804@cisco3.com
-  Callid:                     065f738a  IMSI/MSID:          450081030101806
+  Session-ID:               28:3668808  Username: 12110030101804@cisco3.com
+  Callid:                     081e1388  IMSI/MSID:          450081030101806
   MSISDN:                                                    12110030101804
-  SessMgr Instance:                 22  SessMgr Card/Cpu:               4/0
-  Client-IP:                                             fd02:0:5001:2052::
+  SessMgr Instance:                 28  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5001:2053::
   NAS-IP:                                                     172.20.69.231
   Access-NAS-IP(FA):                                                       
   NAS-PORT:                         0   NSAPI:                            5
-  Acct-Session-ID:                                         AC1445E3025F9086
+  Acct-Session-ID:                                         AC1445E3031B8975
   NAS-ID:                                                               n/a
   Access-NAS-ID(FA):                                                    n/a
   3GPP2-BSID:                                                           n/a
@@ -290,7 +290,7 @@ Friday March 27 16:48:22 KST 2020
   Uplink GBR (bps):                  0  Downlink GBR (bps):               0
   Uplink Burst (bytes):            n/a  Downlink Burst (bytes):         n/a
   Dropped Uplink Pkts:             n/a  Dropped Downlink Pkts:          n/a
-  Creation Time:                          Friday March 27 07:47:52 GMT 2020
+  Creation Time:                          Monday March 30 13:45:57 GMT 2020
   Last Pkt Time:                                                           
   Duration:                                                     00h:00m:31s
   Rule Base name:                                           IMS-DF-POSTPAID
@@ -360,7 +360,7 @@ Predefined Firewall Rules Enabled List: n/a
 
 Total acs sessions matching specified criteria: 1
 [local]CISCO_SMF_7F# show subs imsi 450081030101806
-Friday March 27 16:48:31 KST 2020
+Monday March 30 22:46:36 KST 2020
 +-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
 |     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
 |             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
@@ -416,21 +416,21 @@ Friday March 27 16:48:31 KST 2020
 ||||||
 vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
 ------ -------- --------------- ---------------------- ----------------------------- ---------
-#TCNAT 065f738a 450081030101806 12110030101804@cisco3.com fd02:0:5001:2052:0:6:5f73:8a01 00h00m38s
+#TCNAT 081e1388 450081030101806 12110030101804@cisco3.com fd02:0:5001:2053:0:8:1e13:8801 00h00m40s
 
 Total subscribers matching specified criteria: 1
 [local]CISCO_SMF_7F# show active-charging session full imsi 450081030101806
-Friday March 27 16:48:32 KST 2020
+Monday March 30 22:46:37 KST 2020
 
-  Session-ID:               22:4398789  Username: 12110030101804@cisco3.com
-  Callid:                     065f738a  IMSI/MSID:          450081030101806
+  Session-ID:               28:3668808  Username: 12110030101804@cisco3.com
+  Callid:                     081e1388  IMSI/MSID:          450081030101806
   MSISDN:                                                    12110030101804
-  SessMgr Instance:                 22  SessMgr Card/Cpu:               4/0
-  Client-IP:                                             fd02:0:5001:2052::
+  SessMgr Instance:                 28  SessMgr Card/Cpu:               3/0
+  Client-IP:                                             fd02:0:5001:2053::
   NAS-IP:                                                     172.20.69.231
   Access-NAS-IP(FA):                                                       
   NAS-PORT:                         0   NSAPI:                            5
-  Acct-Session-ID:                                         AC1445E3025F9086
+  Acct-Session-ID:                                         AC1445E3031B8975
   NAS-ID:                                                               n/a
   Access-NAS-ID(FA):                                                    n/a
   3GPP2-BSID:                                                           n/a
@@ -466,7 +466,7 @@ Friday March 27 16:48:32 KST 2020
   Uplink GBR (bps):                  0  Downlink GBR (bps):               0
   Uplink Burst (bytes):            n/a  Downlink Burst (bytes):         n/a
   Dropped Uplink Pkts:             n/a  Dropped Downlink Pkts:          n/a
-  Creation Time:                          Friday March 27 07:47:52 GMT 2020
+  Creation Time:                          Monday March 30 13:45:57 GMT 2020
   Last Pkt Time:                                                           
   Duration:                                                     00h:00m:41s
   Rule Base name:                                           IMS-DF-POSTPAID

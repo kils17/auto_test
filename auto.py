@@ -131,8 +131,8 @@ def do_more(res, dev_obj):
 
 
 def do_ping(proc, dev_obj):
-    up_dev = get_dev_obj('up_cli')
-    res = up_dev.conn_obj.run_command("show subs imsi {0}".format(proc.get('imsi')))
+    cp_dev = get_dev_obj('cp_cli')
+    res = cp_dev.conn_obj.run_command("show subs imsi {0} ebi {1}".format(proc.get('imsi'), proc.get('ebi')))
 
     destips = []
     
@@ -140,40 +140,43 @@ def do_ping(proc, dev_obj):
     for line in (res.split('\n')):
         words = " ".join(line.split()).split(" ")
         if len(words[0]) > 0:
-            if words[0][0] == 'y':
+            if words[0][0] == '#':
                 destips.append(words[4])
 
-
-    # run ping command
     for destip  in destips:
         cmd = "{0} {1} {2}".format(proc.get('cmd'), destip, proc.get('option'))
         print("do_ping(): ", cmd)
         dev_obj.conn_obj.ping_command(cmd, write_fp=dev_obj.fp)
+        break
 
 
 def do_rar(proc, dev_obj):
-    up_dev = get_dev_obj('up_cli')
-    res = up_dev.conn_obj.run_command("show subs imsi {0}".format(proc.get('imsi')))
 
-    destips = []
+    if proc.get('imsi') == None:
+        dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
 
-    print("RAR: {0}".format(proc.get('cmd')))
+    else:
+        up_dev = get_dev_obj('up_cli')
+        res = up_dev.conn_obj.run_command("show subs imsi {0}".format(proc.get('imsi')))
     
-    # extract the destips
-    for line in (res.split('\n')):
-        words = " ".join(line.split()).split(" ")
-        if len(words[0]) > 0:
-            if words[0][0] == 'y':
-                print("RAR: {0}".format(words))
-                destips.append(words[4])
-
-
-
-    # run send_rar.sh with ping command
-    cmd = "{0} {1}".format(proc.get('cmd'), destips[0])
-    print("do_rar(): ", cmd)
-    dev_obj.conn_obj.run_command(cmd, write_fp=dev_obj.fp)
-
+        destips = []
+    
+        print("RAR: {0}".format(proc.get('cmd')))
+        
+        # extract the destips
+        for line in (res.split('\n')):
+            words = " ".join(line.split()).split(" ")
+            if len(words[0]) > 0:
+                if words[0][0] == 'y':
+                    print("RAR: {0}".format(words))
+                    destips.append(words[4])
+    
+    
+    
+        # run send_rar.sh with ping command
+        cmd = "{0} {1}".format(proc.get('cmd'), destips[0])
+        print("do_rar(): ", cmd)
+        dev_obj.conn_obj.run_command(cmd, write_fp=dev_obj.fp)
 
 
 def run_test(testfile):

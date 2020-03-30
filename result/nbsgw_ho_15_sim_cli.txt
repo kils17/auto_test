@@ -1,0 +1,528 @@
+sim1:~# cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_no_dbresp.pySTARENT SAE Sim
+[2020-03-31 07:27:18,392] [MME-Egress-EGTPC_Node DEBUG] Listening on ctrl<172.21.21.240:2123>, src<172.21.21.240:10000>
+[2020-03-31 07:27:18,392] [MME-Egress-EGTPC_Node DEBUG] Starting the thread
+[2020-03-31 07:27:18,393] [ENODEB-S1U-172.21.21.240_Node DEBUG] Listening on data<172.21.21.240:2152>
+[2020-03-31 07:27:18,393] [ENODEB-S1U-172.21.21.240_Node DEBUG] Starting the thread
+State Transition: SAE_SIM_STATE_NONE -> SAE_SIM_STATE_STARTUP
+[2020-03-31 07:27:18,404] [MME-Egress-EGTPC_Node DEBUG] Sending from <172.21.21.240:10000> to <172.20.69.225:2123>
+[2020-03-31 07:27:18,404] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: CREATE_SESSION_REQ
+                Message Length: 221
+                          TEID: 0x0
+               Sequence Number: 0x0
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    IMSI(1, 0): 450081030101806
+                 MSISDN(76, 0): 12110030101804
+                    MEI(75, 0): 1122334455667788
+                    ULI(86, 0): Location Type = TAI , MCC = 121, MNC = 100, TAC = 1234
+                SERV_NW(83, 0): MCC : 450   MNC : 08
+               RAT_TYPE(82, 0): EUTRAN
+                  FTEID(87, 0): MME Control TEID = 0x10010001
+                              : MME Control Address = 172.21.21.240
+                  FTEID(87, 1): PGW Control TEID = 0x0
+                              : PGW Control Address (GTP) = 172.20.69.227
+                    APN(71, 0): cisco3.com
+              SEL_MODE(128, 0): Selected by MS, Subscription unverified
+               PDN_TYPE(99, 0): IPv4v6
+                    PAA(79, 0): PDN-Type: IPv4v6
+                              : PDN-Address: ::
+                              : PDN-Address: 0.0.0.0
+             APN_RESTR(127, 0): 0
+                   AMBR(72, 0): ambr uplink   : 0x12345678
+                              : ambr downlink : 0x87654321
+                    PCO(78, 0): Config Proto: PPP
+                              : Additional Param: P-CSCF Address Request
+                              : Additional Param: Link MTU Request Flag
+            BEARER_CTXT(93, 0):      EBI(73, 0): 5
+                              : BEARER_QOS(80, 0): ARP = 8 QCI = 80, maxUplk = 0 kbps, maxDnlk = 0 kbps, guaUplk = 0 kbps, guaDnlk = 0 kbps
+                RECOVERY(3, 0): 10
+              CHRG_CHAR(95, 0): 0x1234
+         UP_FN_SEL_IND(202, 0): DCNR = 1 
+Hex dump:
+0000   48 20 00 DD 00 00 00 00 00 00 00 00 01 00 08 00    H ..............
+0010   54 00 18 30 10 10 08 F6 4C 00 07 00 21 11 00 03    T..0....L...!...
+0020   01 81 40 4B 00 08 00 11 22 33 44 55 66 77 88 56    ..@K...."3DUfw.V
+0030   00 06 00 08 21 01 01 12 34 53 00 03 00 54 F0 80    ....!...4S...T..
+0040   52 00 01 00 06 57 00 09 00 8A 10 01 00 01 AC 15    R....W..........
+0050   15 F0 57 00 09 01 87 00 00 00 00 AC 14 45 E3 47    ..W..........E.G
+0060   00 0B 00 06 63 69 73 63 6F 33 03 63 6F 6D 80 00    ....cisco3.com..
+0070   01 00 FD 63 00 01 00 03 4F 00 16 00 03 00 00 00    ...c....O.......
+0080   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+0090   00 00 7F 00 01 00 00 48 00 08 00 12 34 56 78 87    .......H....4Vx.
+00A0   65 43 21 4E 00 07 00 80 00 01 00 00 10 00 5D 00    eC!N..........].
+00B0   1F 00 49 00 01 00 05 50 00 16 00 08 50 00 00 00    ..I....P....P...
+00C0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+00D0   00 03 00 01 00 0A 5F 00 02 00 12 34 CA 00 01 00    ......_....4....
+00E0   01                                                 .
+
+[2020-03-31 07:27:18,526] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:2123> to <172.21.21.240:10000>.  Message Length=184 180
+[2020-03-31 07:27:18,526] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: CREATE_SESSION_RSP
+                Message Length: 180
+                          TEID: 0x10010001
+               Sequence Number: 0x0
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                   CAUSE(2, 0): NEW_PDN_TYPE_NETWORK_PREFERENCE
+                              :  oi = 0
+                              :  pce = 0
+                              :  bce = 0
+                  FTEID(87, 0): S11/S4 SGW Control TEID = 0x8B0AC017
+                              : S11/S4 SGW Control Address = 172.20.69.225
+                  FTEID(87, 1): PGW Control TEID = 0x80E9C017
+                              : PGW Control Address (GTP) = 172.20.69.227
+                    PAA(79, 0): PDN-Type: IPv6
+                              : PDN-Address: fd02:0:5001:2053:0:6:a174:4b01
+             APN_RESTR(127, 0): 0
+                   AMBR(72, 0): ambr uplink   : 0x158412
+                              : ambr downlink : 0x158412
+                    PCO(78, 0): Config Proto: PPP
+                              : Additional Param: P-CSCF Address:2001:e60:efed:2100:192:168:0:2
+                              : Additional Param: Link MTU : 1500
+            BEARER_CTXT(93, 0):      EBI(73, 0): 5
+                              :     CAUSE(2, 0): REQUEST_ACCEPTED
+                              :                :  oi = 0
+                              :                :  pce = 0
+                              :                :  bce = 0
+                              :    FTEID(87, 0): S1 SGW Data TEID = 0x22A2002
+                              :                : S1 SGW Data Address = 172.20.68.227
+                              :    FTEID(87, 2): PGW Data TEID = 0x229E002
+                              :                : PGW Data Address = 172.20.68.225
+                              : BEARER_QOS(80, 0): ARP = 120 QCI = 9, maxUplk = 0 kbps, maxDnlk = 0 kbps, guaUplk = 0 kbps, guaDnlk = 0 kbps
+                RECOVERY(3, 0): 43
+Hex dump:
+0000   48 21 00 B4 10 01 00 01 00 00 00 00 02 00 02 00    H!..............
+0010   12 00 57 00 09 00 8B 8B 0A C0 17 AC 14 45 E1 57    ..W..........E.W
+0020   00 09 01 87 80 E9 C0 17 AC 14 45 E3 4F 00 12 00    ..........E.O...
+0030   02 40 FD 02 00 00 50 01 20 53 00 00 00 06 A1 74    .@....P. S.....t
+0040   4B 01 7F 00 01 00 00 48 00 08 00 00 15 84 12 00    K......H........
+0050   15 84 12 4E 00 19 00 80 00 01 10 20 01 0E 60 EF    ...N....... ..`.
+0060   ED 21 00 01 92 01 68 00 00 00 02 00 10 02 05 DC    .!....h.........
+0070   5D 00 3F 00 49 00 01 00 05 02 00 02 00 10 00 57    ].?.I..........W
+0080   00 09 00 81 02 2A 20 02 AC 14 44 E3 57 00 09 02    .....* ...D.W...
+0090   85 02 29 E0 02 AC 14 44 E1 50 00 16 00 78 09 00    ..)....D.P...x..
+00A0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+00B0   00 00 00 03 00 01 00 2B                            .......+
+
+[2020-03-31 07:27:18,526] [MME-Egress-EGTPC_Node DEBUG] acquired lock for CSrsp
+[2020-03-31 07:27:18,527] [MME-Egress DEBUG] Received event CREATE_SESSION_RSP in state ACTIVE_PENDING
+[2020-03-31 07:27:18,546] [MME-Egress-EGTPC_Node DEBUG] Dispatch MBReq to peer node...
+[2020-03-31 07:27:18,547] [MME-Egress-EGTPC_Node DEBUG] Sending from <172.21.21.240:10000> to <172.20.69.225:2123>
+[2020-03-31 07:27:18,547] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: MODIFY_BEARER_REQ
+                Message Length: 30
+                          TEID: 0x8B0AC017
+               Sequence Number: 0x1
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+            BEARER_CTXT(93, 0):      EBI(73, 0): 5
+                              :    FTEID(87, 0): E-NodeB Data TEID = 0x20010287
+                              :                : E-NodeB Data Address = 172.21.21.240
+Hex dump:
+0000   48 22 00 1E 8B 0A C0 17 00 00 01 00 5D 00 12 00    H"..........]...
+0010   49 00 01 00 05 57 00 09 00 80 20 01 02 87 AC 15    I....W.... .....
+0020   15 F0                                              ..
+
+[2020-03-31 07:27:18,550] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:2123> to <172.21.21.240:10000>.  Message Length=46 42
+[2020-03-31 07:27:18,551] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: MODIFY_BEARER_RSP
+                Message Length: 42
+                          TEID: 0x10010001
+               Sequence Number: 0x1
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                   CAUSE(2, 0): REQUEST_ACCEPTED
+                              :  oi = 0
+                              :  pce = 0
+                              :  bce = 0
+            BEARER_CTXT(93, 0):      EBI(73, 0): 5
+                              :     CAUSE(2, 0): REQUEST_ACCEPTED
+                              :                :  oi = 0
+                              :                :  pce = 0
+                              :                :  bce = 0
+                              :    FTEID(87, 0): S1 SGW Data TEID = 0x22A2002
+                              :                : S1 SGW Data Address = 172.20.68.227
+Hex dump:
+0000   48 23 00 2A 10 01 00 01 00 00 01 00 02 00 02 00    H#.*............
+0010   10 00 5D 00 18 00 49 00 01 00 05 02 00 02 00 10    ..]...I.........
+0020   00 57 00 09 00 81 02 2A 20 02 AC 14 44 E3          .W.....* ...D.
+
+[2020-03-31 07:27:18,551] [MME-Egress-EGTPC_Node DEBUG] Dispatch MBReq to app...
+[2020-03-31 07:27:18,551] [MME-Egress DEBUG] Received event MODIFY_BEARER_RSP in state MODIFY_PENDING
+[2020-03-31 07:27:18,619] [ENODEB-S1U-172.21.21.240_Node DEBUG] Received from <172.20.68.227:25502> to <172.21.21.240:2152>. Message Length=104
+[2020-03-31 07:27:18,620] [ENODEB-S1U-172.21.21.240_Node DEBUG]                               : 
+Message Header
+
+                       Version: 1
+                      Seq Flag: 0
+         Extension Header Flag: 0
+                  Message Type: TPDU
+                Message Length: 96
+                          TEID: 0x20010287
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+Hex dump:
+0000   30 FF 00 60 20 01 02 87 60 00 00 00 00 38 3A FF    0..` ...`....8:.
+0010   FE 80 00 00 00 00 00 00 00 00 00 06 A1 74 4B 40    .............tK@
+0020   FF 02 00 00 00 00 00 00 00 00 00 00 00 00 00 01    ................
+0030   86 00 D5 05 FF 00 FF FF 00 00 00 00 00 00 00 00    ................
+0040   03 04 40 40 FF FF FF FF FF FF FF FF 00 00 00 00    ..@@............
+0050   FD 02 00 00 50 01 20 53 00 00 00 00 00 00 00 00    ....P. S........
+0060   05 01 00 00 00 00 05 AA                            ........
+
+[2020-03-31 07:27:18,620] [MME-Egress DEBUG] Received event USER_DATA_PACKET in state ACTIVE
+[2020-03-31 07:27:18,620] [MME-Egress DEBUG] Downlink packet on normal path received
+
+[0;34msim1:~# mme.clearSub()[[1;34m1[0;34m]: [0m[2020-03-31 07:27:21,635] [ENODEB-S1U-172.21.21.240_Node DEBUG] Received from <172.20.68.227:25502> to <172.21.21.240:2152>. Message Length=104
+[2020-03-31 07:27:21,635] [ENODEB-S1U-172.21.21.240_Node DEBUG]                               : 
+Message Header
+
+                       Version: 1
+                      Seq Flag: 0
+         Extension Header Flag: 0
+                  Message Type: TPDU
+                Message Length: 96
+                          TEID: 0x20010287
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+Hex dump:
+0000   30 FF 00 60 20 01 02 87 60 00 00 00 00 38 3A FF    0..` ...`....8:.
+0010   FE 80 00 00 00 00 00 00 00 00 00 06 A1 74 4B 40    .............tK@
+0020   FF 02 00 00 00 00 00 00 00 00 00 00 00 00 00 01    ................
+0030   86 00 D5 05 FF 00 FF FF 00 00 00 00 00 00 00 00    ................
+0040   03 04 40 40 FF FF FF FF FF FF FF FF 00 00 00 00    ..@@............
+0050   FD 02 00 00 50 01 20 53 00 00 00 00 00 00 00 00    ....P. S........
+0060   05 01 00 00 00 00 05 AA                            ........
+
+[2020-03-31 07:27:21,636] [MME-Egress DEBUG] Received event USER_DATA_PACKET in state ACTIVE
+[2020-03-31 07:27:21,636] [MME-Egress DEBUG] Downlink packet on normal path received
+[2020-03-31 07:27:24,651] [ENODEB-S1U-172.21.21.240_Node DEBUG] Received from <172.20.68.227:25502> to <172.21.21.240:2152>. Message Length=104
+[2020-03-31 07:27:24,651] [ENODEB-S1U-172.21.21.240_Node DEBUG]                               : 
+Message Header
+
+                       Version: 1
+                      Seq Flag: 0
+         Extension Header Flag: 0
+                  Message Type: TPDU
+                Message Length: 96
+                          TEID: 0x20010287
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+Hex dump:
+0000   30 FF 00 60 20 01 02 87 60 00 00 00 00 38 3A FF    0..` ...`....8:.
+0010   FE 80 00 00 00 00 00 00 00 00 00 06 A1 74 4B 40    .............tK@
+0020   FF 02 00 00 00 00 00 00 00 00 00 00 00 00 00 01    ................
+0030   86 00 D5 05 FF 00 FF FF 00 00 00 00 00 00 00 00    ................
+0040   03 04 40 40 FF FF FF FF FF FF FF FF 00 00 00 00    ..@@............
+0050   FD 02 00 00 50 01 20 53 00 00 00 00 00 00 00 00    ....P. S........
+0060   05 01 00 00 00 00 05 AA                            ........
+
+[2020-03-31 07:27:24,652] [MME-Egress DEBUG] Received event USER_DATA_PACKET in state ACTIVE
+[2020-03-31 07:27:24,652] [MME-Egress DEBUG] Downlink packet on normal path received
+[2020-03-31 07:27:48,651] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=119 115
+[2020-03-31 07:27:48,651] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: CREATE_BEARER_REQ
+                Message Length: 115
+                          TEID: 0x10010001
+               Sequence Number: 0x64F017
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 0): 5
+            BEARER_CTXT(93, 0):      EBI(73, 0): 0
+                              : BEARER_TFT(84, 0): TFT Operation Code:CREATE_TFT E bit: 0 No. of pkt filters:1
+                              :                : Filter id:0
+                              :                : Direction:UPLNK
+                              :                : Eval Precedence:48
+                              :                : IPv6 Remote Address: ::/::
+                              :    FTEID(87, 0): S1 SGW Data TEID = 0x229A002
+                              :                : S1 SGW Data Address = 172.20.68.227
+                              :    FTEID(87, 1): PGW Data TEID = 0x2298002
+                              :                : PGW Data Address = 172.20.68.225
+                              : BEARER_QOS(80, 0): ARP = 68 QCI = 1, maxUplk = 39 kbps, maxDnlk = 39 kbps, guaUplk = 39 kbps, guaDnlk = 39 kbps
+Hex dump:
+0000   48 5F 00 73 10 01 00 01 64 F0 17 00 49 00 01 00    H_.s....d...I...
+0010   05 5D 00 62 00 49 00 01 00 00 54 00 25 00 21 20    .].b.I....T.%.! 
+0020   30 21 20 00 00 00 00 00 00 00 00 00 00 00 00 00    0! .............
+0030   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+0040   00 00 00 57 00 09 00 81 02 29 A0 02 AC 14 44 E3    ...W.....)....D.
+0050   57 00 09 01 85 02 29 80 02 AC 14 44 E1 50 00 16    W.....)....D.P..
+0060   00 44 01 00 00 00 00 27 00 00 00 00 27 00 00 00    .D.....'....'...
+0070   00 27 00 00 00 00 27                               .'....'
+
+[2020-03-31 07:27:48,652] [MME-Egress DEBUG] Received event CREATE_BEARER_REQ in state INACTIVE
+[2020-03-31 07:27:48,656] [MME-Egress-EGTPC_Node DEBUG] Sending from <172.21.21.240:2123> to <172.20.69.225:30368>
+[2020-03-31 07:27:48,656] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: CREATE_BEARER_RSP
+                Message Length: 55
+                          TEID: 0x8B0AC017
+               Sequence Number: 0x64F017
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                   CAUSE(2, 0): REQUEST_ACCEPTED
+                              :  oi = 0
+                              :  pce = 0
+                              :  bce = 0
+            BEARER_CTXT(93, 0):      EBI(73, 0): 6
+                              :     CAUSE(2, 0): REQUEST_ACCEPTED
+                              :                :  oi = 0
+                              :                :  pce = 0
+                              :                :  bce = 0
+                              :    FTEID(87, 0): E-NodeB Data TEID = 0x200101A6
+                              :                : E-NodeB Data Address = 172.21.21.240
+                              :    FTEID(87, 1): S1 SGW Data TEID = 0x229A002
+                              :                : S1 SGW Data Address = 172.20.68.227
+Hex dump:
+0000   48 60 00 37 8B 0A C0 17 64 F0 17 00 02 00 02 00    H`.7....d.......
+0010   10 00 5D 00 25 00 49 00 01 00 06 02 00 02 00 10    ..].%.I.........
+0020   00 57 00 09 00 80 20 01 01 A6 AC 15 15 F0 57 00    .W.... .......W.
+0030   09 01 81 02 29 A0 02 AC 14 44 E3                   ....)....D.
+
+[2020-03-31 07:27:57,154] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=17 13
+[2020-03-31 07:27:57,154] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_BEARER_REQ
+                Message Length: 13
+                          TEID: 0x10010001
+               Sequence Number: 0x652817
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 1): 6
+Hex dump:
+0000   48 63 00 0D 10 01 00 01 65 28 17 00 49 00 01 01    Hc......e(..I...
+0010   06                                                 .
+
+[2020-03-31 07:27:57,155] [MME-Egress DEBUG] Received event DELETE_BEARER_REQ in state ACTIVE
+[2020-03-31 07:28:02,152] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=17 13
+[2020-03-31 07:28:02,152] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_BEARER_REQ
+                Message Length: 13
+                          TEID: 0x10010001
+               Sequence Number: 0x652817
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 1): 6
+Hex dump:
+0000   48 63 00 0D 10 01 00 01 65 28 17 00 49 00 01 01    Hc......e(..I...
+0010   06                                                 .
+
+[2020-03-31 07:28:02,153] [MME-Egress-EGTPC_Node ERROR] Received Retransmitted Req DELETE_BEARER_REQ from <172.20.69.225:30368> Seq : 6629399 TEID = 0x10010001L 
+Dropping Retransmitted Req msg
+[2020-03-31 07:28:07,078] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=17 13
+[2020-03-31 07:28:07,078] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_BEARER_REQ
+                Message Length: 13
+                          TEID: 0x10010001
+               Sequence Number: 0x652817
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 1): 6
+Hex dump:
+0000   48 63 00 0D 10 01 00 01 65 28 17 00 49 00 01 01    Hc......e(..I...
+0010   06                                                 .
+
+[2020-03-31 07:28:07,078] [MME-Egress-EGTPC_Node ERROR] Received Retransmitted Req DELETE_BEARER_REQ from <172.20.69.225:30368> Seq : 6629399 TEID = 0x10010001L 
+Dropping Retransmitted Req msg
+[2020-03-31 07:28:12,103] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=17 13
+[2020-03-31 07:28:12,104] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_BEARER_REQ
+                Message Length: 13
+                          TEID: 0x10010001
+               Sequence Number: 0x652817
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 1): 6
+Hex dump:
+0000   48 63 00 0D 10 01 00 01 65 28 17 00 49 00 01 01    Hc......e(..I...
+0010   06                                                 .
+
+[2020-03-31 07:28:12,104] [MME-Egress-EGTPC_Node ERROR] Received Retransmitted Req DELETE_BEARER_REQ from <172.20.69.225:30368> Seq : 6629399 TEID = 0x10010001L 
+Dropping Retransmitted Req msg
+[2020-03-31 07:28:17,129] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=17 13
+[2020-03-31 07:28:17,129] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_BEARER_REQ
+                Message Length: 13
+                          TEID: 0x10010001
+               Sequence Number: 0x652817
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 1): 6
+Hex dump:
+0000   48 63 00 0D 10 01 00 01 65 28 17 00 49 00 01 01    Hc......e(..I...
+0010   06                                                 .
+
+[2020-03-31 07:28:17,129] [MME-Egress-EGTPC_Node ERROR] Received Retransmitted Req DELETE_BEARER_REQ from <172.20.69.225:30368> Seq : 6629399 TEID = 0x10010001L 
+Dropping Retransmitted Req msg
+[2020-03-31 07:28:22,158] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:30368> to <172.21.21.240:2123>.  Message Length=23 19
+[2020-03-31 07:28:22,159] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_BEARER_REQ
+                Message Length: 19
+                          TEID: 0x10010001
+               Sequence Number: 0x658817
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 0): 5
+                   CAUSE(2, 0): PEER_NOT_RESPONDING
+                              :  oi = 0
+                              :  pce = 0
+                              :  bce = 0
+Hex dump:
+0000   48 63 00 13 10 01 00 01 65 88 17 00 49 00 01 00    Hc......e...I...
+0010   05 02 00 02 00 64 00                               .....d.
+
+DBReq collision seen. Current bearer State  ACTIVE
+[2020-03-31 07:28:22,159] [MME-Egress DEBUG] Received event ABORT_REQ_TRANS in state INACTIVE
+[2020-03-31 07:28:22,159] [MME-Egress DEBUG] Received event DELETE_BEARER_REQ in state ACTIVE
+mme.clearSub()
+[2020-03-31 07:28:26,398] [MME-Egress-EGTPC_Node DEBUG] Sending from <172.21.21.240:10000> to <172.20.69.225:2123>
+[2020-03-31 07:28:26,398] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_SESSION_REQ
+                Message Length: 36
+                          TEID: 0x8B0AC017
+               Sequence Number: 0x2
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                    EBI(73, 0): 5
+                  FTEID(87, 0): MME Control TEID = 0x10010001
+                              : MME Control Address = 172.21.21.240
+                    IND(77, 0): OI = 1 
+                              : PT = GTP 
+Hex dump:
+0000   48 24 00 24 8B 0A C0 17 00 00 02 00 49 00 01 00    H$.$........I...
+0010   05 57 00 09 00 8A 10 01 00 01 AC 15 15 F0 4D 00    .W............M.
+0020   06 00 08 00 00 00 00 00                            ........
+
+[2020-03-31 07:28:26,399] [MME-Egress-EGTPC_Node DEBUG] Received from <172.20.69.225:2123> to <172.21.21.240:10000>.  Message Length=23 19
+[2020-03-31 07:28:26,399] [MME-Egress-EGTPC_Node DEBUG]                               : 
+Message Header
+
+                       Version: 2
+         Message Priority Flag: 0
+               Piggy Back Flag: 0
+                     TEID Flag: 1
+         Extension Header Flag: 0
+                  Message Type: DELETE_SESSION_RSP
+                Message Length: 19
+                          TEID: 0x0
+               Sequence Number: 0x2
+              Message Priority: 0x0
+                              : 
+EGTP-Packet:
+                   CAUSE(2, 0): CONTEXT_NOT_FOUND
+                              :  oi = 0
+                              :  pce = 0
+                              :  bce = 0
+                RECOVERY(3, 0): 43
+Hex dump:
+0000   48 25 00 13 00 00 00 00 00 00 02 00 02 00 02 00    H%..............
+0010   40 00 03 00 01 00 2B                               @.....+
+
+[2020-03-31 07:28:26,400] [MME-Egress DEBUG] Received event DELETE_SESSION_RSP in state INACTIVE_PENDING
+
+[0;34msim1:~# d[[1;34m2[0;34m]: [0m

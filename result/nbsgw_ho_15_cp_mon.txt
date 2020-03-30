@@ -1,0 +1,3734 @@
+[local]CISCO_SMF_7F# mon subs imsi 450081030101806
+Monday March 30 23:03:44 KST 2020
+
+
+NO MATCHING CALL - waiting for a matching call to connect...
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (OFF)      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  1)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (ON )      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+*** Verbosity Level (  2) ***
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (OFF)      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  2)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (ON )      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+*** Verbosity Level (  3) ***
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (OFF)      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  3)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (ON )      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+*** Multi-Call Trace (ON ) ***
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (OFF)      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  3)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (ON )     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (ON )      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+
+----------------------------------------------------------------------
+Incoming Call:
+----------------------------------------------------------------------
+ MSID/IMSI   : 450081030101806             Callid      : 06a1744b
+ IMEI        : 11223344556677              MSISDN      : 12110030101804
+ Username    : 12110030101804              SessionType : gtp-pdn-type-ipv6
+ Status      : Active                      Service Name: saegw-srv1
+ Src Context : sae                         Dest Context: sae
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
+(Adding Trace) - New Incoming Call:
+----------------------------------------------------------------------
+ MSID/IMSI   : 450081030101806             Callid      : 06a1744b
+ IMEI        : 11223344556677              MSISDN      : 12110030101804
+ Username    : 12110030101804              SessionType : sgw-pdn-type-ipv4-ipv6
+ Status      : Dormant                     Service Name: saegw-srv1
+ Src Context : sae                         Dest Context: sae
+----------------------------------------------------------------------
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:611 Eventid:141004(3)
+[SGW-S11/S4]GTPv2C Rx PDU, from 172.21.21.240:10000 to 172.20.69.225:2123 (225)
+TEID: 0x00000000, Message type: EGTP_CREATE_SESSION_REQUEST (0x20)
+Sequence Number: 0x000000 (0)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x00DD (221)
+
+INFORMATION ELEMENTS
+        IMSI: 
+            Value: 450081030101806
+
+        MSISDN: 
+            Value: 12110030101804
+
+        MOBILE EQUIPMENT IDENTITY: 
+            Value: 1122334455667788
+
+        USER LOCATION INFO: 
+            Value: 
+                Location type: TAI
+                MCC: 121
+                MNC: 100
+                TAC: 0x1234
+
+        SERVING NETWORK: 
+            Value: 
+                MCC: 450
+                MNC: 08
+
+        RADIO ACCESS TECH: 
+            Value: EUTRAN (6)
+
+        MME-CONTROL FTEID: 
+            Value: 
+                Interface: MME S11-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x10010001
+                IPV4 Addr: 172.21.21.240
+
+        PGW-CONTROL FTEID: 
+            Value: 
+                Interface: PGW S5/S8-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x00000000
+                IPV4 Addr: 172.20.69.227
+
+        ACCESS POINT NAME: 
+            Value: cisco3.com
+
+        SELECTION MODE: 
+            Value: MS provided APN,subscr not verified (0x01)
+
+        PDN TYPE: 
+            Value: IPV4/IPV6
+
+        PDN ADDRESS ALLOC: 
+            Value: 
+                PDN Type: IPV4/IPV6
+                IPV4 Addr: 0.0.0.0
+                IPV6 Addr: ::
+
+        APN RESTRICTION: 
+            Value: 0
+
+        AGGREGATE MAX BIT RATE: 
+            Value: 
+                Uplk AMBR: 305419896 kbps
+                Dnlk AMBR: 2271560481 kbps
+
+        PCO: 
+            Container id: 0x0001 (IPv6-PCSCF-Server)
+            Container length: 0x00 (0)
+            Container content: 
+                P-CSCF Address: Request for IPv6 P-CSCF Address allocation
+            Container id: 0x0010 (Link MTU)
+            Container length: 0x00 (0)
+            Container content: 
+                Link MTU: Request
+
+        BEARER CONTEXT TO BE CREATED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 0 (Enabled), PL = 2, PVI = 0 (Enabled)
+                        QCI: 80
+                        Uplnk MBR: 0 kbps
+                        Dnlnk MBR: 0 kbps
+                        Uplnk GBR: 0 kbps
+                        Dnlnk GBR: 0 kbps
+
+
+        RECOVERY: 
+            Value: 0x0A (10)
+
+        CHARGING CHAR: 
+            Value: 0x1234
+
+        FLAGS FOR USER PLANE FUNCTION(UPF) SELECTION INDICATION: 
+            Value: 
+                DCNR: 1
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:612 Eventid:141005(3)
+[SGW-S5]GTPv2C Tx PDU, from 172.20.69.226:30368 to 172.20.69.227:2123 (247)
+TEID: 0x00000000, Message type: EGTP_CREATE_SESSION_REQUEST (0x20)
+Sequence Number: 0x4EC017 (5160983)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x00F3 (243)
+
+INFORMATION ELEMENTS
+        IMSI: 
+            Value: 450081030101806
+
+        MSISDN: 
+            Value: 12110030101804
+
+        MOBILE EQUIPMENT IDENTITY: 
+            Value: 1122334455667788
+
+        USER LOCATION INFO: 
+            Value: 
+                Location type: TAI
+                MCC: 121
+                MNC: 100
+                TAC: 0x1234
+
+        SERVING NETWORK: 
+            Value: 
+                MCC: 450
+                MNC: 08
+
+        RADIO ACCESS TECH: 
+            Value: EUTRAN (6)
+
+        SGW-CONTROL FTEID: 
+            Value: 
+                Interface: SGW S5/S8-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x85E5C017
+                IPV4 Addr: 172.20.69.226
+
+        ACCESS POINT NAME: 
+            Value: cisco3.com
+
+        SELECTION MODE: 
+            Value: MS provided APN,subscr not verified (0x01)
+
+        PDN TYPE: 
+            Value: IPV4/IPV6
+
+        PDN ADDRESS ALLOC: 
+            Value: 
+                PDN Type: IPV4/IPV6
+                IPV4 Addr: 0.0.0.0
+                IPV6 Addr: ::
+
+        INDICATION: 
+            Value: 
+                DAF  : 0
+                DTF  : 0(Direct tunnel disabled)
+                HI   : 0
+                DFI  : 0
+                OI   : 0
+                ISRSI: 0(ISR not supported)
+                ISRAI: 0(ISR not Activated)
+                SGWCI: 0
+                SQCI : 0
+                UIMSI: 0(Authenticated IMSI)
+                CFSI : 0(F-TEID Change Indication not supported)
+                CRSI : 0(Location Change Reporting not supported)
+                PS   : 0(Piggybacking feature not supported)
+                PT   : 0(GTPv2)
+                SI   : 0
+                MSV  : 0
+                RetLoc: 0
+                PBIC: 0
+                SRNI: 0
+                S6AF: 0
+                S4AF: 0
+                MBMDT: 0
+                ISRAU: 0
+                CCRSI: 0(CSG Information Change Reporting mechanism not supported )
+                CPRAI: 0
+                ARRL: 0
+                PPOF: 0
+                PPON / PPEI: 0
+                PPSI: 0
+                CSFBI: 0
+                CLII: 0
+                CPSR: 0
+                UASI: 0
+                DTCI: 0
+                BDWI: 0
+                PCRI: 0
+                AOSI: 0
+                AOPI: 0
+                EPCOSI: 0
+                CPOPCI: 0
+                PMTSMI: 0
+                S11TF: 0
+                PNSI: 0
+                WPMSI: 0
+                5GSIWK: 0
+
+        APN RESTRICTION: 
+            Value: 0
+
+        AGGREGATE MAX BIT RATE: 
+            Value: 
+                Uplk AMBR: 305419896 kbps
+                Dnlk AMBR: 2271560481 kbps
+
+        PCO: 
+            Container id: 0x0001 (IPv6-PCSCF-Server)
+            Container length: 0x00 (0)
+            Container content: 
+                P-CSCF Address: Request for IPv6 P-CSCF Address allocation
+            Container id: 0x0010 (Link MTU)
+            Container length: 0x00 (0)
+            Container content: 
+                Link MTU: Request
+
+        BEARER CONTEXT TO BE CREATED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x00000000
+                        IPV4 Addr: 0.0.0.0
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 0 (Enabled), PL = 2, PVI = 0 (Enabled)
+                        QCI: 80
+                        Uplnk MBR: 0 kbps
+                        Dnlnk MBR: 0 kbps
+                        Uplnk GBR: 0 kbps
+                        Dnlnk GBR: 0 kbps
+
+
+        CHARGING CHAR: 
+            Value: 0x1234
+
+        PRIVATE EXTENSION: 
+            STARENT PRIVATE EXTENSION: 
+                    Enterprise ID: 8164
+                    Call ID: 111244363
+                    Smgr ID: 23
+
+
+        FLAGS FOR USER PLANE FUNCTION(UPF) SELECTION INDICATION: 
+            Value: 
+                DCNR: 1
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:614 Eventid:141004(3)
+[PGW-S5/S2a/S2b]GTPv2C Rx PDU, from 172.20.69.226:30368 to 172.20.69.227:2123 (247)
+TEID: 0x00000000, Message type: EGTP_CREATE_SESSION_REQUEST (0x20)
+Sequence Number: 0x4EC017 (5160983)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x00F3 (243)
+
+INFORMATION ELEMENTS
+        IMSI: 
+            Value: 450081030101806
+
+        MSISDN: 
+            Value: 12110030101804
+
+        MOBILE EQUIPMENT IDENTITY: 
+            Value: 1122334455667788
+
+        USER LOCATION INFO: 
+            Value: 
+                Location type: TAI
+                MCC: 121
+                MNC: 100
+                TAC: 0x1234
+
+        SERVING NETWORK: 
+            Value: 
+                MCC: 450
+                MNC: 08
+
+        RADIO ACCESS TECH: 
+            Value: EUTRAN (6)
+
+        SGW-CONTROL FTEID: 
+            Value: 
+                Interface: SGW S5/S8-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x85E5C017
+                IPV4 Addr: 172.20.69.226
+
+        ACCESS POINT NAME: 
+            Value: cisco3.com
+
+        SELECTION MODE: 
+            Value: MS provided APN,subscr not verified (0x01)
+
+        PDN TYPE: 
+            Value: IPV4/IPV6
+
+        PDN ADDRESS ALLOC: 
+            Value: 
+                PDN Type: IPV4/IPV6
+                IPV4 Addr: 0.0.0.0
+                IPV6 Addr: ::
+
+        INDICATION: 
+            Value: 
+                DAF  : 0
+                DTF  : 0(Direct tunnel disabled)
+                HI   : 0
+                DFI  : 0
+                OI   : 0
+                ISRSI: 0(ISR not supported)
+                ISRAI: 0(ISR not Activated)
+                SGWCI: 0
+                SQCI : 0
+                UIMSI: 0(Authenticated IMSI)
+                CFSI : 0(F-TEID Change Indication not supported)
+                CRSI : 0(Location Change Reporting not supported)
+                PS   : 0(Piggybacking feature not supported)
+                PT   : 0(GTPv2)
+                SI   : 0
+                MSV  : 0
+                RetLoc: 0
+                PBIC: 0
+                SRNI: 0
+                S6AF: 0
+                S4AF: 0
+                MBMDT: 0
+                ISRAU: 0
+                CCRSI: 0(CSG Information Change Reporting mechanism not supported )
+                CPRAI: 0
+                ARRL: 0
+                PPOF: 0
+                PPON / PPEI: 0
+                PPSI: 0
+                CSFBI: 0
+                CLII: 0
+                CPSR: 0
+                UASI: 0
+                DTCI: 0
+                BDWI: 0
+                PCRI: 0
+                AOSI: 0
+                AOPI: 0
+                EPCOSI: 0
+                CPOPCI: 0
+                PMTSMI: 0
+                S11TF: 0
+                PNSI: 0
+                WPMSI: 0
+                5GSIWK: 0
+
+        APN RESTRICTION: 
+            Value: 0
+
+        AGGREGATE MAX BIT RATE: 
+            Value: 
+                Uplk AMBR: 305419896 kbps
+                Dnlk AMBR: 2271560481 kbps
+
+        PCO: 
+            Container id: 0x0001 (IPv6-PCSCF-Server)
+            Container length: 0x00 (0)
+            Container content: 
+                P-CSCF Address: Request for IPv6 P-CSCF Address allocation
+            Container id: 0x0010 (Link MTU)
+            Container length: 0x00 (0)
+            Container content: 
+                Link MTU: Request
+
+        BEARER CONTEXT TO BE CREATED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x00000000
+                        IPV4 Addr: 0.0.0.0
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 0 (Enabled), PL = 2, PVI = 0 (Enabled)
+                        QCI: 80
+                        Uplnk MBR: 0 kbps
+                        Dnlnk MBR: 0 kbps
+                        Uplnk GBR: 0 kbps
+                        Dnlnk GBR: 0 kbps
+
+
+        CHARGING CHAR: 
+            Value: 0x1234
+
+        PRIVATE EXTENSION: 
+            STARENT PRIVATE EXTENSION: 
+                    Enterprise ID: 8164
+                    Call ID: 111244363
+                    Smgr ID: 23
+
+
+        FLAGS FOR USER PLANE FUNCTION(UPF) SELECTION INDICATION: 
+            Value: 
+                DCNR: 1
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:640 Eventid:81990(5)
+Diameter message from 172.20.69.228:45900 to 172.21.21.241:3868
+  Base Header Information:
+   Version: 1
+   Message Length: 852
+   Command Flags: REQ PXY   (192) 
+   Command Code: Credit-Control-Request (272)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0xc2f56af1
+   End2End-ID: 0x02f821f2
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: csc-nsa-smf-7
+        [M] Origin-Realm: kt.com
+        [M] Destination-Realm: cisco.com
+        [M] CC-Request-Type: INITIAL_REQUEST (1)
+        [M] CC-Request-Number: 0
+        [M] Origin-State-Id: 1583813037
+        [M] Subscription-Id: 
+          [M] Subscription-Id-Type: END_USER_E164 (0)
+          [M] Subscription-Id-Data: 12110030101804
+        [M] Subscription-Id: 
+          [M] Subscription-Id-Type: END_USER_IMSI (1)
+          [M] Subscription-Id-Data: 450081030101806
+        [V] [M] Supported-Features: 
+          [M] Vendor-Id: 10415
+          [V] Feature-List-ID: 1
+          [V] Feature-List: 2
+        [V] [M] Supported-Features: 
+          [M] Vendor-Id: 10415
+          [V] Feature-List-ID: 2
+          [V] Feature-List: 128
+        [V] [M] Network-Request-Support: NETWORK_REQUEST_SUPPORTED (1)
+        [M] Framed-IPv6-Prefix: Reserved: 00 Prefixlen: 64 IPv6 prefix: fd02:0:5001:2053::
+        [V] [M] IP-CAN-Type: 3GPP-EPS (5)
+        [V] RAT-Type: EUTRAN (1004)
+        [M] User-Equipment-Info: 
+          [M] User-Equipment-Info-Type: IMEISV (0)
+          [M] User-Equipment-Info-Value: 1122334455667788
+        [V] [M] QoS-Information: 
+          [V] APN-Aggregate-Max-Bitrate-UL: 4294967295
+          [V] APN-Aggregate-Max-Bitrate-DL: 4294967295
+          [V] [M] Extended-APN-AMBR-UL: 305419896
+          [V] [M] Extended-APN-AMBR-DL: 2271560481
+        [V] Default-EPS-Bearer-QoS: 
+          [V] [M] QoS-Class-Identifier: (80)
+          [V] [M] Allocation-Retention-Priority: 
+            [V] Priority-Level: 2
+            [V] Pre-emption-Capability: PRE-EMPTION_CAPABILITY_ENABLED (0)
+            [V] Pre-emption-Vulnerability: PRE-EMPTION_VULNERABILITY_ENABLED (0)
+        [V] [M] 3GPP-SGSN-MCC-MNC: 45008
+        [V] AN-GW-Address: IPv4 172.20.69.226
+        [V] [M] 3GPP-User-Location-Info: Location Type: TAI (128) Location Info (TAI): 121-100-0x1234
+        [M] Called-Station-Id: cisco3.com
+        [V] [M] Bearer-Usage: GENERAL (0)
+        [V] [M] Online: DISABLE_ONLINE (0)
+        [V] [M] Offline: DISABLE_OFFLINE (0)
+        [V] [M] Access-Network-Charging-Address: IPv4 172.20.69.227
+        [V] [M] Access-Network-Charging-Identifier-Gx: 
+          [V] [M] Access-Network-Charging-Identifier-Value: 0x028e298f
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:645 Eventid:81991(5)
+Diameter message from 172.21.21.241:3868 to 172.20.69.228:45900
+  Base Header Information:
+   Version: 1
+   Message Length: 576
+   Command Flags:  PXY   (64) 
+   Command Code: Credit-Control-Answer (272)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0xc2f56af1
+   End2End-ID: 0x02f821f2
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: pcrf-sim
+        [M] Origin-Realm: cisco.com
+        [M] Result-Code: DIAMETER_SUCCESS (2001)
+        [M] CC-Request-Type: INITIAL_REQUEST (1)
+        [M] CC-Request-Number: 0
+        [M] Route-Record: box
+        [V] [M] Supported-Features: 
+          [M] Vendor-Id: 10415
+          [V] Feature-List-ID: 1
+          [V] Feature-List: 2
+        [V] [M] Bearer-Control-Mode: UE_NW (2)
+        [V] [M] Event-Trigger: QOS_CHANGE (1)
+        [V] [M] Event-Trigger: RAT_CHANGE (2)
+        [V] [M] Event-Trigger: IP_CAN_CHANGE (7)
+        [V] [M] Event-Trigger: AN_GW_CHANGE (21)
+        [V] [M] Event-Trigger: SUCCESSFUL_RESOURCE_ALLOCATION (22)
+        [V] [M] Event-Trigger: USAGE_REPORT (26)
+        [V] [M] Charging-Rule-Install: 
+          [V] [M] Charging-Rule-Base-Name: IMS-DF-POSTPAID
+          [V] Resource-Allocation-Notification: ENABLE_NOTIFICATION (0)
+        [V] [M] Online: DISABLE_ONLINE (0)
+        [V] [M] Offline: DISABLE_OFFLINE (0)
+        [V] [M] QoS-Information: 
+          [V] APN-Aggregate-Max-Bitrate-UL: 1410065408
+          [V] APN-Aggregate-Max-Bitrate-DL: 1410065408
+        [V] Default-EPS-Bearer-QoS: 
+          [V] [M] QoS-Class-Identifier: QCI_9 (9)
+          [V] [M] Allocation-Retention-Priority: 
+            [V] Priority-Level: 14
+            [V] Pre-emption-Capability: PRE-EMPTION_CAPABILITY_DISABLED (1)
+            [V] Pre-emption-Vulnerability: PRE-EMPTION_VULNERABILITY_ENABLED (0)
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:648 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (1066)
+SEID: 0x0000000000000000, Message type: SX_SESSION_ESTABLISHMENT_REQUEST (0x32)
+Sequence Number: 0x59CA00 (5884416)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0426 (1062)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        F-SEID: 
+            Value: 
+                SEID: 0x005C0000000008DB
+                IPv4: 1
+                IPv6: 0
+                IPv4 ADDR: 172.20.69.232
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0001
+                PRECEDENCE: 
+                    Value: 0x00000001
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0001
+            FAR ID: 
+                Value: 0x8001
+            RULEBASE: 
+                Value: IMS-DF-POSTPAID
+            QER ID: 
+                Value: 0x80000001
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0002
+                PRECEDENCE: 
+                    Value: 0x00000001
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0001
+            FAR ID: 
+                Value: 0x8002
+            RULEBASE: 
+                Value: IMS-DF-POSTPAID
+            QER ID: 
+                Value: 0x80000001
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0003
+                PRECEDENCE: 
+                    Value: 0x00000000
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: CP-FUNCTION (3)
+                    Traffic Endpoint ID: 
+                        Value: 0x0002
+            OUTER HDR REMOVAL: 
+                Value: GTP-U/UDP/IPv4 (0)
+            FAR ID: 
+                Value: 0x0003
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0004
+                PRECEDENCE: 
+                    Value: 0x00000000
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: ACCESS (0)
+                    SDF FILTER: 
+                            Value: 
+                                FD : 1
+                                TTC: 0
+                                SPI: 0
+                                FL : 0
+                                FD Length: 40
+                                FLOW: permit in 58 from any any to ff01::2 any
+
+                    SDF FILTER: 
+                            Value: 
+                                FD : 1
+                                TTC: 0
+                                SPI: 0
+                                FL : 0
+                                FD Length: 40
+                                FLOW: permit in 58 from any any to ff02::2 any
+
+                    SDF FILTER: 
+                            Value: 
+                                FD : 1
+                                TTC: 0
+                                SPI: 0
+                                FL : 0
+                                FD Length: 40
+                                FLOW: permit in 58 from any any to ff05::2 any
+
+                    Traffic Endpoint ID: 
+                        Value: 0x0001
+            FAR ID: 
+                Value: 0x0004
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0005
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0003
+            FAR ID: 
+                Value: 0x0005
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0006
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0004
+            FAR ID: 
+                Value: 0x0006
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x8001
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 0
+                        FORW: 1
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: CORE (1)
+                        PDN INSTANCE: 
+                            Value: cisco3.com
+                    Traffic Endpoint ID: 
+                        Value: 0x0001
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x8002
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0001
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0003
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0002
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0004
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 0
+                        FORW: 1
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: CP-FUNCTION (3)
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x81222017
+                                IPv4 ADDR: 172.20.69.232
+                    Traffic Endpoint ID: 
+                        Value: 0x0002
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0005
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0004
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0006
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0003
+
+        SUBSCRIBER PARAMS: 
+            Charging-Characters: 0x3412
+            Rat-Type: 6
+            MCC-MNC: 45008
+            SGSN-Address: 172.20.69.226
+            ULI: TAI=210101123400
+            Congestion-Level: 0
+            GGSN-Address: 172.20.69.227
+            User-Name: 12110030101804@cisco3.com
+            Session-ID: AC1445E3028E298F
+            CALLED-STATION-ID: cisco3.com
+            CALLING-STATION-ID: 12110030101804
+
+        User ID: 
+            IMSI: 450081030101806
+            IMEI: 1122334455667788
+            MSISDN: 12110030101804
+
+        CREATE QER: 
+            Value: 
+                QER ID: 
+                    Value: 0x80000001
+                QER CORRELATION ID: 
+                    Value: 0x8E428017
+                GATE STATUS: 
+                    Ul Gate: OPEN
+                    Dl Gate: OPEN
+                MBR: 
+                    UL MBR: 1410066 kbps
+                    DL MBR: 1410066 kbps
+
+        USER INACTIVITY: 
+            Value: 0x00003840
+        CHARGING PARAMS: 
+            Value: 
+                Charging Chars: 0x1234
+                GTPP Group: gtpp1
+                GTPP ContextID: 2
+                Accounting Policy: n/a
+                Diameter Interim Interval: n/a
+                AAA Group: default
+                AAA Group ContextID: 3
+                Radius Interim Interval: 0
+                GY Offline charging enabled: Disabled
+                Credit Control Group: default
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0001
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+                    PDN INSTANCE: 
+                        Value: cisco3.com
+                UE IP ADDR: 
+                    Value: 
+                        S/D: 1
+                        IPv4: 0
+                        IPv6: 1
+                        IPv6 ADDR: fd02:0:5001:2053:0:6:a174:4b01
+                Bearer Info: 
+                    QCI: 9
+                    ARP: 120
+                    Charging ID: 42871183
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0002
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0003
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+                Bearer Info: 
+                    QCI: 9
+                    ARP: 120
+                    Charging ID: 42871183
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0004
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+                Bearer Info: 
+                    QCI: 9
+                    ARP: 120
+                    Charging ID: 42871183
+
+        SUBSCRIBER TRACE: 
+        Action: 
+            Value: Start
+        Data Event: 
+            Value: ON
+                Enable VPP Trace: ON
+                Packet Capture: Full Pkt
+                MEH Header: OFF
+                Pan Priority: 0
+                Packet Capture Size: 0
+        Control Event: 
+            Value: ON
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:649 Eventid:81990(5)
+Diameter message from 172.20.69.228:45900 to 172.21.21.241:3868
+  Base Header Information:
+   Version: 1
+   Message Length: 496
+   Command Flags: REQ PXY   (192) 
+   Command Code: Credit-Control-Request (272)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0xc2f56af2
+   End2End-ID: 0x02f821f3
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: csc-nsa-smf-7
+        [M] Origin-Realm: kt.com
+        [M] Destination-Realm: cisco.com
+        [M] CC-Request-Type: UPDATE_REQUEST (2)
+        [M] CC-Request-Number: 1
+        [M] Destination-Host: pcrf-sim
+        [M] Origin-State-Id: 1583813037
+        [M] Subscription-Id: 
+          [M] Subscription-Id-Type: END_USER_E164 (0)
+          [M] Subscription-Id-Data: 12110030101804
+        [M] Subscription-Id: 
+          [M] Subscription-Id-Type: END_USER_IMSI (1)
+          [M] Subscription-Id-Data: 450081030101806
+        [V] [M] Network-Request-Support: NETWORK_REQUEST_SUPPORTED (1)
+        [M] Framed-IPv6-Prefix: Reserved: 00 Prefixlen: 64 IPv6 prefix: fd02:0:5001:2053::
+        [M] User-Equipment-Info: 
+          [M] User-Equipment-Info-Type: IMEISV (0)
+          [M] User-Equipment-Info-Value: 1122334455667788
+        [M] Called-Station-Id: cisco3.com
+        [V] [M] Event-Trigger: SUCCESSFUL_RESOURCE_ALLOCATION (22)
+        [V] [M] Charging-Rule-Report: 
+          [V] [M] Charging-Rule-Base-Name: IMS-DF-POSTPAID
+          [V] [M] PCC-Rule-Status: ACTIVE (0)
+        [V] [M] Access-Network-Charging-Address: IPv4 172.20.69.227
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:665 Eventid:81991(5)
+Diameter message from 172.21.21.241:3868 to 172.20.69.228:45900
+  Base Header Information:
+   Version: 1
+   Message Length: 300
+   Command Flags:  PXY   (64) 
+   Command Code: Credit-Control-Answer (272)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0xc2f56af2
+   End2End-ID: 0x02f821f3
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: pcrf-sim
+        [M] Origin-Realm: cisco.com
+        [M] Result-Code: DIAMETER_SUCCESS (2001)
+        [M] CC-Request-Type: UPDATE_REQUEST (2)
+        [M] CC-Request-Number: 1
+        [M] Route-Record: box
+        [V] [M] Event-Trigger: QOS_CHANGE (1)
+        [V] [M] Event-Trigger: RAT_CHANGE (2)
+        [V] [M] Event-Trigger: IP_CAN_CHANGE (7)
+        [V] [M] Event-Trigger: USER_LOCATION_CHANGE (13)
+        [V] [M] Event-Trigger: REVALIDATION_TIMEOUT (17)
+        [V] [M] Event-Trigger: AN_GW_CHANGE (21)
+        [V] [M] Event-Trigger: USAGE_REPORT (26)
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:723 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (95)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_ESTABLISHMENT_RESPONSE (0x33)
+Sequence Number: 0x59CA00 (5884416)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x005B (91)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+        UP F-SEID: 
+            Value: 
+                SEID: 0x000800000000257A
+                IPv4: 1
+                IPv6: 0
+                IPv4 ADDR: 172.20.68.228
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0004
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x022A2002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.227
+                    CHID: 0
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0003
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x04B0E002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.226
+                    CHID: 0
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0002
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x822A0002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.228
+                    CHID: 0
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0001
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x0229E002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.225
+                    CHID: 0
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:723 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (163)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x57F601 (5764609)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x009F (159)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0001
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0004
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0005
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x8002
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x04B0E002
+                                IPv4 ADDR: 172.20.68.226
+
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0003
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x04B0E002
+                                IPv4 ADDR: 172.20.68.226
+
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0006
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x0229E002
+                                IPv4 ADDR: 172.20.68.225
+
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:728 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (29)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x57F601 (5764609)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:728 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:2123 to 172.20.69.226:30368 (161)
+TEID: 0x85E5C017, Message type: EGTP_CREATE_SESSION_RESPONSE (0x21)
+Sequence Number: 0x4EC017 (5160983)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x009D (157)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_NEW_PDN_TYPE_NETWORK_PREFERENCE (0x12)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        PGW-CONTROL FTEID: 
+            Value: 
+                Interface: PGW S5/S8-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x80E9C017
+                IPV4 Addr: 172.20.69.227
+
+        PDN ADDRESS ALLOC: 
+            Value: 
+                PDN Type: IPV6
+                IPV6 Addr: fd02:0:5001:2053:0:6:a174:4b01
+
+        APN RESTRICTION: 
+            Value: 0
+
+        AGGREGATE MAX BIT RATE: 
+            Value: 
+                Uplk AMBR: 1410066 kbps
+                Dnlk AMBR: 1410066 kbps
+
+        PCO: 
+            Container id: 0x0001 (IPv6-PCSCF-Server)
+            Container length: 0x10 (16)
+            Container content: 
+                IPv6 P-CSCF Address: 2001:e60:efed:2100:192:168:0:2
+            Container id: 0x0010 (Link MTU)
+            Container length: 0x02 (2)
+            Container content: 
+                Link MTU: 1500
+
+        BEARER CONTEXT CREATED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x0229E002
+                        IPV4 Addr: 172.20.68.225
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 1 (Disabled), PL = 14, PVI = 0 (Enabled)
+                        QCI: 9
+                        Uplnk MBR: 0 kbps
+                        Dnlnk MBR: 0 kbps
+                        Uplnk GBR: 0 kbps
+                        Dnlnk GBR: 0 kbps
+
+                CHARGING ID: 
+                    Value: 0x028E298F
+
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:728 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:2123 to 172.20.69.226:30368 (161)
+TEID: 0x85E5C017, Message type: EGTP_CREATE_SESSION_RESPONSE (0x21)
+Sequence Number: 0x4EC017 (5160983)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x009D (157)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_NEW_PDN_TYPE_NETWORK_PREFERENCE (0x12)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        PGW-CONTROL FTEID: 
+            Value: 
+                Interface: PGW S5/S8-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x80E9C017
+                IPV4 Addr: 172.20.69.227
+
+        PDN ADDRESS ALLOC: 
+            Value: 
+                PDN Type: IPV6
+                IPV6 Addr: fd02:0:5001:2053:0:6:a174:4b01
+
+        APN RESTRICTION: 
+            Value: 0
+
+        AGGREGATE MAX BIT RATE: 
+            Value: 
+                Uplk AMBR: 1410066 kbps
+                Dnlk AMBR: 1410066 kbps
+
+        PCO: 
+            Container id: 0x0001 (IPv6-PCSCF-Server)
+            Container length: 0x10 (16)
+            Container content: 
+                IPv6 P-CSCF Address: 2001:e60:efed:2100:192:168:0:2
+            Container id: 0x0010 (Link MTU)
+            Container length: 0x02 (2)
+            Container content: 
+                Link MTU: 1500
+
+        BEARER CONTEXT CREATED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x0229E002
+                        IPV4 Addr: 172.20.68.225
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 1 (Disabled), PL = 14, PVI = 0 (Enabled)
+                        QCI: 9
+                        Uplnk MBR: 0 kbps
+                        Dnlnk MBR: 0 kbps
+                        Uplnk GBR: 0 kbps
+                        Dnlnk GBR: 0 kbps
+
+                CHARGING ID: 
+                    Value: 0x028E298F
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:729 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:2123 to 172.21.21.240:10000 (184)
+TEID: 0x10010001, Message type: EGTP_CREATE_SESSION_RESPONSE (0x21)
+Sequence Number: 0x000000 (0)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x00B4 (180)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_NEW_PDN_TYPE_NETWORK_PREFERENCE (0x12)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        SGW-CONTROL FTEID: 
+            Value: 
+                Interface: SGW S11/S4-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x8B0AC017
+                IPV4 Addr: 172.20.69.225
+
+        PGW-CONTROL FTEID: 
+            Value: 
+                Interface: PGW S5/S8-C
+                IPv4 Flag: 1
+                IPv6 Flag: 0
+                Teid: 0x80E9C017
+                IPV4 Addr: 172.20.69.227
+
+        PDN ADDRESS ALLOC: 
+            Value: 
+                PDN Type: IPV6
+                IPV6 Addr: fd02:0:5001:2053:0:6:a174:4b01
+
+        APN RESTRICTION: 
+            Value: 0
+
+        AGGREGATE MAX BIT RATE: 
+            Value: 
+                Uplk AMBR: 1410066 kbps
+                Dnlk AMBR: 1410066 kbps
+
+        PCO: 
+            Container id: 0x0001 (IPv6-PCSCF-Server)
+            Container length: 0x10 (16)
+            Container content: 
+                IPv6 P-CSCF Address: 2001:e60:efed:2100:192:168:0:2
+            Container id: 0x0010 (Link MTU)
+            Container length: 0x02 (2)
+            Container content: 
+                Link MTU: 1500
+
+        BEARER CONTEXT CREATED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S1-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x022A2002
+                        IPV4 Addr: 172.20.68.227
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x0229E002
+                        IPV4 Addr: 172.20.68.225
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 1 (Disabled), PL = 14, PVI = 0 (Enabled)
+                        QCI: 9
+                        Uplnk MBR: 0 kbps
+                        Dnlnk MBR: 0 kbps
+                        Uplnk GBR: 0 kbps
+                        Dnlnk GBR: 0 kbps
+
+
+        RECOVERY: 
+            Value: 0x2B (43)
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:730 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:50014 to 172.20.69.232:8805 (33)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_REPORT_REQUEST (0x38)
+Sequence Number: 0x124100 (1196288)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x001D (29)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        REPORT TYPE: 
+            Subscriber Trace Status Report 
+        SUBSCRIBER TRACE ENABLED: 
+            Value: 
+                STATUS: SUCCESS
+                EXIT CODE: 0
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:730 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:8805 to 172.20.68.228:50014 (21)
+SEID: 0x000800000000257A, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
+Sequence Number: 0x124100 (1196288)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0011 (17)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:733 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:50014 to 172.20.69.232:8805 (33)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_REPORT_REQUEST (0x38)
+Sequence Number: 0x0BA401 (762881)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x001D (29)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        REPORT TYPE: 
+            Subscriber Trace Status Report 
+        SUBSCRIBER TRACE ENABLED: 
+            Value: 
+                STATUS: SUCCESS
+                EXIT CODE: 0
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:733 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:8805 to 172.20.68.228:50014 (21)
+SEID: 0x000800000000257A, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
+Sequence Number: 0x0BA401 (762881)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0011 (17)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:752 Eventid:141004(3)
+[SGW-S11/S4]GTPv2C Rx PDU, from 172.21.21.240:10000 to 172.20.69.225:2123 (34)
+TEID: 0x8B0AC017, Message type: EGTP_MODIFY_BEARER_REQUEST (0x22)
+Sequence Number: 0x000001 (1)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x001E (30)
+
+INFORMATION ELEMENTS
+        BEARER CONTEXT TO BE MODIFIED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                ENB-DATA FTEID: 
+                    Value: 
+                        Interface: ENODE-B S1-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x20010287
+                        IPV4 Addr: 172.21.21.240
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:752 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (65)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x59CF02 (5885698)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x003D (61)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0006
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0005
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x20010287
+                                IPv4 ADDR: 172.21.21.240
+
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:03:50:754 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (29)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x59CF02 (5885698)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:50:754 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:2123 to 172.21.21.240:10000 (46)
+TEID: 0x10010001, Message type: EGTP_MODIFY_BEARER_RESPONSE (0x23)
+Sequence Number: 0x000001 (1)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x002A (42)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        BEARER CONTEXT MODIFIED: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 5
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S1-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x022A2002
+                        IPV4 Addr: 172.20.68.227
+
+
+
+
+
+
+Failure: MonSub : File Transfer failed!
+Monday March 30 2020
+INBOUND>>>>>  23:03:51:685 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:50014 to 172.20.69.232:8805 (35)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_REPORT_REQUEST (0x38)
+Sequence Number: 0x54A702 (5547778)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x001F (31)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        REPORT TYPE: 
+            Subscriber Trace Status Report 
+        SUBSCRIBER TRACE ENABLED: 
+            Value: 
+                STATUS: FAILURE
+                EXIT CODE: 28
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:03:51:685 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:8805 to 172.20.68.228:50014 (21)
+SEID: 0x000800000000257A, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
+Sequence Number: 0x54A702 (5547778)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0011 (17)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:847 Eventid:81991(5)
+Diameter message from 172.21.21.241:3868 to 172.20.69.228:45900
+  Base Header Information:
+   Version: 1
+   Message Length: 612
+   Command Flags: REQ PXY   (192) 
+   Command Code: Re-Auth-Request (258)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0x38f12242
+   End2End-ID: 0x38f12242
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: pcrf-sim
+        [M] Origin-Realm: cisco.com
+        [M] Destination-Realm: kt.com
+        [M] Destination-Host: csc-nsa-smf-7
+        [M] Re-Auth-Request-Type: AUTHORIZE_ONLY (0)
+        [M] Origin-State-Id: 1583813037
+        [M] Route-Record: box
+        [V] [M] Event-Trigger: NO_EVENT_TRIGGERS (14)
+        [V] [M] Charging-Rule-Install: 
+          [V] [M] Charging-Rule-Definition: 
+            [V] [M] Charging-Rule-Name: 2
+            [M] Rating-Group: 60
+            [V] Flow-Information: 
+              [V] [M] Flow-Description: permit in ip from fd02:0:5001:2053:0:6:a174:4b01 to any
+            [V] [M] Flow-Status: ENABLED (2)
+            [V] [M] QoS-Information: 
+              [V] [M] QoS-Class-Identifier: QCI_1 (1)
+              [V] [M] Max-Requested-Bandwidth-UL: 39000
+              [V] [M] Max-Requested-Bandwidth-DL: 39000
+              [V] [M] Guaranteed-Bitrate-UL: 39000
+              [V] [M] Guaranteed-Bitrate-DL: 39000
+              [V] [M] Allocation-Retention-Priority: 
+                [V] Priority-Level: 1
+                [V] Pre-emption-Capability: PRE-EMPTION_CAPABILITY_DISABLED (1)
+                [V] Pre-emption-Vulnerability: PRE-EMPTION_VULNERABILITY_ENABLED (0)
+            [V] [M] Reporting-Level: RATING_GROUP_LEVEL (1)
+            [V] [M] Online: DISABLE_ONLINE (0)
+            [V] [M] Offline: DISABLE_OFFLINE (0)
+            [V] [M] Precedence: 0
+          [V] Resource-Allocation-Notification: ENABLE_NOTIFICATION (0)
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:850 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (717)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x4C5503 (5002499)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x02C9 (713)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0007
+                PRECEDENCE: 
+                    Value: 0x00000000
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: ACCESS (0)
+                    SDF FILTER: 
+                            Value: 
+                                FD : 1
+                                TTC: 0
+                                SPI: 0
+                                FL : 0
+                                FD Length: 63
+                                FLOW: permit in ip from fd02:0:5001:2053:0:6:a174:4b01 any to any any
+
+                    Traffic Endpoint ID: 
+                        Value: 0x0005
+            FAR ID: 
+                Value: 0x0007
+            URR ID: 
+                Value: 0x00000009
+            URR ID: 
+                Value: 0x0000001B
+            RULE NAME: 
+                Value: 2
+            QER ID: 
+                Value: 0x00000002
+            QER ID: 
+                Value: 0x80000003
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0008
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0006
+            OUTER HDR REMOVAL: 
+                Value: GTP-U/UDP/IPv4 (0)
+            FAR ID: 
+                Value: 0x0008
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0009
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0007
+            FAR ID: 
+                Value: 0x0009
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0007
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 0
+                        FORW: 1
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: CORE (1)
+                        PDN INSTANCE: 
+                            Value: cisco3.com
+                    Traffic Endpoint ID: 
+                        Value: 0x0005
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0008
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: ACCESS (0)
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x20010287
+                                IPv4 ADDR: 172.21.21.240
+                    Traffic Endpoint ID: 
+                        Value: 0x0007
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0009
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0006
+
+        CREATE URR: 
+            Value: 
+                URR ID: 
+                    Value: 0x00000009
+                MEASUREMENT METHOD: 
+                    Event: 0
+                    Volume: 1
+                    Duration: 1
+                REPORTING TRIGGERS: 
+                    Volume Quota: 0
+                    Time Quota: 0
+                    Envelope Closure: 0
+                    Periodic Reporting: 0
+                    Volume Threshold: 0
+                    Time Threshold: 1
+                    Quota Holding Time: 0
+                    Start of Traffic: 0
+                    Stop of Traffic: 0
+                    Dropped DL Traffic Threshold: 0
+                    Linked Usage Reporting: 0
+                TIME THRESHOLD: 
+                    Value: 3600
+                EXTENDED MEASUREMENT METHOD: 
+                    Packet: 1
+
+        CREATE URR: 
+            Value: 
+                URR ID: 
+                    Value: 0x0000001B
+                MEASUREMENT METHOD: 
+                    Event: 0
+                    Volume: 1
+                    Duration: 1
+                REPORTING TRIGGERS: 
+                    Volume Quota: 0
+                    Time Quota: 0
+                    Envelope Closure: 0
+                    Periodic Reporting: 0
+                    Volume Threshold: 1
+                    Time Threshold: 1
+                    Quota Holding Time: 0
+                    Start of Traffic: 0
+                    Stop of Traffic: 0
+                    Dropped DL Traffic Threshold: 0
+                    Linked Usage Reporting: 0
+                VOLUME THRESHOLD: 
+                    Uplink Volume: 100
+                TIME THRESHOLD: 
+                    Value: 300
+                EXTENDED MEASUREMENT METHOD: 
+                    Packet: 1
+
+        CREATE QER: 
+            Value: 
+                QER ID: 
+                    Value: 0x00000002
+                GATE STATUS: 
+                    Ul Gate: OPEN
+                    Dl Gate: OPEN
+                MBR: 
+                    UL MBR: 39 kbps
+                    DL MBR: 39 kbps
+                GBR: 
+                    UL GBR: 39 kbps
+                    Dl GBR: 39 kbps
+
+        CREATE QER: 
+            Value: 
+                QER ID: 
+                    Value: 0x80000003
+                GATE STATUS: 
+                    Ul Gate: OPEN
+                    Dl Gate: OPEN
+                MBR: 
+                    UL MBR: 39 kbps
+                    DL MBR: 39 kbps
+                GBR: 
+                    UL GBR: 39 kbps
+                    Dl GBR: 39 kbps
+
+        SUBSCRIBER PARAMS: 
+            Charging-Characters: 0x3412
+            Rat-Type: 6
+            MCC-MNC: 45008
+            SGSN-Address: 172.20.69.226
+            ULI: TAI=210101123400
+            Congestion-Level: 0
+            GGSN-Address: 172.20.69.227
+            User-Name: 12110030101804@cisco3.com
+            Session-ID: AC1445E3028E298F
+            CALLED-STATION-ID: cisco3.com
+            CALLING-STATION-ID: 12110030101804
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0005
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+                    PDN INSTANCE: 
+                        Value: cisco3.com
+                UE IP ADDR: 
+                    Value: 
+                        S/D: 0
+                        IPv4: 0
+                        IPv6: 1
+                        IPv6 ADDR: fd02:0:5001:2053:0:6:a174:4b01
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0006
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0007
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:853 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (71)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x4C5503 (5002499)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0043 (67)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0007
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x0229A002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.227
+                    CHID: 0
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0006
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x04B0C002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.226
+                    CHID: 0
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0005
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x02298002
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.68.225
+                    CHID: 0
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:853 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (65)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x5A2D04 (5909764)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x003D (61)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0007
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0009
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x02298002
+                                IPv4 ADDR: 172.20.68.225
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:854 Eventid:81990(5)
+Diameter message from 172.20.69.228:45900 to 172.21.21.241:3868
+  Base Header Information:
+   Version: 1
+   Message Length: 176
+   Command Flags:  PXY   (64) 
+   Command Code: Re-Auth-Answer (258)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0x38f12242
+   End2End-ID: 0x38f12242
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Origin-Host: csc-nsa-smf-7
+        [M] Origin-Realm: kt.com
+        [M] Result-Code: DIAMETER_SUCCESS (2001)
+        [M] Origin-State-Id: 1583813037
+        [V] [M] Access-Network-Charging-Address: IPv4 172.20.69.227
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:854 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (29)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x5A2D04 (5909764)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:854 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (114)
+TEID: 0x85E5C017, Message type: EGTP_CREATE_BEARER_REQUEST (0x5F)
+Sequence Number: 0x64A817 (6596631)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x006E (110)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 5
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 0
+
+                BEARER TFT: 
+                    Value: 
+                        Opcode: Create New TFT
+                        TFT Packet Filters: 1
+                        Filter Dir: 2 (Uplink only)
+                        Filter Id.: 0  
+                        Eval Prec: 48 
+                        Pkt Filter Contents Len: 33
+                        Components: 
+                            ipv6 remote: :: / ::
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x02298002
+                        IPV4 Addr: 172.20.68.225
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 1 (Disabled), PL = 1, PVI = 0 (Enabled)
+                        QCI: 1
+                        Uplnk MBR: 39 kbps
+                        Dnlnk MBR: 39 kbps
+                        Uplnk GBR: 39 kbps
+                        Dnlnk GBR: 39 kbps
+
+                CHARGING ID: 
+                    Value: 0x028E2990
+
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:855 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (114)
+TEID: 0x85E5C017, Message type: EGTP_CREATE_BEARER_REQUEST (0x5F)
+Sequence Number: 0x64A817 (6596631)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x006E (110)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 5
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 0
+
+                BEARER TFT: 
+                    Value: 
+                        Opcode: Create New TFT
+                        TFT Packet Filters: 1
+                        Filter Dir: 2 (Uplink only)
+                        Filter Id.: 0  
+                        Eval Prec: 48 
+                        Pkt Filter Contents Len: 33
+                        Components: 
+                            ipv6 remote: :: / ::
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x02298002
+                        IPV4 Addr: 172.20.68.225
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 1 (Disabled), PL = 1, PVI = 0 (Enabled)
+                        QCI: 1
+                        Uplnk MBR: 39 kbps
+                        Dnlnk MBR: 39 kbps
+                        Uplnk GBR: 39 kbps
+                        Dnlnk GBR: 39 kbps
+
+                CHARGING ID: 
+                    Value: 0x028E2990
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:855 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (119)
+TEID: 0x10010001, Message type: EGTP_CREATE_BEARER_REQUEST (0x5F)
+Sequence Number: 0x64F017 (6615063)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0073 (115)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 5
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 0
+
+                BEARER TFT: 
+                    Value: 
+                        Opcode: Create New TFT
+                        TFT Packet Filters: 1
+                        Filter Dir: 2 (Uplink only)
+                        Filter Id.: 0  
+                        Eval Prec: 48 
+                        Pkt Filter Contents Len: 33
+                        Components: 
+                            ipv6 remote: :: / ::
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S1-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x0229A002
+                        IPV4 Addr: 172.20.68.227
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x02298002
+                        IPV4 Addr: 172.20.68.225
+
+                BEARER QOS: 
+                    Value: 
+                        ARP: PCI = 1 (Disabled), PL = 1, PVI = 0 (Enabled)
+                        QCI: 1
+                        Uplnk MBR: 39 kbps
+                        Dnlnk MBR: 39 kbps
+                        Uplnk GBR: 39 kbps
+                        Dnlnk GBR: 39 kbps
+
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:861 Eventid:141004(3)
+[SGW-S11/S4]GTPv2C Rx PDU, from 172.21.21.240:2123 to 172.20.69.225:30368 (59)
+TEID: 0x8B0AC017, Message type: EGTP_CREATE_BEARER_RESPONSE (0x60)
+Sequence Number: 0x64F017 (6615063)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0037 (55)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 6
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                ENB-DATA FTEID: 
+                    Value: 
+                        Interface: ENODE-B S1-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x200101A6
+                        IPV4 Addr: 172.21.21.240
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S1-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x0229A002
+                        IPV4 Addr: 172.20.68.227
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:861 Eventid:141005(3)
+[SGW-S5]GTPv2C Tx PDU, from 172.20.69.226:2123 to 172.20.69.227:30368 (59)
+TEID: 0x80E9C017, Message type: EGTP_CREATE_BEARER_RESPONSE (0x60)
+Sequence Number: 0x64A817 (6596631)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0037 (55)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 6
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x04B0C002
+                        IPV4 Addr: 172.20.68.226
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x02298002
+                        IPV4 Addr: 172.20.68.225
+
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:862 Eventid:141004(3)
+[PGW-S5/S2a/S2b]GTPv2C Rx PDU, from 172.20.69.226:2123 to 172.20.69.227:30368 (59)
+TEID: 0x80E9C017, Message type: EGTP_CREATE_BEARER_RESPONSE (0x60)
+Sequence Number: 0x64A817 (6596631)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0037 (55)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 6
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+                SGW-DATA FTEID: 
+                    Value: 
+                        Interface: SGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x04B0C002
+                        IPV4 Addr: 172.20.68.226
+
+                PGW-DATA FTEID: 
+                    Value: 
+                        Interface: PGW S5/S8-U
+                        IPv4 Flag: 1
+                        IPv6 Flag: 0
+                        Teid: 0x02298002
+                        IPV4 Addr: 172.20.68.225
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:20:862 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (189)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x5A3905 (5912837)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x00B9 (185)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0009
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0008
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x200101A6
+                                IPv4 ADDR: 172.21.21.240
+                        TRANSPORT LEVEL MARKING: 
+                            TOS/TRAFFIC CLASS: 0x58 0xFC
+                        INNER PACKET MARKING: 
+                            TOS/TRAFFIC CLASS: 0x50 0xFC
+
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0009
+            UPDATE FORWARDING PARAMETERS: 
+                Value: 
+                    TRANSPORT LEVEL MARKING: 
+                        TOS/TRAFFIC CLASS: 0x48 0xFC
+                    INNER PACKET MARKING: 
+                        TOS/TRAFFIC CLASS: 0x40 0xFC
+
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0007
+            UPDATE FORWARDING PARAMETERS: 
+                Value: 
+                    TRANSPORT LEVEL MARKING: 
+                        TOS/TRAFFIC CLASS: 0x40 0xFC
+                    LAYER2 MARKING: 
+                        TYPE PRIORITY: No-Marking  0x0   
+
+
+        UPDATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0005
+            Bearer Info: 
+                QCI: 1
+                ARP: 68
+                Charging ID: 42871184
+
+        UPDATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0007
+            Bearer Info: 
+                QCI: 1
+                ARP: 68
+                Charging ID: 42871184
+
+        UPDATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0006
+            Bearer Info: 
+                QCI: 1
+                ARP: 68
+                Charging ID: 42871184
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:20:864 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (29)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x5A3905 (5912837)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:29:352 Eventid:81991(5)
+Diameter message from 172.21.21.241:3868 to 172.20.69.228:45900
+  Base Header Information:
+   Version: 1
+   Message Length: 292
+   Command Flags: REQ PXY   (192) 
+   Command Code: Re-Auth-Request (258)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0x38f12243
+   End2End-ID: 0x38f12243
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: pcrf-sim
+        [M] Origin-Realm: cisco.com
+        [M] Destination-Realm: kt.com
+        [M] Destination-Host: csc-nsa-smf-7
+        [M] Re-Auth-Request-Type: AUTHORIZE_ONLY (0)
+        [M] Origin-State-Id: 1583813037
+        [M] Route-Record: box
+        [V] [M] Supported-Features: 
+          [M] Vendor-Id: 10415
+        [V] [M] Supported-Features: 
+          [M] Vendor-Id: 10415
+        [V] [M] Charging-Rule-Remove: 
+          [V] [M] Charging-Rule-Name: 2
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:29:356 Eventid:81990(5)
+Diameter message from 172.20.69.228:45900 to 172.21.21.241:3868
+  Base Header Information:
+   Version: 1
+   Message Length: 232
+   Command Flags:  PXY   (64) 
+   Command Code: Re-Auth-Answer (258)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0x38f12243
+   End2End-ID: 0x38f12243
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Origin-Host: csc-nsa-smf-7
+        [M] Origin-Realm: kt.com
+        [V] [M] Supported-Features: 
+          [M] Vendor-Id: 10415
+          [V] Feature-List-ID: 1
+          [V] Feature-List: 2
+        [M] Result-Code: DIAMETER_SUCCESS (2001)
+        [M] Origin-State-Id: 1583813037
+        [V] [M] Access-Network-Charging-Address: IPv4 172.20.69.227
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:29:356 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (169)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x591206 (5837318)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x00A5 (165)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0007
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0009
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        SUBSCRIBER PARAMS: 
+            Charging-Characters: 0x3412
+            Rat-Type: 6
+            MCC-MNC: 45008
+            SGSN-Address: 172.20.69.226
+            ULI: TAI=210101123400
+            Congestion-Level: 0
+            GGSN-Address: 172.20.69.227
+            User-Name: 12110030101804@cisco3.com
+            Session-ID: AC1445E3028E298F
+            CALLED-STATION-ID: cisco3.com
+            CALLING-STATION-ID: 12110030101804
+
+        REMOVE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0006
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:29:358 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (29)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x591206 (5837318)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:29:358 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:29:359 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:29:359 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (17)
+TEID: 0x10010001, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x652817 (6629399)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:34:356 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (17)
+TEID: 0x10010001, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x652817 (6629399)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:34:357 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:34:357 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:39:282 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:39:282 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (17)
+TEID: 0x10010001, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x652817 (6629399)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:39:283 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:44:308 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:44:308 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (17)
+TEID: 0x10010001, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x652817 (6629399)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:44:309 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:49:334 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:49:334 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (17)
+TEID: 0x10010001, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x652817 (6629399)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:49:334 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (17)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x000D (13)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 6
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:363 Eventid:141005(3)
+[SGW-S5]GTPv2C Tx PDU, from 172.20.69.226:2123 to 172.20.69.227:30368 (33)
+TEID: 0x80E9C017, Message type: EGTP_DELETE_BEARER_RESPONSE (0x64)
+Sequence Number: 0x64E817 (6613015)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x001D (29)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        BEARER CONTEXT: 
+            Value: 
+                EPS BEARER ID: 
+                    Value: 6
+
+                CAUSE: 
+                    Value: 
+                        Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                        PCE: 0
+                        BCE: 0
+                        CS: 0
+
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:363 Eventid:141005(3)
+[PGW-S5/S2a/S2b]GTPv2C Tx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (23)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64A017 (6594583)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0013 (19)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 5
+
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_PEER_NOT_RESPONDING (0x64)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:363 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (118)
+SEID: 0x000800000000257A, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x579F07 (5742343)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0072 (114)
+        Interface: SXab
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0005
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0006
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0003
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0004
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x8002
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x8001
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:54:364 Eventid:141004(3)
+[SGW-S5]GTPv2C Rx PDU, from 172.20.69.227:30368 to 172.20.69.226:2123 (23)
+TEID: 0x85E5C017, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x64A017 (6594583)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0013 (19)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 5
+
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_PEER_NOT_RESPONDING (0x64)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:364 Eventid:141005(3)
+[SGW-S11/S4]GTPv2C Tx PDU, from 172.20.69.225:30368 to 172.21.21.240:2123 (23)
+TEID: 0x10010001, Message type: EGTP_DELETE_BEARER_REQUEST (0x63)
+Sequence Number: 0x658817 (6653975)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0013 (19)
+
+INFORMATION ELEMENTS
+        EPS BEARER ID: 
+            Value: 5
+
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_PEER_NOT_RESPONDING (0x64)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:54:365 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (29)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x579F07 (5742343)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:365 Eventid:141005(3)
+[SGW-S5]GTPv2C Tx PDU, from 172.20.69.226:2123 to 172.20.69.227:30368 (23)
+TEID: 0x80E9C017, Message type: EGTP_DELETE_BEARER_RESPONSE (0x64)
+Sequence Number: 0x64A017 (6594583)
+GTP HEADER
+        Version number: 2
+        TEID flag: Present
+        Piggybacking flag: Not present
+        Message Priority flag: Not present
+        Message Priority: NA
+        Message Length: 0x0013 (19)
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: EGTP_CAUSE_REQ_ACCEPTED (0x10)
+                PCE: 0
+                BCE: 0
+                CS: 0
+
+        EPS BEARER ID: 
+            Value: 5
+
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:464 Eventid:221302(3)
+[C-PLANE]PFCP Tx PDU, from 172.20.69.232:50161 to 172.20.68.228:8805 (16)
+SEID: 0x000800000000257A, Message type: SX_SESSION_DELETION_REQUEST (0x36)
+Sequence Number: 0x589F08 (5807880)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x000C (12)
+        Interface: SXab
+        Compression: Not Enabled
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:54:465 Eventid:221301(3)
+[C-PLANE]PFCP Rx PDU, from 172.20.68.228:8805 to 172.20.69.232:50161 (82)
+SEID: 0x005C0000000008DB, Message type: SX_SESSION_DELETION_RESPONSE (0x37)
+Sequence Number: 0x589F08 (5807880)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x004E (78)
+        Interface: SXab
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+        USAGE REPORT: 
+            Value: 
+            URR ID: 
+                Value: 0x00000009
+            UR-SEQN: 
+                Value: 1
+            USAGE REPORT TRIGGER: 
+                Termination Report 
+            START TIME: 
+                Value: 1585577060
+            END TIME: 
+                Value: 1585577094
+            DURATION MEASUREMENT: 
+                Value: 34
+
+        USAGE REPORT: 
+            Value: 
+            URR ID: 
+                Value: 0x0000001B
+            UR-SEQN: 
+                Value: 1
+            USAGE REPORT TRIGGER: 
+                Termination Report 
+            START TIME: 
+                Value: 1585577060
+            END TIME: 
+                Value: 1585577094
+            DURATION MEASUREMENT: 
+                Value: 34
+
+        USAGE REPORT: 
+            Value: 
+            URR ID: 
+                Value: 0x80000009
+            UR-SEQN: 
+                Value: 1
+            USAGE REPORT TRIGGER: 
+                Termination Report 
+            START TIME: 
+                Value: 1585577030
+            END TIME: 
+                Value: 1585577094
+            DURATION MEASUREMENT: 
+                Value: 64
+
+
+
+Monday March 30 2020
+***CONTROL*** 23:04:54:468 Eventid:10285 
+CALL STATS: <12110030101804@cisco3.com>, msid <450081030101806>, Call-Duration(sec): 64
+  input pkts: 0                          output pkts: 0           
+  input bytes: 0                         output bytes: 0           
+  input bytes dropped: 0                 output bytes dropped: 0         
+  input pkts dropped: 0                  output pkts dropped: 0         
+  pk rate from user(bps): 0              pk rate to user(bps): 0           
+  ave rate from user(bps): 0             ave rate to user(bps): 0           
+  sust rate from user(bps): 0            sust rate to user(bps): 0           
+  pk rate from user(pps): 0              pk rate to user(pps): 0           
+  ave rate from user(pps): 0             ave rate to user(pps): 0           
+  sust rate from user(pps): 0            sust rate to user(pps): 0           
+  link online/active percent: 72 
+  ipv4 bad hdr: 0                        ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                 ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                 ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv4 input non-mip drop: 0             ipv4 output non-mip drop: 0         
+  ipv4 input css drop: 0                 ipv4 output css drop: 0         
+  output gre xoff pkts drop: 0           output gre xoff bytes drop: 0         
+  ipv4 output no-flow drop: 0         
+  ipv4 source violations: 0              ipv4 early pdu drop: 0         
+  ipv4 proxy-dns redirect: 0             ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0                 ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                        ipv6 bad length trim: 0         
+  ip source violation no acct: 0          ip source violation ignored: 0         
+  dlnk pkts exceeded bw: 0               dlnk pkts violated bw: 0         
+  uplnk pkts exceeded bw: 0              uplnk pkts violated bw: 0         
+  dormancy total: 0                      handoff total: 0         
+  Disconnect Reason: No-response
+  Last Progress State: GTP-PDN-IPv6-Connected
+
+
+Monday March 30 2020
+<<<<OUTBOUND  23:04:54:468 Eventid:81990(5)
+Diameter message from 172.20.69.228:45900 to 172.21.21.241:3868
+  Base Header Information:
+   Version: 1
+   Message Length: 420
+   Command Flags: REQ PXY   (192) 
+   Command Code: Credit-Control-Request (272)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0xc2f56af4
+   End2End-ID: 0x02f821f4
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: csc-nsa-smf-7
+        [M] Origin-Realm: kt.com
+        [M] Destination-Realm: cisco.com
+        [M] CC-Request-Type: TERMINATION_REQUEST (3)
+        [M] CC-Request-Number: 2
+        [M] Destination-Host: pcrf-sim
+        [M] Origin-State-Id: 1583813037
+        [M] Subscription-Id: 
+          [M] Subscription-Id-Type: END_USER_E164 (0)
+          [M] Subscription-Id-Data: 12110030101804
+        [M] Subscription-Id: 
+          [M] Subscription-Id-Type: END_USER_IMSI (1)
+          [M] Subscription-Id-Data: 450081030101806
+        [M] Framed-IPv6-Prefix: Reserved: 00 Prefixlen: 64 IPv6 prefix: fd02:0:5001:2053::
+        [M] Termination-Cause: DIAMETER_LOGOUT (1)
+        [M] User-Equipment-Info: 
+          [M] User-Equipment-Info-Type: IMEISV (0)
+          [M] User-Equipment-Info-Value: 1122334455667788
+        [M] Called-Station-Id: cisco3.com
+        [V] [M] Access-Network-Charging-Address: IPv4 172.20.69.227
+
+
+Monday March 30 2020
+INBOUND>>>>>  23:04:54:477 Eventid:81991(5)
+Diameter message from 172.21.21.241:3868 to 172.20.69.228:45900
+  Base Header Information:
+   Version: 1
+   Message Length: 188
+   Command Flags:  PXY   (64) 
+   Command Code: Credit-Control-Answer (272)
+   Application ID: 3GPP-Gx (16777238)
+   Hop2Hop-ID: 0xc2f56af4
+   End2End-ID: 0x02f821f4
+  AVP Information:
+        [M] Session-Id: csc-nsa-smf-7;111244363-450081030101806;940594199;5e81fc46-1702
+        [M] Auth-Application-Id: 16777238
+        [M] Origin-Host: pcrf-sim
+        [M] Origin-Realm: cisco.com
+        [M] Result-Code: DIAMETER_SUCCESS (2001)
+        [M] CC-Request-Type: TERMINATION_REQUEST (3)
+        [M] CC-Request-Number: 2
+        [M] Route-Record: box
+
+
+
+
+ ***
+ *** Call Finished - Waiting to trace next matching call
+ ***
+

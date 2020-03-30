@@ -16,7 +16,9 @@ test_prepartion:
   hostfile: saesim1.yaml
 - host: gx_cli
   hostfile: gx1.yaml
-- host: ping_cli
+- host: ping_cli1
+  hostfile: router1.yaml
+- host: ping_cli2
   hostfile: router1.yaml
 
 # proc_type: [ mon_pro | show_cli | sim_sli | gx_cli ]
@@ -75,11 +77,20 @@ test_procedure:
   cmd: show subs imsi 450081030101806
   more: True
 - proc_type: ping_cli
-  wait: 5
+  wait: 1
   loop: 1
-  host: ping_cli
+  host: ping_cli1
   cmd: ping6
   imsi: 450081030101806
+  ebi: 5
+  option: count 15 interval 1 packet-size 64
+- proc_type: ping_cli
+  wait: 5
+  loop: 1
+  host: ping_cli2
+  cmd: ping6
+  imsi: 450081030101806
+  ebi: 6
   option: count 15 interval 1 packet-size 64
 - proc_type: show_cli
   wait: 1

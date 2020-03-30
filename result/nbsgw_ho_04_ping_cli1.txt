@@ -1,0 +1,22 @@
+TB_7F_N9508_Core1# ping6 fd02:0:5001:2053::f570:6801 count 15 interval 1 packet- size 64
+PING6 fd02:0:5001:2053::f570:6801 (fd02:0:5001:2053::f570:6801): 64 data bytes
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=0 time=3.091 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=1 time=2.578 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=2 time=2.485 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=3 time=2.275 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=4 time=2.28 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=5 time=2.089 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=6 time=2.519 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=7 time=2.318 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=8 time=2.189 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=9 time=2.019 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=10 time=2.132 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=11 time=2.418 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=12 time=2.463 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=13 time=2.466 ms
+72 bytes from fd02:0:5001:2053::f570:6801: icmp_seq=14 time=2.518 ms
+
+--- fd02:0:5001:2053::f570:6801 ping6 statistics ---
+15 packets transmitted, 15 packets received, 0.00% packet loss
+round-trip min/avg/max = 2.019/2.389/3.091 ms
+TB_7F_N9508_Core1# 

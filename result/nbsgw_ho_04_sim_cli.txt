@@ -1,0 +1,17 @@
+sim1:~# cd sae_sim; ipython -i scripts/7F_inkwon/5g_nsa_2pdn.pySTARENT SAE Sim
+[2020-03-31 07:13:09,089] [MME-Egress-EGTPC_Node DEBUG] Listening on ctrl<172.21.21.240:2123>, src<172.21.21.240:10000>
+[2020-03-31 07:13:09,090] [MME-Egress-EGTPC_Node DEBUG] Starting the thread
+[2020-03-31 07:13:09,090] [ENODEB-S1U-172.21.21.246_Node DEBUG] Listening on data<172.21.21.246:2152>
+[2020-03-31 07:13:09,090] [ENODEB-S1U-172.21.21.246_Node DEBUG] Starting the thread
+[2020-03-31 07:13:09,091] [ENODEB-S1U-172.21.21.247_Node DEBUG] Listening on data<172.21.21.247:2152>
+[2020-03-31 07:13:09,091] [ENODEB-S1U-172.21.21.247_Node DEBUG] Starting the thread
+State Transition: SAE_SIM_STATE_NONE -> SAE_SIM_STATE_STARTUP
+
+[0;34msim1:~# mme.ueReqPdnConnTrgr(user_sess,apn_str=apn_str2,up_fn_sel=UpFnSelInd(dcnr=1))[[1;34m1[0;34m]: [0mmme.ueReqPdnConnTrgr(user_sess,apn_str=apn_str2,up_fn_sel=UpFnSelInd( dcnr=1))
+[0;31mMME Out[[1;31m1[0;31m]: [0m
+(<app.common.UserSess.PdnSess instance at 0xf73d43ac>,
+ <app.common.UserSess.BearerSess instance at 0xf73d430c>)
+
+[0;34msim1:~# mme.s1ReestablishTrgr(user_sess, enodeb_addr="172.21.21.247")
+[0;34msim1:~# mme.clearSub()
+[0;34msim1:~# d[[1;34m4[0;34m]: [0m

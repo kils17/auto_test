@@ -6,8 +6,18 @@ name: NB-SGW Handover test
 description: kkk
 
 test_list:
-#- nbsgw_ho_01.yaml
-#- nbsgw_ho_02.yaml
+- nbsgw_ho_01.yaml
+- nbsgw_ho_02.yaml
 - nbsgw_ho_03.yaml
+- nbsgw_ho_04.yaml
+- nbsgw_ho_06.yaml
+- nbsgw_ho_07.yaml
+- nbsgw_ho_08.yaml
+- nbsgw_ho_10.yaml
+- nbsgw_ho_11.yaml
+- nbsgw_ho_12.yaml
+- nbsgw_ho_13.yaml
+- nbsgw_ho_14.yaml
+- nbsgw_ho_15.yaml
 
 ...

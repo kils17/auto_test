@@ -3,6 +3,61 @@
 
 case $1 in
 
+ho_01)
+./minidclisender 172.21.21.241 3868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 3868 --gx-command 3 &&
+./minidclisender 172.21.21.241 3868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 3868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 3868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 3868 --flow-information   &&
+./minidclisender 172.21.21.241 3868 --flow-info-flow-description "permit in ip from $2 to any"  &&
+./minidclisender 172.21.21.241 3868 --flow-information   &&
+./minidclisender 172.21.21.241 3868 --flow-info-flow-description "permit out ip from any to $2"  &&
+./minidclisender 172.21.21.241 3868 --flow-status  2 &&
+./minidclisender 172.21.21.241 3868 --precedence   0 &&
+./minidclisender 172.21.21.241 3868 --flow-authorized-qos "1 39000 39000 39000 39000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 3868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 3868 --report-level  1 &&
+./minidclisender 172.21.21.241 3868 --enable-online 0 &&
+./minidclisender 172.21.21.241 3868 --enable-offline 0 &&
+./minidclisender 172.21.21.241 3868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 3868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 3868 --rar-time 1
+;;
+
+ho_02)
+./minidclisender 172.21.21.241 3868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 3868 --gx-command 3 &&
+./minidclisender 172.21.21.241 3868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 3868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 3868 --charging-rule-name  2 &&
+./minidclisender 172.21.21.241 3868 --flow-information   &&
+./minidclisender 172.21.21.241 3868 --flow-info-flow-description "permit in ip from $2 to any"  &&
+./minidclisender 172.21.21.241 3868 --flow-information   &&
+./minidclisender 172.21.21.241 3868 --flow-info-flow-description "permit out ip from any to $2"  &&
+./minidclisender 172.21.21.241 3868 --flow-status  2 &&
+./minidclisender 172.21.21.241 3868 --precedence   0 &&
+./minidclisender 172.21.21.241 3868 --flow-authorized-qos "1 49000 49000 49000 49000  -1 1 1 0" &&
+./minidclisender 172.21.21.241 3868 --rating-grp  60 &&
+./minidclisender 172.21.21.241 3868 --report-level  1 &&
+./minidclisender 172.21.21.241 3868 --enable-online 0 &&
+./minidclisender 172.21.21.241 3868 --enable-offline 0 &&
+./minidclisender 172.21.21.241 3868 --resource-allocation-notification  0 &&
+./minidclisender 172.21.21.241 3868 --event-trigger  14 &&
+./minidclisender 172.21.21.241 3868 --rar-time 1
+;;
+
+ho_03)
+./minidclisender 172.21.21.241 3868 --reset-rar-info-gx &&
+./minidclisender 172.21.21.241 3868 --gx-command 3 &&
+./minidclisender 172.21.21.241 3868 --supported-features 10415 1 2 &&
+./minidclisender 172.21.21.241 3868 --supported-features 10415 2 128 &&
+./minidclisender 172.21.21.241 3868 --destination-host   csc-nsa-smf-7 &&
+./minidclisender 172.21.21.241 3868 --destination-realm kt.com &&
+./minidclisender 172.21.21.241 3868 --remove-level-charging-rule-name  2 &&
+./minidclisender 172.21.21.241 3868 --rar-time 1
+;;
+
 va_01) 
 ./minidclisender 172.21.21.241 4868 --reset-rar-info-gx &&
 ./minidclisender 172.21.21.241 4868 --gx-command 3 &&

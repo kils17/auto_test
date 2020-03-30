@@ -1,0 +1,7 @@
+TB_7F_N9508_Core1# ping6 fd02:0:5001:2053:0:7:396b:df01 count 1 interval 1 packe t-size 64
+PING6 fd02:0:5001:2053:0:7:396b:df01 (fd02:0:5001:2053:0:7:396b:df01): 64 data bytes
+Request 0 timed out
+
+--- fd02:0:5001:2053:0:7:396b:df01 ping6 statistics ---
+1 packets transmitted, 0 packets received, 100.00% packet loss
+TB_7F_N9508_Core1# 

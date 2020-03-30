@@ -1,5 +1,5 @@
 [local]TB_UPF02-08# mon subs imsi 450081030101806
-Friday March 27 16:47:49 KST 2020
+Monday March 30 22:45:53 KST 2020
 
 
 NO MATCHING CALL - waiting for a matching call to connect...
@@ -153,7 +153,7 @@ N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
 ----------------------------------------------------------------------
 Incoming Call:
 ----------------------------------------------------------------------
- MSID/IMSI   : 450081030101806             Callid      : 00e67308
+ MSID/IMSI   : 450081030101806             Callid      : 0001913b
  IMEI        : 1122334455667788            MSISDN      : 12110030101804
  Username    : 12110030101804@cisco3.com   SessionType : n/a
  Status      : Active                      Service Name: UP-SVC
