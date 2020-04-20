@@ -1,0 +1,11 @@
+---
+# test list
+
+name: SGW-only call test
+
+description: kkk
+
+test_list:
+- sgw_only_09.yaml
+
+...

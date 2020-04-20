@@ -1,0 +1,1431 @@
+[local]CISCO_SMF_7F# show ver
+Friday April 17 12:22:07 KST 2020
+Active Software:
+  Image Version:                  21.17.1
+  Image Build Number:             74081
+  Image Description:              Deployment_Build
+  Image Date:                     Mon Jan  6 19:06:21 EST 2020
+  Boot Image:                     /flash/qvpc-di-21.17.1.bin
+  Source Commit ID:               f56b41e56962db68420ef4edbc04bc84cb23cdac
+[local]CISCO_SMF_7F# show subs imsi 450081030101805
+Friday April 17 12:22:10 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+OTC.AT 07d04b97 450081030101805 12110030101854         2001:e60:efe0:3167:0:9:89b6:6601 00h00m13s
+
+Total subscribers matching specified criteria: 1
+[local]CISCO_SMF_7F# show subs saegw-only full imsi 450081030101805
+Friday April 17 12:22:13 KST 2020
+
+Username            : 12110030101854                
+  SAEGW Call mode   : Sgw-Anchored
+  Subscriber Type   : Visitor
+  Status            : Online/Active
+  State             : Connected
+  Bearer State      : N/A
+  Connect Time      : Fri Apr 17 12:21:57 2020
+
+  SAEGW UID         : 6f70001b
+  Idle time         : 00h00m15s
+  Auto Delete        : No
+
+  Callid            : 07d04b97                    IMSI                : 450081030101805
+  Card/Cpu          : 4/0                         Sessmgr Instance    : 27
+  Source context    : sae                         Destination context : sae
+  Bearer Type       : Default                     Bearer-Id           : 5
+  Access Type       : sgw-pdn-type-ipv6           Network Type        : IPv6
+  Access Tech       : eUTRAN                      saegw-service-name  : saegw-srv1
+  MSISDN            : 12110030101854
+  TWAN Mode         : N/A
+  eMPS Bearer       : No
+  MS TimeZone       :                             Daylight Saving Time: n/a
+  MEI               : 1122334455667788            Accounting mode     : GTPP
+  Serving Nw        : n/a                         APN Selection mode  : Subscribed
+  Emergency Bearer  : n/a                         UnAutheticated IMSI : NO
+  Charging id       : 178957026                
+  Charging chars (hex): 0x0002                    Charging chars      : flat 
+  Charging Group    : n/a                         Charging Host Name  : n/a                 
+  IP Source Validation : Disabled  
+  Downlink APN AMBR :    1410066 Kbps             Uplink APN AMBR     :    1410066 Kbps
+  S5/S8-APN         : cisco17.com                 SGi-APN             : n/a                   
+  S6b Returned Virtual APN:   n/a                      
+  S6b Auth Status   : N/A
+  IMS-Media Bearer  : No                          NTSR state          : Normal                
+  APN-OI            : n/a                         Low Access Priority : No
+  PGW PLMN ID       : n/a                      
+  IMS Auth Service  : n/a
+  SGW Opr Policy    : None                        SGW APN Profile     : None                
+  IP allocation type: no alloc                  
+  IPv6 alloc type   : no alloc                  
+  ECS Rulebase      : n/a
+  Chrg Char Sel Mod : Peer Supplied
+  Restoration priority level : n/a
+  HLCOM Session     : No                        
+  IP Address        : 2001:e60:efe0:3167:0:9:89b6:6601
+  Bearer capable for restoration: No
+  UE P-CSCF Restoration Support : n/a
+
+  Peer Profile      : 
+    PGW Access      : n/a            
+    SGW Access      : default        
+    SGW Network     : default
+
+  ULI               : TAI-ID
+    MCC             : 214                         MNC              : 365
+    LAC             : n/a                         TAC              : 0x6788
+    SAC             : n/a                         RAC              : n/a
+    CI              : n/a                         ECI              : 0x1234567
+
+  Bearer QoS        : 
+   QCI              : 9 
+   ARP              : 0x078 
+   PCI              : 1 (Disabled) 
+   PL               : 14 
+   PVI              : 0 (Enabled) 
+   MBR Uplink(bps)  : 0                           MBR Downlink(bps)   : 0
+   GBR Uplink(bps)  : 0                           GBR Downlink(bps)   : 0
+
+  PCRF Authorized Bearer QoS:
+   QCI: n/a 
+   ARP: n/a
+   PCI: n/a
+   PL: n/a
+   PVI: n/a 
+   MBR uplink (bps): n/a                       MBR downlink (bps): n/a                  
+   GBR uplink (bps): n/a                       GBR downlink (bps): n/a                  
+   Uplink APN AMBR (bps): n/a                 Downlink APN AMBR (bps): n/a                  
+
+  Access Ctrl Lists :
+   input ipv4 acl   :                             output ipv4 acl     :                     
+   input ipv6 acl   :                             output ipv6 acl     :                     
+   Idle-mode v4 acl : None                        Idle-mode v6 acl    : None                
+
+ 
+  P-CSCF Address Information: 
+    Primary IPv6  :   n/a
+    Secondary IPv6:   n/a
+    Tertiary IPv6 :   n/a
+
+    Primary IPv4  :   n/a
+    Secondary IPv4:   n/a
+    Tertiary IPv4 :   n/a
+
+  S5/S8 interface   : 
+    pgw c-addr      :  192.168.84.1
+    pgw u-addr      :  192.168.84.11
+    pgw c-teid      :  [0x8008a021]               pgw u-teid          : [0x8008a021]
+
+    sgw c-addr      :  172.20.69.226
+    sgw u-addr      :  172.20.101.226
+    sgw c-teid      :  [0x83d6801b]               sgw u-teid          : [0x8001c003]
+
+
+  S11/S4/S12 i/f    :
+    ISR             : Inactive                    ISR Active Interface: None
+
+    sgw c-addr      : 172.20.69.225              
+    sgw u-addr      : 172.20.101.227             
+    sgw c-teid      : [0x8309a01b]                sgw u-teid          :[0x8002c003] 
+
+    mme c-addr      : 172.21.21.240             
+    enb u-addr      : 172.21.21.248             
+    mme u-addr      :                           
+    mme c-teid      : [0x10010001]                enb u-teid          :[0x2001006a] 
+    mme u-teid      : [0x00000000] 
+ 
+    sgsn c-addr     :                           
+    sgsn u-addr     :                           
+    rnc  u-addr     :                           
+    sgsn c-teid     : [0x00000000]                sgsn u-teid         :[0x00000000] 
+    rnc  u-teid     : [0x00000000] 
+
+  Indirect Fwding   : Inactive
+  DL fwd local addr :                             DL fwd remote addr  :
+  DL fwd local teid :                             DL fwd remote teid  :
+  DL pkts forwarded :                             DL bytes forwarded  :
+  UL fwd local addr :                             UL fwd remote addr  :
+  UL fwd local teid :                             UL fwd remote teid  :
+  UL pkts forwarded :                             UL bytes forwarded  :
+  GTPU NPU Fast Path (Pure-S): Inactive
+    Uplink Flowid   : n/a
+    Downlink Flowid : n/a
+  Idle mode buffring:
+  buffered pkts     : 0                           buffered bytes      : 0       
+
+  UE Local Address :  n/a
+  UE UDP Port      : n/a
+
+ TWAN User Location Information: N/A
+ UE WLAN Timestamp:  n/a
+
+
+
+  User Plane Address : 172.20.101.228
+  Local SEID         : [0x006c0000000059f1] 30399297484773873
+  Remote SEID        : [0x000c00000000000d] 3377699720527885
+
+  input pkts: 0                                   output pkts: 0           
+  input bytes: 0                                  output bytes: 0           
+  input bytes dropped: 0                          output bytes dropped: 0         
+  input pkts dropped: 0                           output pkts dropped: 0         
+  input pkts dropped due to lorc    : 0           output pkts dropped due to lorc    : 0         
+  input bytes dropped due to lorc   : 0           
+  in packet dropped suspended state: 0            out packet dropped suspended state: 0         
+  in bytes dropped suspended state: 0             out bytes dropped suspended state: 0         
+  in packet dropped sgw restoration state: 0      out packet dropped sgw restoration state: 0         
+  in bytes dropped sgw restoration state: 0       out bytes dropped sgw restoration state: 0         
+  pk rate from user(bps): 0                       pk rate to user(bps): 0           
+  ave rate from user(bps): 0                      ave rate to user(bps): 0           
+  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(pps): 0                       pk rate to user(pps): 0           
+  ave rate from user(pps): 0                      ave rate to user(pps): 0           
+  sust rate from user(pps): 0                     sust rate to user(pps): 0           
+  link online/active percent: 47 
+  ipv4 bad hdr: 0                                 ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                          ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                          ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv6 input acl drop: 0                          ipv6 output acl drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 output xoff pkts drop: 0                   ipv4 output xoff bytes drop: 0         
+  ipv6 output xoff pkts drop: 0                   ipv6 output xoff bytes drop: 0         
+  ipv6 input ehrpd-access drop: 0                 ipv6 output ehrpd-access drop: 0         
+  input pkts dropped (0 mbr): 0                   output pkts dropped (0 mbr): 0         
+  ip source violations: 0                         ipv4 output no-flow drop: 0         
+  ipv6 egress filtered: 0         
+  ipv4 proxy-dns redirect: 0                      ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0         
+  ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                                 ipv6 bad length trim: 0         
+  ip source violations no acct: 0         
+  ip source violations ignored: 0         
+  dormancy total: 0                               handoff total: 0         
+  ipv4 icmp packets dropped: 0         
+  APN AMBR Input Pkts Drop: 0                     APN AMBR Output Pkts Drop: 0         
+  APN AMBR Input Bytes Drop: 0                    APN AMBR Output Bytes Drop: 0         
+
+  CIoT APN Rate Control:
+    Allowed UL Limit:   0                         Allowed DL limit:    0           
+    Remaining UL Limit: 0                         Remaining DL limit:  0           
+    Allowed Time unit: unrestricted               Status Validity Time: N/A              
+
+CAE Server Address: 
+Total subscribers matching specified criteria: 1
+[local]CISCO_SMF_7F# show subs imsi 450081030101805
+Friday April 17 12:22:37 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+OTC.AT 07d04b97 450081030101805 12110030101854         2001:e60:efe0:3167:0:9:89b6:6601 00h00m40s
+OTC.AT 07d04b97 450081030101805 12110030101854         2001:e60:efe0:3167:0:9:89b6:6601 00h00m40s
+
+Total subscribers matching specified criteria: 2
+[local]CISCO_SMF_7F# show subs saegw-only full imsi 450081030101805
+Friday April 17 12:22:40 KST 2020
+
+Username            : 12110030101854                
+  SAEGW Call mode   : Sgw-Anchored
+  Subscriber Type   : Visitor
+  Status            : Online/Active
+  State             : Connected
+  Bearer State      : N/A
+  Connect Time      : Fri Apr 17 12:21:57 2020
+
+  SAEGW UID         : 6f70001b
+  Idle time         : 00h00m43s
+  Auto Delete        : No
+
+  Callid            : 07d04b97                    IMSI                : 450081030101805
+  Card/Cpu          : 4/0                         Sessmgr Instance    : 27
+  Source context    : sae                         Destination context : sae
+  Bearer Type       : Default                     Bearer-Id           : 5
+  Access Type       : sgw-pdn-type-ipv6           Network Type        : IPv6
+  Access Tech       : eUTRAN                      saegw-service-name  : saegw-srv1
+  MSISDN            : 12110030101854
+  TWAN Mode         : N/A
+  eMPS Bearer       : No
+  MS TimeZone       :                             Daylight Saving Time: n/a
+  MEI               : 1122334455667788            Accounting mode     : GTPP
+  Serving Nw        : n/a                         APN Selection mode  : Subscribed
+  Emergency Bearer  : n/a                         UnAutheticated IMSI : NO
+  Charging id       : 178957026                
+  Charging chars (hex): 0x0002                    Charging chars      : flat 
+  Charging Group    : n/a                         Charging Host Name  : n/a                 
+  IP Source Validation : Disabled  
+  Downlink APN AMBR :    1410066 Kbps             Uplink APN AMBR     :    1410066 Kbps
+  S5/S8-APN         : cisco17.com                 SGi-APN             : n/a                   
+  S6b Returned Virtual APN:   n/a                      
+  S6b Auth Status   : N/A
+  IMS-Media Bearer  : No                          NTSR state          : Normal                
+  APN-OI            : n/a                         Low Access Priority : No
+  PGW PLMN ID       : n/a                      
+  IMS Auth Service  : n/a
+  SGW Opr Policy    : None                        SGW APN Profile     : None                
+  IP allocation type: no alloc                  
+  IPv6 alloc type   : no alloc                  
+  ECS Rulebase      : n/a
+  Chrg Char Sel Mod : Peer Supplied
+  Restoration priority level : n/a
+  HLCOM Session     : No                        
+  IP Address        : 2001:e60:efe0:3167:0:9:89b6:6601
+  Bearer capable for restoration: No
+  UE P-CSCF Restoration Support : n/a
+
+  Peer Profile      : 
+    PGW Access      : n/a            
+    SGW Access      : default        
+    SGW Network     : default
+
+  ULI               : TAI-ID
+    MCC             : 214                         MNC              : 365
+    LAC             : n/a                         TAC              : 0x6788
+    SAC             : n/a                         RAC              : n/a
+    CI              : n/a                         ECI              : 0x1234567
+
+  Bearer QoS        : 
+   QCI              : 9 
+   ARP              : 0x078 
+   PCI              : 1 (Disabled) 
+   PL               : 14 
+   PVI              : 0 (Enabled) 
+   MBR Uplink(bps)  : 0                           MBR Downlink(bps)   : 0
+   GBR Uplink(bps)  : 0                           GBR Downlink(bps)   : 0
+
+  PCRF Authorized Bearer QoS:
+   QCI: n/a 
+   ARP: n/a
+   PCI: n/a
+   PL: n/a
+   PVI: n/a 
+   MBR uplink (bps): n/a                       MBR downlink (bps): n/a                  
+   GBR uplink (bps): n/a                       GBR downlink (bps): n/a                  
+   Uplink APN AMBR (bps): n/a                 Downlink APN AMBR (bps): n/a                  
+
+  Access Ctrl Lists :
+   input ipv4 acl   :                             output ipv4 acl     :                     
+   input ipv6 acl   :                             output ipv6 acl     :                     
+   Idle-mode v4 acl : None                        Idle-mode v6 acl    : None                
+
+ 
+  P-CSCF Address Information: 
+    Primary IPv6  :   n/a
+    Secondary IPv6:   n/a
+    Tertiary IPv6 :   n/a
+
+    Primary IPv4  :   n/a
+    Secondary IPv4:   n/a
+    Tertiary IPv4 :   n/a
+
+  S5/S8 interface   : 
+    pgw c-addr      :  192.168.84.1
+    pgw u-addr      :  192.168.84.11
+    pgw c-teid      :  [0x8008a021]               pgw u-teid          : [0x8008a021]
+
+    sgw c-addr      :  172.20.69.226
+    sgw u-addr      :  172.20.101.226
+    sgw c-teid      :  [0x83d6801b]               sgw u-teid          : [0x8001c003]
+
+
+  S11/S4/S12 i/f    :
+    ISR             : Inactive                    ISR Active Interface: None
+
+    sgw c-addr      : 172.20.69.225              
+    sgw u-addr      : 172.20.101.227             
+    sgw c-teid      : [0x8309a01b]                sgw u-teid          :[0x8002c003] 
+
+    mme c-addr      : 172.21.21.240             
+    enb u-addr      : 172.21.21.248             
+    mme u-addr      :                           
+    mme c-teid      : [0x10010001]                enb u-teid          :[0x2001006a] 
+    mme u-teid      : [0x00000000] 
+ 
+    sgsn c-addr     :                           
+    sgsn u-addr     :                           
+    rnc  u-addr     :                           
+    sgsn c-teid     : [0x00000000]                sgsn u-teid         :[0x00000000] 
+    rnc  u-teid     : [0x00000000] 
+
+  Indirect Fwding   : Inactive
+  DL fwd local addr :                             DL fwd remote addr  :
+  DL fwd local teid :                             DL fwd remote teid  :
+  DL pkts forwarded :                             DL bytes forwarded  :
+  UL fwd local addr :                             UL fwd remote addr  :
+  UL fwd local teid :                             UL fwd remote teid  :
+  UL pkts forwarded :                             UL bytes forwarded  :
+  GTPU NPU Fast Path (Pure-S): Inactive
+    Uplink Flowid   : n/a
+    Downlink Flowid : n/a
+  Idle mode buffring:
+  buffered pkts     : 0                           buffered bytes      : 0       
+
+  UE Local Address :  n/a
+  UE UDP Port      : n/a
+
+ TWAN User Location Information: N/A
+ UE WLAN Timestamp:  n/a
+
+
+
+  User Plane Address : 172.20.101.228
+  Local SEID         : [0x006c0000000059f1] 30399297484773873
+  Remote SEID        : [0x000c00000000000d] 3377699720527885
+
+  input pkts: 0                                   output pkts: 0           
+  input bytes: 0                                  output bytes: 0           
+  input bytes dropped: 0                          output bytes dropped: 0         
+  input pkts dropped: 0                           output pkts dropped: 0         
+  input pkts dropped due to lorc    : 0           output pkts dropped due to lorc    : 0         
+  input bytes dropped due to lorc   : 0           
+  in packet dropped suspended state: 0            out packet dropped suspended state: 0         
+  in bytes dropped suspended state: 0             out bytes dropped suspended state: 0         
+  in packet dropped sgw restoration state: 0      out packet dropped sgw restoration state: 0         
+  in bytes dropped sgw restoration state: 0       out bytes dropped sgw restoration state: 0         
+  pk rate from user(bps): 0                       pk rate to user(bps): 0           
+  ave rate from user(bps): 0                      ave rate to user(bps): 0           
+  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(pps): 0                       pk rate to user(pps): 0           
+  ave rate from user(pps): 0                      ave rate to user(pps): 0           
+  sust rate from user(pps): 0                     sust rate to user(pps): 0           
+  link online/active percent: 47 
+  ipv4 bad hdr: 0                                 ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                          ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                          ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv6 input acl drop: 0                          ipv6 output acl drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 output xoff pkts drop: 0                   ipv4 output xoff bytes drop: 0         
+  ipv6 output xoff pkts drop: 0                   ipv6 output xoff bytes drop: 0         
+  ipv6 input ehrpd-access drop: 0                 ipv6 output ehrpd-access drop: 0         
+  input pkts dropped (0 mbr): 0                   output pkts dropped (0 mbr): 0         
+  ip source violations: 0                         ipv4 output no-flow drop: 0         
+  ipv6 egress filtered: 0         
+  ipv4 proxy-dns redirect: 0                      ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0         
+  ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                                 ipv6 bad length trim: 0         
+  ip source violations no acct: 0         
+  ip source violations ignored: 0         
+  dormancy total: 0                               handoff total: 0         
+  ipv4 icmp packets dropped: 0         
+  APN AMBR Input Pkts Drop: 0                     APN AMBR Output Pkts Drop: 0         
+  APN AMBR Input Bytes Drop: 0                    APN AMBR Output Bytes Drop: 0         
+
+  CIoT APN Rate Control:
+    Allowed UL Limit:   0                         Allowed DL limit:    0           
+    Remaining UL Limit: 0                         Remaining DL limit:  0           
+    Allowed Time unit: unrestricted               Status Validity Time: N/A              
+
+CAE Server Address: 
+Username            : 12110030101854                
+  SAEGW Call mode   : Sgw-Anchored
+  Subscriber Type   : Visitor
+  Status            : Online/Active
+  State             : Connected
+  Bearer State      : N/A
+  Connect Time      : Fri Apr 17 12:21:57 2020
+
+  SAEGW UID         : 6f70001b
+  Idle time         : 00h00m43s
+  Auto Delete        : No
+
+  Callid            : 07d04b97                    IMSI                : 450081030101805
+  Card/Cpu          : 4/0                         Sessmgr Instance    : 27
+  Source context    : sae                         Destination context : sae
+  Bearer Type       : Dedicated                   Bearer-Id           : 6
+  Access Type       : sgw-pdn-type-ipv6           Network Type        : IPv6
+  Access Tech       : eUTRAN                      saegw-service-name  : saegw-srv1
+  MSISDN            : 12110030101854
+  TWAN Mode         : N/A
+  eMPS Bearer       : No
+  MS TimeZone       :                             Daylight Saving Time: n/a
+  MEI               : 1122334455667788            Accounting mode     : GTPP
+  Serving Nw        : n/a                         APN Selection mode  : Subscribed
+  Emergency Bearer  : n/a                         UnAutheticated IMSI : NO
+  Charging id       : 178957027                
+  Charging chars (hex): 0x0002                    Charging chars      : flat 
+  Charging Group    : n/a                         Charging Host Name  : n/a                 
+  IP Source Validation : Disabled  
+  Downlink APN AMBR :          0 Kbps             Uplink APN AMBR     :          0 Kbps
+  S5/S8-APN         : cisco17.com                 SGi-APN             : n/a                   
+  S6b Returned Virtual APN:   n/a                      
+  S6b Auth Status   : N/A
+  IMS-Media Bearer  : No                          NTSR state          : Normal                
+  APN-OI            : n/a                         Low Access Priority : No
+  PGW PLMN ID       : n/a                      
+  IMS Auth Service  : n/a
+  SGW Opr Policy    : None                        SGW APN Profile     : None                
+  IP allocation type: no alloc                  
+  IPv6 alloc type   : no alloc                  
+  ECS Rulebase      : n/a
+  Chrg Char Sel Mod : Peer Supplied
+  Restoration priority level : n/a
+  HLCOM Session     : No                        
+  IP Address        : 2001:e60:efe0:3167:0:9:89b6:6601
+  Bearer capable for restoration: No
+  UE P-CSCF Restoration Support : n/a
+
+  Peer Profile      : 
+    PGW Access      : n/a            
+    SGW Access      : default        
+    SGW Network     : default
+
+  ULI               : TAI-ID
+    MCC             : 214                         MNC              : 365
+    LAC             : n/a                         TAC              : 0x6788
+    SAC             : n/a                         RAC              : n/a
+    CI              : n/a                         ECI              : 0x1234567
+
+  Bearer QoS        : 
+   QCI              : 1 
+   ARP              : 0x044 
+   PCI              : 1 (Disabled) 
+   PL               : 1 
+   PVI              : 0 (Enabled) 
+   MBR Uplink(bps)  : 39000                       MBR Downlink(bps)   : 39000
+   GBR Uplink(bps)  : 39000                       GBR Downlink(bps)   : 39000
+
+  PCRF Authorized Bearer QoS:
+   QCI: n/a 
+   ARP: n/a
+   PCI: n/a
+   PL: n/a
+   PVI: n/a 
+   MBR uplink (bps): n/a                       MBR downlink (bps): n/a                  
+   GBR uplink (bps): n/a                       GBR downlink (bps): n/a                  
+   Uplink APN AMBR (bps): n/a                 Downlink APN AMBR (bps): n/a                  
+
+  Access Ctrl Lists :
+   input ipv4 acl   :                             output ipv4 acl     :                     
+   input ipv6 acl   :                             output ipv6 acl     :                     
+   Idle-mode v4 acl : None                        Idle-mode v6 acl    : None                
+
+ 
+  P-CSCF Address Information: 
+    Primary IPv6  :   n/a
+    Secondary IPv6:   n/a
+    Tertiary IPv6 :   n/a
+
+    Primary IPv4  :   n/a
+    Secondary IPv4:   n/a
+    Tertiary IPv4 :   n/a
+
+  S5/S8 interface   : 
+    pgw c-addr      :  192.168.84.1
+    pgw u-addr      :  192.168.84.12
+    pgw c-teid      :  [0x8008a021]               pgw u-teid          : [0x8008c021]
+
+    sgw c-addr      :  172.20.69.226
+    sgw u-addr      :  172.20.101.226
+    sgw c-teid      :  [0x83d6801b]               sgw u-teid          : [0x8001e003]
+
+
+  S11/S4/S12 i/f    :
+    ISR             : Inactive                    ISR Active Interface: None
+
+    sgw c-addr      : 172.20.69.225              
+    sgw u-addr      : 172.20.101.227             
+    sgw c-teid      : [0x8309a01b]                sgw u-teid          :[0x8002e003] 
+
+    mme c-addr      : 172.21.21.240             
+    enb u-addr      : 172.21.21.248             
+    mme u-addr      :                           
+    mme c-teid      : [0x10010001]                enb u-teid          :[0x20010ae9] 
+    mme u-teid      : [0x00000000] 
+ 
+    sgsn c-addr     :                           
+    sgsn u-addr     :                           
+    rnc  u-addr     :                           
+    sgsn c-teid     : [0x00000000]                sgsn u-teid         :[0x00000000] 
+    rnc  u-teid     : [0x00000000] 
+
+  Indirect Fwding   : Inactive
+  DL fwd local addr :                             DL fwd remote addr  :
+  DL fwd local teid :                             DL fwd remote teid  :
+  DL pkts forwarded :                             DL bytes forwarded  :
+  UL fwd local addr :                             UL fwd remote addr  :
+  UL fwd local teid :                             UL fwd remote teid  :
+  UL pkts forwarded :                             UL bytes forwarded  :
+  GTPU NPU Fast Path (Pure-S): Inactive
+    Uplink Flowid   : n/a
+    Downlink Flowid : n/a
+  Idle mode buffring:
+  buffered pkts     : 0                           buffered bytes      : 0       
+
+  UE Local Address :  n/a
+  UE UDP Port      : n/a
+
+ TWAN User Location Information: N/A
+ UE WLAN Timestamp:  n/a
+
+
+
+  User Plane Address : 172.20.101.228
+  Local SEID         : [0x006c0000000059f1] 30399297484773873
+  Remote SEID        : [0x000c00000000000d] 3377699720527885
+
+  input pkts: 0                                   output pkts: 0           
+  input bytes: 0                                  output bytes: 0           
+  input bytes dropped: 0                          output bytes dropped: 0         
+  input pkts dropped: 0                           output pkts dropped: 0         
+  input pkts dropped due to lorc    : 0           output pkts dropped due to lorc    : 0         
+  input bytes dropped due to lorc   : 0           
+  in packet dropped suspended state: 0            out packet dropped suspended state: 0         
+  in bytes dropped suspended state: 0             out bytes dropped suspended state: 0         
+  in packet dropped sgw restoration state: 0      out packet dropped sgw restoration state: 0         
+  in bytes dropped sgw restoration state: 0       out bytes dropped sgw restoration state: 0         
+  pk rate from user(bps): 0                       pk rate to user(bps): 0           
+  ave rate from user(bps): 0                      ave rate to user(bps): 0           
+  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(pps): 0                       pk rate to user(pps): 0           
+  ave rate from user(pps): 0                      ave rate to user(pps): 0           
+  sust rate from user(pps): 0                     sust rate to user(pps): 0           
+  link online/active percent: 47 
+  ipv4 bad hdr: 0                                 ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                          ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                          ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv6 input acl drop: 0                          ipv6 output acl drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 output xoff pkts drop: 0                   ipv4 output xoff bytes drop: 0         
+  ipv6 output xoff pkts drop: 0                   ipv6 output xoff bytes drop: 0         
+  ipv6 input ehrpd-access drop: 0                 ipv6 output ehrpd-access drop: 0         
+  input pkts dropped (0 mbr): 0                   output pkts dropped (0 mbr): 0         
+  ip source violations: 0                         ipv4 output no-flow drop: 0         
+  ipv6 egress filtered: 0         
+  ipv4 proxy-dns redirect: 0                      ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0         
+  ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                                 ipv6 bad length trim: 0         
+  ip source violations no acct: 0         
+  ip source violations ignored: 0         
+  dormancy total: 0                               handoff total: 0         
+  ipv4 icmp packets dropped: 0         
+  APN AMBR Input Pkts Drop: 0                     APN AMBR Output Pkts Drop: 0         
+  APN AMBR Input Bytes Drop: 0                    APN AMBR Output Bytes Drop: 0         
+
+  CIoT APN Rate Control:
+    Allowed UL Limit:   0                         Allowed DL limit:    0           
+    Remaining UL Limit: 0                         Remaining DL limit:  0           
+    Allowed Time unit: unrestricted               Status Validity Time: N/A              
+
+CAE Server Address: 
+Total subscribers matching specified criteria: 2
+[local]CISCO_SMF_7F# show subs imsi 450081030101805
+Friday April 17 12:23:00 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+OTC.AT 07d04b97 450081030101805 12110030101854         2001:e60:efe0:3167:0:9:89b6:6601 00h01m03s
+OTC.AT 07d04b97 450081030101805 12110030101854         2001:e60:efe0:3167:0:9:89b6:6601 00h01m03s
+
+Total subscribers matching specified criteria: 2
+[local]CISCO_SMF_7F# show subs saegw-only full imsi 450081030101805
+Friday April 17 12:23:03 KST 2020
+
+Username            : 12110030101854                
+  SAEGW Call mode   : Sgw-Anchored
+  Subscriber Type   : Visitor
+  Status            : Online/Active
+  State             : Connected
+  Bearer State      : N/A
+  Connect Time      : Fri Apr 17 12:21:57 2020
+
+  SAEGW UID         : 6f70001b
+  Idle time         : 00h01m06s
+  Auto Delete        : No
+
+  Callid            : 07d04b97                    IMSI                : 450081030101805
+  Card/Cpu          : 4/0                         Sessmgr Instance    : 27
+  Source context    : sae                         Destination context : sae
+  Bearer Type       : Default                     Bearer-Id           : 5
+  Access Type       : sgw-pdn-type-ipv6           Network Type        : IPv6
+  Access Tech       : eUTRAN                      saegw-service-name  : saegw-srv1
+  MSISDN            : 12110030101854
+  TWAN Mode         : N/A
+  eMPS Bearer       : No
+  MS TimeZone       :                             Daylight Saving Time: n/a
+  MEI               : 1122334455667788            Accounting mode     : GTPP
+  Serving Nw        : n/a                         APN Selection mode  : Subscribed
+  Emergency Bearer  : n/a                         UnAutheticated IMSI : NO
+  Charging id       : 178957026                
+  Charging chars (hex): 0x0002                    Charging chars      : flat 
+  Charging Group    : n/a                         Charging Host Name  : n/a                 
+  IP Source Validation : Disabled  
+  Downlink APN AMBR :    1410066 Kbps             Uplink APN AMBR     :    1410066 Kbps
+  S5/S8-APN         : cisco17.com                 SGi-APN             : n/a                   
+  S6b Returned Virtual APN:   n/a                      
+  S6b Auth Status   : N/A
+  IMS-Media Bearer  : No                          NTSR state          : Normal                
+  APN-OI            : n/a                         Low Access Priority : No
+  PGW PLMN ID       : n/a                      
+  IMS Auth Service  : n/a
+  SGW Opr Policy    : None                        SGW APN Profile     : None                
+  IP allocation type: no alloc                  
+  IPv6 alloc type   : no alloc                  
+  ECS Rulebase      : n/a
+  Chrg Char Sel Mod : Peer Supplied
+  Restoration priority level : n/a
+  HLCOM Session     : No                        
+  IP Address        : 2001:e60:efe0:3167:0:9:89b6:6601
+  Bearer capable for restoration: No
+  UE P-CSCF Restoration Support : n/a
+
+  Peer Profile      : 
+    PGW Access      : n/a            
+    SGW Access      : default        
+    SGW Network     : default
+
+  ULI               : TAI-ID
+    MCC             : 214                         MNC              : 365
+    LAC             : n/a                         TAC              : 0x6788
+    SAC             : n/a                         RAC              : n/a
+    CI              : n/a                         ECI              : 0x1234567
+
+  Bearer QoS        : 
+   QCI              : 9 
+   ARP              : 0x078 
+   PCI              : 1 (Disabled) 
+   PL               : 14 
+   PVI              : 0 (Enabled) 
+   MBR Uplink(bps)  : 0                           MBR Downlink(bps)   : 0
+   GBR Uplink(bps)  : 0                           GBR Downlink(bps)   : 0
+
+  PCRF Authorized Bearer QoS:
+   QCI: n/a 
+   ARP: n/a
+   PCI: n/a
+   PL: n/a
+   PVI: n/a 
+   MBR uplink (bps): n/a                       MBR downlink (bps): n/a                  
+   GBR uplink (bps): n/a                       GBR downlink (bps): n/a                  
+   Uplink APN AMBR (bps): n/a                 Downlink APN AMBR (bps): n/a                  
+
+  Access Ctrl Lists :
+   input ipv4 acl   :                             output ipv4 acl     :                     
+   input ipv6 acl   :                             output ipv6 acl     :                     
+   Idle-mode v4 acl : None                        Idle-mode v6 acl    : None                
+
+ 
+  P-CSCF Address Information: 
+    Primary IPv6  :   n/a
+    Secondary IPv6:   n/a
+    Tertiary IPv6 :   n/a
+
+    Primary IPv4  :   n/a
+    Secondary IPv4:   n/a
+    Tertiary IPv4 :   n/a
+
+  S5/S8 interface   : 
+    pgw c-addr      :  192.168.84.1
+    pgw u-addr      :  192.168.84.11
+    pgw c-teid      :  [0x8008a021]               pgw u-teid          : [0x8008a021]
+
+    sgw c-addr      :  172.20.69.226
+    sgw u-addr      :  172.20.101.226
+    sgw c-teid      :  [0x83d6801b]               sgw u-teid          : [0x8001c003]
+
+
+  S11/S4/S12 i/f    :
+    ISR             : Inactive                    ISR Active Interface: None
+
+    sgw c-addr      : 172.20.69.225              
+    sgw u-addr      : 172.20.101.227             
+    sgw c-teid      : [0x8309a01b]                sgw u-teid          :[0x8002c003] 
+
+    mme c-addr      : 172.21.21.240             
+    enb u-addr      : 172.21.21.248             
+    mme u-addr      :                           
+    mme c-teid      : [0x10010001]                enb u-teid          :[0x2001006a] 
+    mme u-teid      : [0x00000000] 
+ 
+    sgsn c-addr     :                           
+    sgsn u-addr     :                           
+    rnc  u-addr     :                           
+    sgsn c-teid     : [0x00000000]                sgsn u-teid         :[0x00000000] 
+    rnc  u-teid     : [0x00000000] 
+
+  Indirect Fwding   : Inactive
+  DL fwd local addr :                             DL fwd remote addr  :
+  DL fwd local teid :                             DL fwd remote teid  :
+  DL pkts forwarded :                             DL bytes forwarded  :
+  UL fwd local addr :                             UL fwd remote addr  :
+  UL fwd local teid :                             UL fwd remote teid  :
+  UL pkts forwarded :                             UL bytes forwarded  :
+  GTPU NPU Fast Path (Pure-S): Inactive
+    Uplink Flowid   : n/a
+    Downlink Flowid : n/a
+  Idle mode buffring:
+  buffered pkts     : 0                           buffered bytes      : 0       
+
+  UE Local Address :  n/a
+  UE UDP Port      : n/a
+
+ TWAN User Location Information: N/A
+ UE WLAN Timestamp:  n/a
+
+
+
+  User Plane Address : 172.20.101.228
+  Local SEID         : [0x006c0000000059f1] 30399297484773873
+  Remote SEID        : [0x000c00000000000d] 3377699720527885
+
+  input pkts: 0                                   output pkts: 0           
+  input bytes: 0                                  output bytes: 0           
+  input bytes dropped: 0                          output bytes dropped: 0         
+  input pkts dropped: 0                           output pkts dropped: 0         
+  input pkts dropped due to lorc    : 0           output pkts dropped due to lorc    : 0         
+  input bytes dropped due to lorc   : 0           
+  in packet dropped suspended state: 0            out packet dropped suspended state: 0         
+  in bytes dropped suspended state: 0             out bytes dropped suspended state: 0         
+  in packet dropped sgw restoration state: 0      out packet dropped sgw restoration state: 0         
+  in bytes dropped sgw restoration state: 0       out bytes dropped sgw restoration state: 0         
+  pk rate from user(bps): 0                       pk rate to user(bps): 0           
+  ave rate from user(bps): 0                      ave rate to user(bps): 0           
+  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(pps): 0                       pk rate to user(pps): 0           
+  ave rate from user(pps): 0                      ave rate to user(pps): 0           
+  sust rate from user(pps): 0                     sust rate to user(pps): 0           
+  link online/active percent: 73 
+  ipv4 bad hdr: 0                                 ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                          ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                          ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv6 input acl drop: 0                          ipv6 output acl drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 output xoff pkts drop: 0                   ipv4 output xoff bytes drop: 0         
+  ipv6 output xoff pkts drop: 0                   ipv6 output xoff bytes drop: 0         
+  ipv6 input ehrpd-access drop: 0                 ipv6 output ehrpd-access drop: 0         
+  input pkts dropped (0 mbr): 0                   output pkts dropped (0 mbr): 0         
+  ip source violations: 0                         ipv4 output no-flow drop: 0         
+  ipv6 egress filtered: 0         
+  ipv4 proxy-dns redirect: 0                      ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0         
+  ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                                 ipv6 bad length trim: 0         
+  ip source violations no acct: 0         
+  ip source violations ignored: 0         
+  dormancy total: 0                               handoff total: 0         
+  ipv4 icmp packets dropped: 0         
+  APN AMBR Input Pkts Drop: 0                     APN AMBR Output Pkts Drop: 0         
+  APN AMBR Input Bytes Drop: 0                    APN AMBR Output Bytes Drop: 0         
+
+  CIoT APN Rate Control:
+    Allowed UL Limit:   0                         Allowed DL limit:    0           
+    Remaining UL Limit: 0                         Remaining DL limit:  0           
+    Allowed Time unit: unrestricted               Status Validity Time: N/A              
+
+CAE Server Address: 
+Username            : 12110030101854                
+  SAEGW Call mode   : Sgw-Anchored
+  Subscriber Type   : Visitor
+  Status            : Online/Active
+  State             : Connected
+  Bearer State      : N/A
+  Connect Time      : Fri Apr 17 12:21:57 2020
+
+  SAEGW UID         : 6f70001b
+  Idle time         : 00h01m06s
+  Auto Delete        : No
+
+  Callid            : 07d04b97                    IMSI                : 450081030101805
+  Card/Cpu          : 4/0                         Sessmgr Instance    : 27
+  Source context    : sae                         Destination context : sae
+  Bearer Type       : Dedicated                   Bearer-Id           : 6
+  Access Type       : sgw-pdn-type-ipv6           Network Type        : IPv6
+  Access Tech       : eUTRAN                      saegw-service-name  : saegw-srv1
+  MSISDN            : 12110030101854
+  TWAN Mode         : N/A
+  eMPS Bearer       : No
+  MS TimeZone       :                             Daylight Saving Time: n/a
+  MEI               : 1122334455667788            Accounting mode     : GTPP
+  Serving Nw        : n/a                         APN Selection mode  : Subscribed
+  Emergency Bearer  : n/a                         UnAutheticated IMSI : NO
+  Charging id       : 178957027                
+  Charging chars (hex): 0x0002                    Charging chars      : flat 
+  Charging Group    : n/a                         Charging Host Name  : n/a                 
+  IP Source Validation : Disabled  
+  Downlink APN AMBR :          0 Kbps             Uplink APN AMBR     :          0 Kbps
+  S5/S8-APN         : cisco17.com                 SGi-APN             : n/a                   
+  S6b Returned Virtual APN:   n/a                      
+  S6b Auth Status   : N/A
+  IMS-Media Bearer  : No                          NTSR state          : Normal                
+  APN-OI            : n/a                         Low Access Priority : No
+  PGW PLMN ID       : n/a                      
+  IMS Auth Service  : n/a
+  SGW Opr Policy    : None                        SGW APN Profile     : None                
+  IP allocation type: no alloc                  
+  IPv6 alloc type   : no alloc                  
+  ECS Rulebase      : n/a
+  Chrg Char Sel Mod : Peer Supplied
+  Restoration priority level : n/a
+  HLCOM Session     : No                        
+  IP Address        : 2001:e60:efe0:3167:0:9:89b6:6601
+  Bearer capable for restoration: No
+  UE P-CSCF Restoration Support : n/a
+
+  Peer Profile      : 
+    PGW Access      : n/a            
+    SGW Access      : default        
+    SGW Network     : default
+
+  ULI               : TAI-ID
+    MCC             : 214                         MNC              : 365
+    LAC             : n/a                         TAC              : 0x6788
+    SAC             : n/a                         RAC              : n/a
+    CI              : n/a                         ECI              : 0x1234567
+
+  Bearer QoS        : 
+   QCI              : 1 
+   ARP              : 0x044 
+   PCI              : 1 (Disabled) 
+   PL               : 1 
+   PVI              : 0 (Enabled) 
+   MBR Uplink(bps)  : 49000                       MBR Downlink(bps)   : 49000
+   GBR Uplink(bps)  : 49000                       GBR Downlink(bps)   : 49000
+
+  PCRF Authorized Bearer QoS:
+   QCI: n/a 
+   ARP: n/a
+   PCI: n/a
+   PL: n/a
+   PVI: n/a 
+   MBR uplink (bps): n/a                       MBR downlink (bps): n/a                  
+   GBR uplink (bps): n/a                       GBR downlink (bps): n/a                  
+   Uplink APN AMBR (bps): n/a                 Downlink APN AMBR (bps): n/a                  
+
+  Access Ctrl Lists :
+   input ipv4 acl   :                             output ipv4 acl     :                     
+   input ipv6 acl   :                             output ipv6 acl     :                     
+   Idle-mode v4 acl : None                        Idle-mode v6 acl    : None                
+
+ 
+  P-CSCF Address Information: 
+    Primary IPv6  :   n/a
+    Secondary IPv6:   n/a
+    Tertiary IPv6 :   n/a
+
+    Primary IPv4  :   n/a
+    Secondary IPv4:   n/a
+    Tertiary IPv4 :   n/a
+
+  S5/S8 interface   : 
+    pgw c-addr      :  192.168.84.1
+    pgw u-addr      :  192.168.84.12
+    pgw c-teid      :  [0x8008a021]               pgw u-teid          : [0x8008c021]
+
+    sgw c-addr      :  172.20.69.226
+    sgw u-addr      :  172.20.101.226
+    sgw c-teid      :  [0x83d6801b]               sgw u-teid          : [0x8001e003]
+
+
+  S11/S4/S12 i/f    :
+    ISR             : Inactive                    ISR Active Interface: None
+
+    sgw c-addr      : 172.20.69.225              
+    sgw u-addr      : 172.20.101.227             
+    sgw c-teid      : [0x8309a01b]                sgw u-teid          :[0x8002e003] 
+
+    mme c-addr      : 172.21.21.240             
+    enb u-addr      : 172.21.21.248             
+    mme u-addr      :                           
+    mme c-teid      : [0x10010001]                enb u-teid          :[0x20010ae9] 
+    mme u-teid      : [0x00000000] 
+ 
+    sgsn c-addr     :                           
+    sgsn u-addr     :                           
+    rnc  u-addr     :                           
+    sgsn c-teid     : [0x00000000]                sgsn u-teid         :[0x00000000] 
+    rnc  u-teid     : [0x00000000] 
+
+  Indirect Fwding   : Inactive
+  DL fwd local addr :                             DL fwd remote addr  :
+  DL fwd local teid :                             DL fwd remote teid  :
+  DL pkts forwarded :                             DL bytes forwarded  :
+  UL fwd local addr :                             UL fwd remote addr  :
+  UL fwd local teid :                             UL fwd remote teid  :
+  UL pkts forwarded :                             UL bytes forwarded  :
+  GTPU NPU Fast Path (Pure-S): Inactive
+    Uplink Flowid   : n/a
+    Downlink Flowid : n/a
+  Idle mode buffring:
+  buffered pkts     : 0                           buffered bytes      : 0       
+
+  UE Local Address :  n/a
+  UE UDP Port      : n/a
+
+ TWAN User Location Information: N/A
+ UE WLAN Timestamp:  n/a
+
+
+
+  User Plane Address : 172.20.101.228
+  Local SEID         : [0x006c0000000059f1] 30399297484773873
+  Remote SEID        : [0x000c00000000000d] 3377699720527885
+
+  input pkts: 0                                   output pkts: 0           
+  input bytes: 0                                  output bytes: 0           
+  input bytes dropped: 0                          output bytes dropped: 0         
+  input pkts dropped: 0                           output pkts dropped: 0         
+  input pkts dropped due to lorc    : 0           output pkts dropped due to lorc    : 0         
+  input bytes dropped due to lorc   : 0           
+  in packet dropped suspended state: 0            out packet dropped suspended state: 0         
+  in bytes dropped suspended state: 0             out bytes dropped suspended state: 0         
+  in packet dropped sgw restoration state: 0      out packet dropped sgw restoration state: 0         
+  in bytes dropped sgw restoration state: 0       out bytes dropped sgw restoration state: 0         
+  pk rate from user(bps): 0                       pk rate to user(bps): 0           
+  ave rate from user(bps): 0                      ave rate to user(bps): 0           
+  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(pps): 0                       pk rate to user(pps): 0           
+  ave rate from user(pps): 0                      ave rate to user(pps): 0           
+  sust rate from user(pps): 0                     sust rate to user(pps): 0           
+  link online/active percent: 73 
+  ipv4 bad hdr: 0                                 ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                          ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                          ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv6 input acl drop: 0                          ipv6 output acl drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 output xoff pkts drop: 0                   ipv4 output xoff bytes drop: 0         
+  ipv6 output xoff pkts drop: 0                   ipv6 output xoff bytes drop: 0         
+  ipv6 input ehrpd-access drop: 0                 ipv6 output ehrpd-access drop: 0         
+  input pkts dropped (0 mbr): 0                   output pkts dropped (0 mbr): 0         
+  ip source violations: 0                         ipv4 output no-flow drop: 0         
+  ipv6 egress filtered: 0         
+  ipv4 proxy-dns redirect: 0                      ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0         
+  ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                                 ipv6 bad length trim: 0         
+  ip source violations no acct: 0         
+  ip source violations ignored: 0         
+  dormancy total: 0                               handoff total: 0         
+  ipv4 icmp packets dropped: 0         
+  APN AMBR Input Pkts Drop: 0                     APN AMBR Output Pkts Drop: 0         
+  APN AMBR Input Bytes Drop: 0                    APN AMBR Output Bytes Drop: 0         
+
+  CIoT APN Rate Control:
+    Allowed UL Limit:   0                         Allowed DL limit:    0           
+    Remaining UL Limit: 0                         Remaining DL limit:  0           
+    Allowed Time unit: unrestricted               Status Validity Time: N/A              
+
+CAE Server Address: 
+Total subscribers matching specified criteria: 2
+[local]CISCO_SMF_7F# show subs imsi 450081030101805
+Friday April 17 12:23:21 KST 2020
++-----Access  (S) - pdsn-simple-ip     (M) - pdsn-mobile-ip  (H) - ha-mobile-ip
+|     Type:   (P) - ggsn-pdp-type-ppp  (h) - ha-ipsec        (N) - lns-l2tp
+|             (I) - ggsn-pdp-type-ipv4                       (G) - IPSG
+|             (V) - ggsn-pdp-type-ipv6                       (C) - cscf-sip
+|             (z) - ggsn-pdp-type-ipv4v6                     (A) - X2GW 
+|             (R) - sgw-gtp-ipv4       (O) - sgw-gtp-ipv6    (Q) - sgw-gtp-ipv4-ipv6
+|             (W) - pgw-gtp-ipv4       (Y) - pgw-gtp-ipv6    (Z) - pgw-gtp-ipv4-ipv6
+|             (B) - pgw-gtp-non-ip     (J) - sgw-gtp-non-ip
+|             (@) - saegw-gtp-ipv4     (#) - saegw-gtp-ipv6  ($) - saegw-gtp-ipv4-ipv6
+|             (&) - samog-ip           (^) - cgw-gtp-ipv6    (*) - cgw-gtp-ipv4-ipv6
+|             (p) - sgsn-pdp-type-ppp  (s) - sgsn            (4) - sgsn-pdp-type-ip
+|             (6) - sgsn-pdp-type-ipv6 (2) - sgsn-pdp-type-ipv4-ipv6
+|             (L) - pdif-simple-ip     (K) - pdif-mobile-ip  (o) - femto-ip
+|             (F) - standalone-fa                            
+|             (e) - ggsn-mbms-ue       (U) - pdg-ipsec-ipv4
+|             (E) - ha-mobile-ipv6     (T) - pdg-ssl         (v) - pdg-ipsec-ipv6
+|             (f) - hnbgw-hnb          (g) - hnbgw-iu        (x) - s1-mme
+|                                      (k) - PCC
+|             (X) - HSGW               (n) - ePDG            (t) - henbgw-ue
+|             (m) - henbgw-henb        (q) - wsg-simple-ip   (r) - samog-pmip
+|             (D) - bng-simple-ip      (l) - pgw-pmip        (3) - GILAN
+|             (y) - User-Plane         (u) - Unknown
+|             (+) - samog-eogre        (%) - eMBMS-ipv4      (!) - eMBMS-ipv6
+|
+|+----Access  (X) - CDMA 1xRTT         (E) - GPRS GERAN      (I) - IP
+||    Tech:   (D) - CDMA EV-DO         (U) - WCDMA UTRAN     (W) - Wireless LAN
+||            (A) - CDMA EV-DO REVA    (G) - GPRS Other      (M) - WiMax
+||            (C) - CDMA Other         (J) - GAN             (O) - Femto IPSec
+||            (P) - PDIF               (S) - HSPA            (L) - eHRPD
+||            (T) - eUTRAN             (B) - PPPoE           (F) - FEMTO UTRAN
+||            (N) - NB-IoT             (Q) - WSG             (.) - Other/Unknown
+||
+||+---Call    (C) - Connected          (c) - Connecting
+|||   State:  (d) - Disconnecting      (u) - Unknown
+|||           (r) - CSCF-Registering   (R) - CSCF-Registered
+|||           (U) - CSCF-Unregistered
+|||
+|||+--Access  (A) - Attached           (N) - Not Attached
+||||  CSCF    (.) - Not Applicable
+||||  Status:
+||||
+||||+-Link    (A) - Online/Active      (D) - Dormant/Idle
+||||| Status:
+|||||
+|||||+Network (I) - IP                 (M) - Mobile-IP         (L) - L2TP
+||||||Type:   (P) - Proxy-Mobile-IP    (i) - IP-in-IP          (G) - GRE
+||||||        (V) - IPv6-in-IPv4       (S) - IPSEC             (C) - GTP
+||||||        (A) - R4 (IP-GRE)        (T) - IPv6              (u) - Unknown
+||||||        (W) - PMIPv6(IPv4)       (Y) - PMIPv6(IPv4+IPv6) (R) - IPv4+IPv6
+||||||        (v) - PMIPv6(IPv6)       (/) - GTPv1(For SAMOG)  (+) - GTPv2(For SAMOG)
+||||||        (N) - NON-IP             (x) - UDP-IPv4          (X) - UDP-IPv6
+||||||
+||||||
+vvvvvv CALLID   MSID            USERNAME               IP                            TIME-IDLE
+------ -------- --------------- ---------------------- ----------------------------- ---------
+OTC.AT 07d04b97 450081030101805 12110030101854         2001:e60:efe0:3167:0:9:89b6:6601 00h01m24s
+
+Total subscribers matching specified criteria: 1
+[local]CISCO_SMF_7F# show subs saegw-only full imsi 450081030101805
+Friday April 17 12:23:24 KST 2020
+
+Username            : 12110030101854                
+  SAEGW Call mode   : Sgw-Anchored
+  Subscriber Type   : Visitor
+  Status            : Online/Active
+  State             : Connected
+  Bearer State      : N/A
+  Connect Time      : Fri Apr 17 12:21:57 2020
+
+  SAEGW UID         : 6f70001b
+  Idle time         : 00h01m27s
+  Auto Delete        : No
+
+  Callid            : 07d04b97                    IMSI                : 450081030101805
+  Card/Cpu          : 4/0                         Sessmgr Instance    : 27
+  Source context    : sae                         Destination context : sae
+  Bearer Type       : Default                     Bearer-Id           : 5
+  Access Type       : sgw-pdn-type-ipv6           Network Type        : IPv6
+  Access Tech       : eUTRAN                      saegw-service-name  : saegw-srv1
+  MSISDN            : 12110030101854
+  TWAN Mode         : N/A
+  eMPS Bearer       : No
+  MS TimeZone       :                             Daylight Saving Time: n/a
+  MEI               : 1122334455667788            Accounting mode     : GTPP
+  Serving Nw        : n/a                         APN Selection mode  : Subscribed
+  Emergency Bearer  : n/a                         UnAutheticated IMSI : NO
+  Charging id       : 178957026                
+  Charging chars (hex): 0x0002                    Charging chars      : flat 
+  Charging Group    : n/a                         Charging Host Name  : n/a                 
+  IP Source Validation : Disabled  
+  Downlink APN AMBR :    1410066 Kbps             Uplink APN AMBR     :    1410066 Kbps
+  S5/S8-APN         : cisco17.com                 SGi-APN             : n/a                   
+  S6b Returned Virtual APN:   n/a                      
+  S6b Auth Status   : N/A
+  IMS-Media Bearer  : No                          NTSR state          : Normal                
+  APN-OI            : n/a                         Low Access Priority : No
+  PGW PLMN ID       : n/a                      
+  IMS Auth Service  : n/a
+  SGW Opr Policy    : None                        SGW APN Profile     : None                
+  IP allocation type: no alloc                  
+  IPv6 alloc type   : no alloc                  
+  ECS Rulebase      : n/a
+  Chrg Char Sel Mod : Peer Supplied
+  Restoration priority level : n/a
+  HLCOM Session     : No                        
+  IP Address        : 2001:e60:efe0:3167:0:9:89b6:6601
+  Bearer capable for restoration: No
+  UE P-CSCF Restoration Support : n/a
+
+  Peer Profile      : 
+    PGW Access      : n/a            
+    SGW Access      : default        
+    SGW Network     : default
+
+  ULI               : TAI-ID
+    MCC             : 214                         MNC              : 365
+    LAC             : n/a                         TAC              : 0x6788
+    SAC             : n/a                         RAC              : n/a
+    CI              : n/a                         ECI              : 0x1234567
+
+  Bearer QoS        : 
+   QCI              : 9 
+   ARP              : 0x078 
+   PCI              : 1 (Disabled) 
+   PL               : 14 
+   PVI              : 0 (Enabled) 
+   MBR Uplink(bps)  : 0                           MBR Downlink(bps)   : 0
+   GBR Uplink(bps)  : 0                           GBR Downlink(bps)   : 0
+
+  PCRF Authorized Bearer QoS:
+   QCI: n/a 
+   ARP: n/a
+   PCI: n/a
+   PL: n/a
+   PVI: n/a 
+   MBR uplink (bps): n/a                       MBR downlink (bps): n/a                  
+   GBR uplink (bps): n/a                       GBR downlink (bps): n/a                  
+   Uplink APN AMBR (bps): n/a                 Downlink APN AMBR (bps): n/a                  
+
+  Access Ctrl Lists :
+   input ipv4 acl   :                             output ipv4 acl     :                     
+   input ipv6 acl   :                             output ipv6 acl     :                     
+   Idle-mode v4 acl : None                        Idle-mode v6 acl    : None                
+
+ 
+  P-CSCF Address Information: 
+    Primary IPv6  :   n/a
+    Secondary IPv6:   n/a
+    Tertiary IPv6 :   n/a
+
+    Primary IPv4  :   n/a
+    Secondary IPv4:   n/a
+    Tertiary IPv4 :   n/a
+
+  S5/S8 interface   : 
+    pgw c-addr      :  192.168.84.1
+    pgw u-addr      :  192.168.84.11
+    pgw c-teid      :  [0x8008a021]               pgw u-teid          : [0x8008a021]
+
+    sgw c-addr      :  172.20.69.226
+    sgw u-addr      :  172.20.101.226
+    sgw c-teid      :  [0x83d6801b]               sgw u-teid          : [0x8001c003]
+
+
+  S11/S4/S12 i/f    :
+    ISR             : Inactive                    ISR Active Interface: None
+
+    sgw c-addr      : 172.20.69.225              
+    sgw u-addr      : 172.20.101.227             
+    sgw c-teid      : [0x8309a01b]                sgw u-teid          :[0x8002c003] 
+
+    mme c-addr      : 172.21.21.240             
+    enb u-addr      : 172.21.21.248             
+    mme u-addr      :                           
+    mme c-teid      : [0x10010001]                enb u-teid          :[0x2001006a] 
+    mme u-teid      : [0x00000000] 
+ 
+    sgsn c-addr     :                           
+    sgsn u-addr     :                           
+    rnc  u-addr     :                           
+    sgsn c-teid     : [0x00000000]                sgsn u-teid         :[0x00000000] 
+    rnc  u-teid     : [0x00000000] 
+
+  Indirect Fwding   : Inactive
+  DL fwd local addr :                             DL fwd remote addr  :
+  DL fwd local teid :                             DL fwd remote teid  :
+  DL pkts forwarded :                             DL bytes forwarded  :
+  UL fwd local addr :                             UL fwd remote addr  :
+  UL fwd local teid :                             UL fwd remote teid  :
+  UL pkts forwarded :                             UL bytes forwarded  :
+  GTPU NPU Fast Path (Pure-S): Inactive
+    Uplink Flowid   : n/a
+    Downlink Flowid : n/a
+  Idle mode buffring:
+  buffered pkts     : 0                           buffered bytes      : 0       
+
+  UE Local Address :  n/a
+  UE UDP Port      : n/a
+
+ TWAN User Location Information: N/A
+ UE WLAN Timestamp:  n/a
+
+
+
+  User Plane Address : 172.20.101.228
+  Local SEID         : [0x006c0000000059f1] 30399297484773873
+  Remote SEID        : [0x000c00000000000d] 3377699720527885
+
+  input pkts: 0                                   output pkts: 0           
+  input bytes: 0                                  output bytes: 0           
+  input bytes dropped: 0                          output bytes dropped: 0         
+  input pkts dropped: 0                           output pkts dropped: 0         
+  input pkts dropped due to lorc    : 0           output pkts dropped due to lorc    : 0         
+  input bytes dropped due to lorc   : 0           
+  in packet dropped suspended state: 0            out packet dropped suspended state: 0         
+  in bytes dropped suspended state: 0             out bytes dropped suspended state: 0         
+  in packet dropped sgw restoration state: 0      out packet dropped sgw restoration state: 0         
+  in bytes dropped sgw restoration state: 0       out bytes dropped sgw restoration state: 0         
+  pk rate from user(bps): 0                       pk rate to user(bps): 0           
+  ave rate from user(bps): 0                      ave rate to user(bps): 0           
+  sust rate from user(bps): 0                     sust rate to user(bps): 0           
+  pk rate from user(pps): 0                       pk rate to user(pps): 0           
+  ave rate from user(pps): 0                      ave rate to user(pps): 0           
+  sust rate from user(pps): 0                     sust rate to user(pps): 0           
+  link online/active percent: 82 
+  ipv4 bad hdr: 0                                 ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                          ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                          ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv6 input acl drop: 0                          ipv6 output acl drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 input css down drop: 0                     ipv4 output css down drop: 0         
+  ipv4 output xoff pkts drop: 0                   ipv4 output xoff bytes drop: 0         
+  ipv6 output xoff pkts drop: 0                   ipv6 output xoff bytes drop: 0         
+  ipv6 input ehrpd-access drop: 0                 ipv6 output ehrpd-access drop: 0         
+  input pkts dropped (0 mbr): 0                   output pkts dropped (0 mbr): 0         
+  ip source violations: 0                         ipv4 output no-flow drop: 0         
+  ipv6 egress filtered: 0         
+  ipv4 proxy-dns redirect: 0                      ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0         
+  ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                                 ipv6 bad length trim: 0         
+  ip source violations no acct: 0         
+  ip source violations ignored: 0         
+  dormancy total: 0                               handoff total: 0         
+  ipv4 icmp packets dropped: 0         
+  APN AMBR Input Pkts Drop: 0                     APN AMBR Output Pkts Drop: 0         
+  APN AMBR Input Bytes Drop: 0                    APN AMBR Output Bytes Drop: 0         
+
+  CIoT APN Rate Control:
+    Allowed UL Limit:   0                         Allowed DL limit:    0           
+    Remaining UL Limit: 0                         Remaining DL limit:  0           
+    Allowed Time unit: unrestricted               Status Validity Time: N/A              
+
+CAE Server Address: 
+Total subscribers matching specified criteria: 1

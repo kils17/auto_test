@@ -1,0 +1,49 @@
+sim2:~# cd ~/GX_inkwon/test; ./send_rar.sh so_01 2001:e60:efe0:3167:0:9:89b6:6601# cd ~/GX_inkwon/test; ./send_rar.sh so_01 2001:e60:efe0:3167:0:9:89b6:660 1
+./minidclisenderSending: minid_cli_message--reset-rar-info-gx (null)
+./minidclisenderSending: minid_cli_message--gx-command 3
+./minidclisenderSending: minid_cli_message--destination-host csc-nsa-smf-7
+./minidclisenderSending: minid_cli_message--destination-realm kt.com
+./minidclisenderSending: minid_cli_message--charging-rule-name 2
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit in ip from 2001:e60:efe0:3167:0:9:89b6:6601 to any
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit out ip from any to 2001:e60:efe0:3167:0:9:89b6:6601
+./minidclisenderSending: minid_cli_message--flow-status 2
+./minidclisenderSending: minid_cli_message--precedence 0
+./minidclisenderSending: minid_cli_message--flow-authorized-qos 1 39000 39000 39000 39000  -1 1 1 0
+./minidclisenderSending: minid_cli_message--rating-grp 60
+./minidclisenderSending: minid_cli_message--report-level 1
+./minidclisenderSending: minid_cli_message--enable-online 0
+./minidclisenderSending: minid_cli_message--enable-offline 0
+./minidclisenderSending: minid_cli_message--resource-allocation-notification 0
+./minidclisenderSending: minid_cli_message--event-trigger 14
+./minidclisenderSending: minid_cli_message--rar-time 1
+sim2:~# cd ~/GX_inkwon/test; ./send_rar.sh so_02 2001:e60:efe0:3167:0:9:89b6:6601/GX_inkwon/test# cd ~/GX_inkwon/test; ./send_rar.sh so_02 2001:e60:efe0:31 67:0:9:89b6:6601
+./minidclisenderSending: minid_cli_message--reset-rar-info-gx (null)
+./minidclisenderSending: minid_cli_message--gx-command 3
+./minidclisenderSending: minid_cli_message--destination-host csc-nsa-smf-7
+./minidclisenderSending: minid_cli_message--destination-realm kt.com
+./minidclisenderSending: minid_cli_message--charging-rule-name 2
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit in ip from 2001:e60:efe0:3167:0:9:89b6:6601 to any
+./minidclisenderSending: minid_cli_message--flow-information (null)
+./minidclisenderSending: minid_cli_message--flow-info-flow-description permit out ip from any to 2001:e60:efe0:3167:0:9:89b6:6601
+./minidclisenderSending: minid_cli_message--flow-status 2
+./minidclisenderSending: minid_cli_message--precedence 0
+./minidclisenderSending: minid_cli_message--flow-authorized-qos 1 49000 49000 49000 49000  -1 1 1 0
+./minidclisenderSending: minid_cli_message--rating-grp 60
+./minidclisenderSending: minid_cli_message--report-level 1
+./minidclisenderSending: minid_cli_message--enable-online 0
+./minidclisenderSending: minid_cli_message--enable-offline 0
+./minidclisenderSending: minid_cli_message--resource-allocation-notification 0
+./minidclisenderSending: minid_cli_message--event-trigger 14
+./minidclisenderSending: minid_cli_message--rar-time 1
+sim2:~# cd ~/GX_inkwon/test; ./send_rar.sh so_03 2001:e60:efe0:3167:0:9:89b6:6601/GX_inkwon/test# cd ~/GX_inkwon/test; ./send_rar.sh so_03 2001:e60:efe0:31 67:0:9:89b6:6601
+./minidclisenderSending: minid_cli_message--reset-rar-info-gx (null)
+./minidclisenderSending: minid_cli_message--gx-command 3
+./minidclisenderSending: minid_cli_message--supported-features 10415
+./minidclisenderSending: minid_cli_message--supported-features 10415
+./minidclisenderSending: minid_cli_message--destination-host csc-nsa-smf-7
+./minidclisenderSending: minid_cli_message--destination-realm kt.com
+./minidclisenderSending: minid_cli_message--remove-level-charging-rule-name 2
+./minidclisenderSending: minid_cli_message--rar-time 1

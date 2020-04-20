@@ -134,6 +134,8 @@ def do_ping(proc, dev_obj):
     cp_dev = get_dev_obj('cp_cli')
     res = cp_dev.conn_obj.run_command("show subs imsi {0} ebi {1}".format(proc.get('imsi'), proc.get('ebi')))
 
+    print("do_ping(): ", res)
+
     destips = []
     
     # extract the destips
@@ -156,8 +158,8 @@ def do_rar(proc, dev_obj):
         dev_obj.conn_obj.run_command(proc.get('cmd'), write_fp=dev_obj.fp)
 
     else:
-        up_dev = get_dev_obj('up_cli')
-        res = up_dev.conn_obj.run_command("show subs imsi {0}".format(proc.get('imsi')))
+        cp_dev = get_dev_obj('cp_cli')
+        res = cp_dev.conn_obj.run_command("show subs imsi {0}".format(proc.get('imsi')))
     
         destips = []
     
@@ -167,7 +169,7 @@ def do_rar(proc, dev_obj):
         for line in (res.split('\n')):
             words = " ".join(line.split()).split(" ")
             if len(words[0]) > 0:
-                if words[0][0] == 'y':
+                if words[0][0] == '#' or words[0][0] == 'O' or words[0][0] == 'Y':
                     print("RAR: {0}".format(words))
                     destips.append(words[4])
     
@@ -201,6 +203,7 @@ def run_test(testfile):
     # do preparation
     ############################################################################
     for host in testitem.get('test_prepartion'):
+        print('connecting to {0}'.format(host))
         connect_device(testname, host)
 
     print("Total:", len(DEV_OBJS))

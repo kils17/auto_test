@@ -1,0 +1,1053 @@
+[local]TB_UPF02-09# mon subs imsi 450081030101805
+Friday April 17 12:21:51 KST 2020
+
+
+NO MATCHING CALL - waiting for a matching call to connect...
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (OFF)      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  1)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (OFF)      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+*** Verbosity Level (  2) ***
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (OFF)      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  2)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (OFF)      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+*** PDU Hex+Ascii dump (ON ) ***
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (ON )      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  2)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (OFF)      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+*** Mon Display (ON ) ***
+
+C - Control Events  (ON )      11 - PPP         (ON )  21 - L2TP        (ON )
+D - Data Events     (ON )      12 - A11         (ON )  22 - L2TPMGR     (OFF)
+E - EventID Info    (ON )      13 - RADIUS Auth (ON )  23 - L2TP Data   (OFF)
+I - Inbound Events  (ON )      14 - RADIUS Acct (ON )  24 - GTPC        (ON )
+O - Outbound Events (ON )      15 - Mobile IPv4 (ON )  25 - TACACS  (ON )
+S - Sender Info     (OFF)      16 - A11MGR      (OFF)  26 - GTPU        (OFF)
+T - Timestamps      (ON )      17 - SESSMGR     (ON )  27 - GTPP        (ON )
+X - PDU Hexdump     (OFF)      18 - A10         (OFF)  28 - DHCP        (ON )
+A - PDU Hex/Ascii   (ON )      19 - User L3     (OFF)  29 - CDR         (ON )
++/- Verbosity Level (  2)      31 - Radius COA  (ON )  30 - DHCPV6      (ON )
+L - Limit Context   (OFF)      32 - MIP Tunnel  (ON )  53 - SCCP        (OFF)
+M - Match Newcalls  (ON )      33 - L3 Tunnel   (OFF)  54 - TCAP        (OFF)
+R - RADIUS Dict: (no-override) 34 - CSS Data    (OFF)  55 - MAP         (ON )
+G - GTPP Dict: (no-override)   35 - CSS Signal  (OFF)  56 - RANAP       (OFF)
+Y - Multi-Call Trace (OFF)     36 - EC Diameter (ON )  57 - GMM         (ON )
+H - Display ethernet (OFF)     37 - SIP (IMS)   (OFF)  58 - GPRS-NS     (OFF)
+U - Mon Display     (ON )      40 - IPSec IKEv2 (OFF)  59 - BSSGP       (OFF)
+V - PCAP Hexdump     (ON )      41 - IPSG RADIUS (ON )  60 - CAP         (ON )
+F - Packet Capture: (Full Pkt) 42 - ROHC        (OFF)  64 - LLC         (OFF)
+/ - Priority        (  0)      43 - WiMAX R6    (ON )  65 - SNDCP       (OFF)
+N - MEH Header      (OFF)      44 - WiMAX Data  (OFF)  66 - BSSAP+      (OFF)
+                             45 - SRP         (OFF)  67 - SMS         (OFF)
+                                                    68 - OpenFlow(ON )
+                               46 - BCMCS SERV AUTH(OFF)
+                               47 - RSVP        (ON )
+                               48 - Mobile IPv6 (ON )  69 - X2AP        (ON )
+                                                    77 - ICAP/UIDH   (ON )
+                               50 - STUN (IMS)  (OFF)  78 - Micro-Tunnel(ON )
+                               51 - SCTP        (OFF)                   
+                               72 - HNBAP       (ON )  79 - ALCAP       (ON )
+                               73 - RUA         (ON )  80 - SSL         (ON )
+                               74 - EGTPC       (ON )
+                               75 - App Specific Diameter  (OFF)
+                               81 - S1-AP       (ON )  82 - NAS         (ON )
+                               83 - LDAP        (ON )  84 - SGS         (ON )
+                               85 - AAL2        (ON )  86 - S102         (ON )
+                               87 - PPPOE  (ON )
+                               88 - RTP(IMS)    (OFF)  89 - RTCP(IMS)   (OFF)
+                               91 - NPDB(IMS)  (OFF)
+                               92 - SABP  (ON )
+                               94 - SLS   (ON )
+                               96 - SBc-AP  (ON )
+                               97 - M3AP    (ON )
+                               49 - PFCP    (ON )
+                               76 - NSH    (ON )
+
+  (Q)uit,   <ESC> Prev Menu,   <SPACE> Pause,   <ENTER> Re-Display Options
+
+----------------------------------------------------------------------
+Incoming Call:
+----------------------------------------------------------------------
+ MSID/IMSI   : 450081030101805             Callid      : 0098e4ae
+ IMEI        : 1122334455667788            MSISDN      : 12110030101854
+ Username    : n/a                         SessionType : n/a
+ Status      : Active                      Service Name: UP-SVC
+ Src Context : sae                         Dest Context: sae
+----------------------------------------------------------------------
+
+Friday April 17 2020
+INBOUND>>>>>  12:21:57:778 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (149)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x2FF101 (3141889)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0091 (145)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0001
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0002
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x8008A021
+                                IPv4 ADDR: 192.168.84.11
+                        TRANSPORT LEVEL MARKING: 
+                            TOS/TRAFFIC CLASS: 0x50 0xFC
+                        INNER PACKET MARKING: 
+                            TOS/TRAFFIC CLASS: 0x50 0xFC
+                        LAYER2 MARKING: 
+                            TYPE PRIORITY: No-Marking  0x0   
+
+
+        UPDATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0002
+            Bearer Info: 
+                QCI: 9
+                ARP: 120
+                Charging ID: 178957026
+
+        UPDATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0001
+            Bearer Info: 
+                QCI: 9
+                ARP: 120
+                Charging ID: 178957026
+
+        SUBSCRIBER TRACE: 
+        Action: 
+            Value: Start
+        Data Event: 
+            Value: ON
+                Enable VPP Trace: ON
+                Packet Capture: Full Pkt
+                MEH Header: OFF
+                Pan Priority: 0
+                Packet Capture Size: 0
+        Control Event: 
+            Value: ON
+
+PDU HEX DUMP
+0x0000	 2134 0091 000c 0000 0000 000d 2ff1 0100	!4........../...
+0x0010	 0009 000b 0038 0002 0001 005f 0001 0000	.....8....._....
+0x0020	 0a00 2f00 6c00 0400 0000 0200 2c00 0102	../.l.......,...
+0x0030	 000b 001e 0054 0009 0080 08a0 21c0 a854	.....T......!..T
+0x0040	 0b00 1e00 0250 fc00 dc00 0250 fc00 e400	.....P.....P....
+0x0050	 01c0 0081 000f 0083 0001 0200 e100 0609	................
+0x0060	 780a aaaa e200 8100 0f00 8300 0101 00e1	x...............
+0x0070	 0006 0978 0aaa aae2 00e5 0019 0e01 0000	...x............
+0x0080	 0000 0000 0000 f822 fbd1 8a93 f230 f7ff	.......".....0..
+0x0090	 f003 0000 00                           	.....
+
+Friday April 17 2020
+<<<<OUTBOUND  12:21:57:784 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x2FF101 (3141889)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 2ff1 0108	!5...l....Y./...
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+<<<<OUTBOUND  12:21:57:785 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:50021 to 172.20.69.232:8805 (33)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_REPORT_REQUEST (0x38)
+Sequence Number: 0x005100 (20736)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x001D (29)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        REPORT TYPE: 
+            Subscriber Trace Status Report 
+        SUBSCRIBER TRACE ENABLED: 
+            Value: 
+                STATUS: SUCCESS
+                EXIT CODE: 0
+
+PDU HEX DUMP
+0x0000	 2138 001d 006c 0000 0000 59f1 0051 0008	!8...l....Y..Q..
+0x0010	 78da 6350 6760 6260 6478 06c4 0005 4101	x.cPg`b`dx....A.
+0x0020	 12                                     	.
+
+Friday April 17 2020
+INBOUND>>>>>  12:21:57:786 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:8805 to 172.20.101.228:50021 (21)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_REPORT_RESPONSE (0x39)
+Sequence Number: 0x005100 (20736)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0011 (17)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2139 0011 000c 0000 0000 000d 0051 0000	!9...........Q..
+0x0010	 0013 0001 01                           	.....
+
+Friday April 17 2020
+INBOUND>>>>>  12:21:57:810 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (82)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x152702 (1386242)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x004E (78)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0002
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0001
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x2001006A
+                                IPv4 ADDR: 172.21.21.248
+                        TRANSPORT LEVEL MARKING: 
+                            TOS/TRAFFIC CLASS: 0x50 0xFC
+                        INNER PACKET MARKING: 
+                            TOS/TRAFFIC CLASS: 0x50 0xFC
+                        LAYER2 MARKING: 
+                            TYPE PRIORITY: No-Marking  0x0   
+
+
+
+PDU HEX DUMP
+0x0000	 2134 004e 000c 0000 0000 000d 1527 0200	!4.N.........'..
+0x0010	 0009 000b 0038 0002 0002 005f 0001 0000	.....8....._....
+0x0020	 0a00 2f00 6c00 0400 0000 0100 2c00 0102	../.l.......,...
+0x0030	 000b 001e 0054 0009 0020 0100 6aac 1515	.....T......j...
+0x0040	 f800 1e00 0250 fc00 dc00 0250 fc00 e400	.....P.....P....
+0x0050	 01c0                                   	..
+
+Friday April 17 2020
+<<<<OUTBOUND  12:21:57:811 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x152702 (1386242)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 1527 0208	!5...l....Y..'..
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+INBOUND>>>>>  12:22:28:438 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (190)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x41C903 (4311299)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x00BA (186)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0003
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0003
+            FAR ID: 
+                Value: 0x0003
+
+        CREATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0004
+                PDI: 
+                    Value: 
+                        SOURCE INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0004
+            FAR ID: 
+                Value: 0x0004
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0003
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: ACCESS (0)
+                    Traffic Endpoint ID: 
+                        Value: 0x0004
+
+        CREATE FAR: 
+            Value: 
+                FAR ID: 
+                    Value: 0x0004
+                APPLY ACTION: 
+                    Value: 
+                        DROP: 1
+                        FORW: 0
+                        BUFF: 0
+                        NOCP: 0
+                        DUPL: 0
+                FORWARDING PARAMETERS: 
+                    Value: 
+                        DESTINATION INTERFACE: 
+                            Value: CORE (1)
+                    Traffic Endpoint ID: 
+                        Value: 0x0003
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0003
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+                Bearer Info: 
+                    QCI: 1
+                    ARP: 68
+                    Charging ID: 178957027
+
+        CREATE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0004
+                Local F-TEID: 
+                    Value: 
+                        CH: 1
+                        IPv4: 0
+                        IPv6: 0
+                        CHID: 0
+                Bearer Info: 
+                    QCI: 1
+                    ARP: 68
+                    Charging ID: 178957027
+
+
+PDU HEX DUMP
+0x0000	 2134 00ba 000c 0000 0000 000d 41c9 0300	!4..........A...
+0x0010	 0001 001c 0038 0002 0003 0002 000a 0014	.....8..........
+0x0020	 0001 0100 8300 0103 006c 0004 0000 0003	.........l......
+0x0030	 0001 001c 0038 0002 0004 0002 000a 0014	.....8..........
+0x0040	 0001 0000 8300 0104 006c 0004 0000 0004	.........l......
+0x0050	 0003 001b 006c 0004 0000 0003 002c 0001	.....l.......,..
+0x0060	 0100 0400 0a00 2a00 0100 0083 0001 0400	......*.........
+0x0070	 0300 1b00 6c00 0400 0000 0400 2c00 0101	....l.......,...
+0x0080	 0004 000a 002a 0001 0100 8300 0103 007f	.....*..........
+0x0090	 0014 0083 0001 0300 1500 0104 00e1 0006	................
+0x00a0	 0144 0aaa aae3 007f 0014 0083 0001 0400	.D..............
+0x00b0	 1500 0104 00e1 0006 0144 0aaa aae3     	.........D....
+
+Friday April 17 2020
+<<<<OUTBOUND  12:22:28:439 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (60)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x41C903 (4311299)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0038 (56)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0004
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x8002E003
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.101.227
+                    CHID: 0
+
+        CREATED TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0003
+            Local F-TEID: 
+                Value: 
+                    CH: 0
+                    TEID: 0x8001E003
+                    IPv4: 1
+                    IPv6: 0
+                    IPv4 ADDR: 172.20.101.226
+                    CHID: 0
+
+
+PDU HEX DUMP
+0x0000	 2135 0038 006c 0000 0000 59f1 41c9 0308	!5.8.l....Y.A...
+0x0010	 78da 6310 6660 6464 6860 1062 6866 6064	x.c.f`ddh`.bhf`d
+0x0020	 6110 65e0 646c 607a c0bc 4624 f531 4c94	a.e.dl`z..F$.1L.
+0x0030	 1922 ca08 167d 0400 b294 095f          	."...}....._
+
+Friday April 17 2020
+INBOUND>>>>>  12:22:28:446 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (148)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x37F004 (3665924)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0090 (144)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0003
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE PDR: 
+            Value: 
+                PDR ID: 
+                    Value: 
+                        RULE ID: 0x0004
+                OUTER HDR REMOVAL: 
+                    Value: GTP-U/UDP/IPv4 (0)
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0003
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x20010AE9
+                                IPv4 ADDR: 172.21.21.248
+                        TRANSPORT LEVEL MARKING: 
+                            TOS/TRAFFIC CLASS: 0x98 0xFC
+                        INNER PACKET MARKING: 
+                            TOS/TRAFFIC CLASS: 0x98 0xFC
+                        LAYER2 MARKING: 
+                            TYPE PRIORITY: No-Marking  0x0   
+
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0004
+            APPLY ACTION: 
+                Value: 
+                    DROP: 0
+                    FORW: 1
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+                UPDATE FORWARDING PARAMETERS: 
+                    Value: 
+                        OUTER HDR CREATION: 
+                            Value: 
+                                DESC: GTP-U/UDP/IPv4 (0)
+                                TEID: 0x8008C021
+                                IPv4 ADDR: 192.168.84.12
+                        TRANSPORT LEVEL MARKING: 
+                            TOS/TRAFFIC CLASS: 0x98 0xFC
+                        INNER PACKET MARKING: 
+                            TOS/TRAFFIC CLASS: 0x98 0xFC
+                        LAYER2 MARKING: 
+                            TYPE PRIORITY: No-Marking  0x0   
+
+
+
+PDU HEX DUMP
+0x0000	 2134 0090 000c 0000 0000 000d 37f0 0400	!4..........7...
+0x0010	 0009 000b 0038 0002 0003 005f 0001 0000	.....8....._....
+0x0020	 0900 0b00 3800 0200 0400 5f00 0100 000a	....8....._.....
+0x0030	 002f 006c 0004 0000 0003 002c 0001 0200	./.l.......,....
+0x0040	 0b00 1e00 5400 0900 2001 0ae9 ac15 15f8	....T...........
+0x0050	 001e 0002 98fc 00dc 0002 98fc 00e4 0001	................
+0x0060	 c000 0a00 2f00 6c00 0400 0000 0400 2c00	..../.l.......,.
+0x0070	 0102 000b 001e 0054 0009 0080 08c0 21c0	.......T......!.
+0x0080	 a854 0c00 1e00 0298 fc00 dc00 0298 fc00	.T..............
+0x0090	 e400 01c0                              	....
+
+Friday April 17 2020
+<<<<OUTBOUND  12:22:28:446 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x37F004 (3665924)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 37f0 0408	!5...l....Y.7...
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+INBOUND>>>>>  12:22:51:619 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (16)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x4A9C05 (4889605)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x000C (12)
+        Interface: SXa
+        Compression: Not Enabled
+
+PDU HEX DUMP
+0x0000	 2134 000c 000c 0000 0000 000d 4a9c 0500	!4..........J...
+
+Friday April 17 2020
+<<<<OUTBOUND  12:22:51:620 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x4A9C05 (4889605)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 4a9c 0508	!5...l....Y.J...
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+INBOUND>>>>>  12:23:12:446 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (50)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x546306 (5530374)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x002E (46)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0003
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0004
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+
+PDU HEX DUMP
+0x0000	 2134 002e 000c 0000 0000 000d 5463 0600	!4..........Tc..
+0x0010	 000a 000d 006c 0004 0000 0003 002c 0001	.....l.......,..
+0x0020	 0100 0a00 0d00 6c00 0400 0000 0400 2c00	......l.......,.
+0x0030	 0101                                   	..
+
+Friday April 17 2020
+<<<<OUTBOUND  12:23:12:447 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x546306 (5530374)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 5463 0608	!5...l....Y.Tc..
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+INBOUND>>>>>  12:23:12:451 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (34)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x557407 (5600263)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x001E (30)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        REMOVE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0004
+
+        REMOVE TRAFFIC ENDPOINT: 
+            Value: 
+            Traffic Endpoint ID: 
+                Value: 0x0003
+
+
+PDU HEX DUMP
+0x0000	 2134 001e 000c 0000 0000 000d 5574 0700	!4..........Ut..
+0x0010	 0082 0005 0083 0001 0400 8200 0500 8300	................
+0x0020	 0103                                   	..
+
+Friday April 17 2020
+<<<<OUTBOUND  12:23:12:451 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x557407 (5600263)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 5574 0708	!5...l....Y.Ut..
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+INBOUND>>>>>  12:23:33:946 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (50)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_MODIFICATION_REQUEST (0x34)
+Sequence Number: 0x000908 (2312)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x002E (46)
+        Interface: SXa
+        Compression: Not Enabled
+
+INFORMATION ELEMENTS
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0001
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+        UPDATE FAR: 
+            Value: 
+            FAR ID: 
+                Value: 0x0002
+            APPLY ACTION: 
+                Value: 
+                    DROP: 1
+                    FORW: 0
+                    BUFF: 0
+                    NOCP: 0
+                    DUPL: 0
+
+
+PDU HEX DUMP
+0x0000	 2134 002e 000c 0000 0000 000d 0009 0800	!4..............
+0x0010	 000a 000d 006c 0004 0000 0001 002c 0001	.....l.......,..
+0x0020	 0100 0a00 0d00 6c00 0400 0000 0200 2c00	......l.......,.
+0x0030	 0101                                   	..
+
+Friday April 17 2020
+<<<<OUTBOUND  12:23:33:946 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_MODIFICATION_RESPONSE (0x35)
+Sequence Number: 0x000908 (2312)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2135 0019 006c 0000 0000 59f1 0009 0808	!5...l....Y.....
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+INBOUND>>>>>  12:23:33:949 Eventid:221301(3)
+[U-PLANE]PFCP Rx PDU, from 172.20.69.232:50189 to 172.20.101.228:8805 (16)
+SEID: 0x000C00000000000D, Message type: SX_SESSION_DELETION_REQUEST (0x36)
+Sequence Number: 0x47C209 (4702729)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x000C (12)
+        Interface: SXa
+        Compression: Not Enabled
+
+PDU HEX DUMP
+0x0000	 2136 000c 000c 0000 0000 000d 47c2 0900	!6..........G...
+
+Friday April 17 2020
+<<<<OUTBOUND  12:23:33:949 Eventid:221302(3)
+[U-PLANE]PFCP Tx PDU, from 172.20.101.228:8805 to 172.20.69.232:50189 (29)
+SEID: 0x006C0000000059F1, Message type: SX_SESSION_DELETION_RESPONSE (0x37)
+Sequence Number: 0x47C209 (4702729)
+PFCP HEADER
+        Version number: 1
+        SEID flag: Present
+        MP flag: Not present
+        Message Length: 0x0019 (25)
+        Interface: SXa
+        Compression: Enabled
+
+INFORMATION ELEMENTS
+        CAUSE: 
+            Value: 
+                Cause: PFCP_CAUSE_REQUEST_ACCEPTED (0x01)
+
+
+PDU HEX DUMP
+0x0000	 2137 0019 006c 0000 0000 59f1 47c2 0908	!7...l....Y.G...
+0x0010	 78da 6310 6660 6404 0000 5400 16       	x.c.f`d...T..
+
+Friday April 17 2020
+***CONTROL*** 12:23:34:001 Eventid:10285 
+CALL STATS: <>, msid <>, Call-Duration(sec): 96
+  input pkts: 0                          output pkts: 1           
+  input bytes: 0                         output bytes: 88          
+  input bytes dropped: 0                 output bytes dropped: 0         
+  input pkts dropped: 0                  output pkts dropped: 0         
+  pk rate from user(bps): 0              pk rate to user(bps): 0           
+  ave rate from user(bps): 0             ave rate to user(bps): 0           
+  sust rate from user(bps): 0            sust rate to user(bps): 0           
+  pk rate from user(pps): 0              pk rate to user(pps): 0           
+  ave rate from user(pps): 0             ave rate to user(pps): 0           
+  sust rate from user(pps): 0            sust rate to user(pps): 0           
+  link online/active percent: 100
+  ipv4 bad hdr: 0                        ipv4 ttl exceeded: 0         
+  ipv4 fragments sent: 0                 ipv4 could not fragment: 0         
+  ipv4 input acl drop: 0                 ipv4 output acl drop: 0         
+  ipv4 bad length trim: 0         
+  ipv4 input non-mip drop: 0             ipv4 output non-mip drop: 0         
+  ipv4 input css drop: 0                 ipv4 output css drop: 0         
+  output gre xoff pkts drop: 0           output gre xoff bytes drop: 0         
+  ipv4 output no-flow drop: 0         
+  ipv4 source violations: 0              ipv4 early pdu drop: 0         
+  ipv4 proxy-dns redirect: 0             ipv4 proxy-dns pass-thru: 0         
+  ipv4 proxy-dns drop: 0                 ipv4 proxy-dns redirect tcp connection: 0         
+  ipv6 bad hdr: 0                        ipv6 bad length trim: 0         
+  ip source violation no acct: 0          ip source violation ignored: 0         
+  dlnk pkts exceeded bw: 0               dlnk pkts violated bw: 0         
+  uplnk pkts exceeded bw: 0              uplnk pkts violated bw: 0         
+  dormancy total: 0                      handoff total: 0         
+  Disconnect Reason: Remote-disconnect
+  Last Progress State: Call-arrived
+
+
+
+
+ ***
+ *** Call Finished - Waiting to trace next matching call
+ ***
+
